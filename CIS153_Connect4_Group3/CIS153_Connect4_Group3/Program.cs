@@ -16,7 +16,7 @@ namespace CIS153_Connect4_Group3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmWelcome());
         }
     }
 }
