@@ -20,18 +20,18 @@ namespace CIS153_Connect4_Group3
         private void frmWelcome_Load(object sender, EventArgs e)
         {
             Board board = new Board();
-            board.commitNextMoveForColumn(1, 0);
-            board.commitNextMoveForColumn(2, 0);
-            board.commitNextMoveForColumn(1, 0);
+            board.onClick(1, 0);
+            board.onClick(2, 0);
+            board.onClick(1, 0);
             board.mouseHover(2, 0);
             board.mouseLeave();
             board.mouseHover(2, 1);
-            board.commitNextMoveForColumn(2, 1);
+            board.onClick(2, 1);
             board.mouseLeave();
             board.mouseHover(1, 4);
             board.mouseLeave();
             board.mouseHover(1, 4);
-            board.commitNextMoveForColumn(1, 4);
+            board.onClick(1, 4);
             board.mouseLeave();
 
         }

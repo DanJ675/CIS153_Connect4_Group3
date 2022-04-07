@@ -76,7 +76,7 @@ namespace CIS153_Connect4_Group3
                 }
             }
         }
-        public void commitNextMoveForColumn(int playerNum, int column)
+        public void onClick(int playerNum, int column)
         {
             bool addedPiece = false;
             //fill from bottom up
