@@ -13,59 +13,69 @@ namespace CIS153_Connect4_Group3
 {
     class Board
     {
+        Square[,] showBoard = new Square[7, 6];
         Square[,] board = new Square[7, 6]; 
         public Board()
         {
             Square square = new Square();
             square.setPlayerNum(0);
+            Square showSquare = new Square();
+            showSquare.setPlayerNum(0);
             //initialize board to all empty
             for (int column = 0; column < 7; column++)
             {
                 for (int row = 0; row < 6; row++)
                 {
                     board[column, row] = square;
+                    showBoard[column, row]= showSquare;
                 }
             }
-
         }
-        //public Square[,] showNextMoveForColumn(int playerNum, int column)
-        //{
-        //    Square[,] outBoard = new Square[7, 6];
-        //    bool addedPiece = false;
-        //    //fill from bottom up
-        //    for(int c = 0; c < 7; c++)
-        //    {
-        //        for (int row = 0; row < 6; row++)
-        //        {
-        //            if(c == column)
-        //            {
-        //                if (board[c, row].getPlayerNum() == 0 && !addedPiece)
-        //                {
-        //                    Square square = new Square();
-        //                    addedPiece = true;
-        //                    square.setPlayerNum(playerNum);
-        //                    outBoard[c, row] = square;
-        //                }
-        //                else
-        //                {
-        //                    Square square = new Square();
-        //                    square.setPlayerNum(board[c, row].getPlayerNum());
-        //                    outBoard[c, row] = square;
-        //                }
+        public void mouseHover(int playerNum, int column)
+        {
+            bool addedPiece = false;
+            //fill from bottom up
+            for (int c = 0; c < 7; c++)
+            {
+                for (int row = 0; row < 6; row++)
+                {
+                    if (c == column)
+                    {
+                        if (board[c, row].getPlayerNum() == 0 && !addedPiece)
+                        {
+                            Square square = new Square();
+                            addedPiece = true;
+                            square.setPlayerNum(playerNum);
+                            showBoard[c, row] = square;
+                        }
+                        else
+                        {
+                            Square square = new Square();
+                            square.setPlayerNum(board[c, row].getPlayerNum());
+                            showBoard[c, row] = square;
+                        }
 
-        //            }
-        //            else
-        //            {
-        //                Square square = new Square();
-        //                square.setPlayerNum(board[c, row].getPlayerNum());
-        //                outBoard[c, row] = square;
-        //            }
-        //        }
+                    }
+                    else
+                    {
+                        Square square = new Square();
+                        square.setPlayerNum(board[c, row].getPlayerNum());
+                        showBoard[c, row] = square;
+                    }
+                }
+            }
+        }
 
-        //    }
-
-        //    return outBoard;
-        //}
+        public void mouseLeave()
+        {
+            for (int column = 0; column < 7; column++)
+            {
+                for (int row = 0; row < 6; row++)
+                {
+                    showBoard[column, row] = board[column, row];
+                }
+            }
+        }
         public void commitNextMoveForColumn(int playerNum, int column)
         {
             bool addedPiece = false;
@@ -82,12 +92,14 @@ namespace CIS153_Connect4_Group3
                             addedPiece = true;
                             square.setPlayerNum(playerNum);
                             board[c, row] = square;
+                            showBoard[c, row] = square;
                         }
                         else
                         {
                             Square square = new Square();
                             square.setPlayerNum(board[c, row].getPlayerNum());
                             board[c, row] = square;
+                            showBoard[c, row] = square;
                         }
 
                     }
@@ -96,6 +108,7 @@ namespace CIS153_Connect4_Group3
                         Square square = new Square();
                         square.setPlayerNum(board[c, row].getPlayerNum());
                         board[c, row] = square;
+                        showBoard[c, row] = square;
                     }
                 }
 
