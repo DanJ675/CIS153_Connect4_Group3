@@ -13,8 +13,8 @@ namespace CIS153_Connect4_Group3
 {
     class Board
     {
-        Square[,] showBoard = new Square[7, 6];
-        Square[,] board = new Square[7, 6]; 
+        private Square[,] showBoard = new Square[7, 6];
+        private Square[,] board = new Square[7, 6];
         public Board()
         {
             Square square = new Square();
@@ -27,9 +27,17 @@ namespace CIS153_Connect4_Group3
                 for (int row = 0; row < 6; row++)
                 {
                     board[column, row] = square;
-                    showBoard[column, row]= showSquare;
+                    showBoard[column, row] = showSquare;
                 }
             }
+        }
+        public Square[,] getBoard()
+        {
+            return board;
+        }
+        public Square[,] getShowBoard()
+        {
+            return showBoard;
         }
         public void mouseHover(int playerNum, int column)
         {
