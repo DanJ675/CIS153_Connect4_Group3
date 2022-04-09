@@ -39,7 +39,7 @@ namespace CIS153_Connect4_Group3
         {
             return showBoard;
         }
-        public void mouseHover(int playerNum, int column)
+        public Square[,] mouseHover(int playerNum, int column)
         {
             bool addedPiece = false;
             //fill from bottom up
@@ -72,6 +72,7 @@ namespace CIS153_Connect4_Group3
                     }
                 }
             }
+            return showBoard;
         }
 
         public void mouseLeave()
@@ -84,7 +85,7 @@ namespace CIS153_Connect4_Group3
                 }
             }
         }
-        public void onClick(int playerNum, int column)
+        public Square[,] onClick(int playerNum, int column)
         {
             bool addedPiece = false;
             //fill from bottom up
@@ -121,6 +122,7 @@ namespace CIS153_Connect4_Group3
                 }
 
             }
+            return board;
         }
     }
 }
