@@ -157,14 +157,53 @@ namespace Connect4
             this.bb38 = new System.Windows.Forms.Button();
             this.bb37 = new System.Windows.Forms.Button();
             this.bb36 = new System.Windows.Forms.Button();
+            this.col0 = new System.Windows.Forms.Panel();
+            this.pBox03P1 = new System.Windows.Forms.PictureBox();
+            this.pBox00P1 = new System.Windows.Forms.PictureBox();
+            this.pBox01P2 = new System.Windows.Forms.PictureBox();
+            this.pBox00P2 = new System.Windows.Forms.PictureBox();
+            this.pBox00P0 = new System.Windows.Forms.PictureBox();
+            this.pBox01P0 = new System.Windows.Forms.PictureBox();
+            this.pBox01P1 = new System.Windows.Forms.PictureBox();
+            this.pBox02P0 = new System.Windows.Forms.PictureBox();
+            this.pBox02P1 = new System.Windows.Forms.PictureBox();
+            this.pBox02P2 = new System.Windows.Forms.PictureBox();
+            this.pBox03P2 = new System.Windows.Forms.PictureBox();
+            this.pBox03P0 = new System.Windows.Forms.PictureBox();
+            this.pBox04P2 = new System.Windows.Forms.PictureBox();
+            this.pBox04P0 = new System.Windows.Forms.PictureBox();
+            this.pBox04P1 = new System.Windows.Forms.PictureBox();
+            this.pBox05P1 = new System.Windows.Forms.PictureBox();
+            this.pBox05P2 = new System.Windows.Forms.PictureBox();
+            this.pBox05P0 = new System.Windows.Forms.PictureBox();
+            this.col0.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox03P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox01P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox01P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox01P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox02P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox02P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox02P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox03P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox03P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox04P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox04P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox04P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox05P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox05P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox05P0)).BeginInit();
             this.SuspendLayout();
             // 
             // rb36
             // 
             this.rb36.Image = ((System.Drawing.Image)(resources.GetObject("rb36.Image")));
-            this.rb36.Location = new System.Drawing.Point(50, 263);
+            this.rb36.Location = new System.Drawing.Point(100, 506);
+            this.rb36.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb36.Name = "rb36";
-            this.rb36.Size = new System.Drawing.Size(38, 39);
+            this.rb36.Size = new System.Drawing.Size(76, 75);
             this.rb36.TabIndex = 0;
             this.rb36.UseVisualStyleBackColor = true;
             this.rb36.Visible = false;
@@ -173,18 +212,20 @@ namespace Connect4
             // 
             this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(33, 31);
+            this.listView1.Location = new System.Drawing.Point(66, 60);
+            this.listView1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(333, 282);
+            this.listView1.Size = new System.Drawing.Size(662, 539);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // rb29
             // 
             this.rb29.Image = ((System.Drawing.Image)(resources.GetObject("rb29.Image")));
-            this.rb29.Location = new System.Drawing.Point(50, 218);
+            this.rb29.Location = new System.Drawing.Point(100, 419);
+            this.rb29.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb29.Name = "rb29";
-            this.rb29.Size = new System.Drawing.Size(38, 39);
+            this.rb29.Size = new System.Drawing.Size(76, 75);
             this.rb29.TabIndex = 8;
             this.rb29.UseVisualStyleBackColor = true;
             this.rb29.Visible = false;
@@ -192,9 +233,10 @@ namespace Connect4
             // rb22
             // 
             this.rb22.Image = ((System.Drawing.Image)(resources.GetObject("rb22.Image")));
-            this.rb22.Location = new System.Drawing.Point(50, 173);
+            this.rb22.Location = new System.Drawing.Point(100, 333);
+            this.rb22.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb22.Name = "rb22";
-            this.rb22.Size = new System.Drawing.Size(38, 39);
+            this.rb22.Size = new System.Drawing.Size(76, 75);
             this.rb22.TabIndex = 9;
             this.rb22.UseVisualStyleBackColor = true;
             this.rb22.Visible = false;
@@ -202,9 +244,10 @@ namespace Connect4
             // rb15
             // 
             this.rb15.Image = ((System.Drawing.Image)(resources.GetObject("rb15.Image")));
-            this.rb15.Location = new System.Drawing.Point(50, 128);
+            this.rb15.Location = new System.Drawing.Point(100, 246);
+            this.rb15.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb15.Name = "rb15";
-            this.rb15.Size = new System.Drawing.Size(38, 39);
+            this.rb15.Size = new System.Drawing.Size(76, 75);
             this.rb15.TabIndex = 10;
             this.rb15.UseVisualStyleBackColor = true;
             this.rb15.Visible = false;
@@ -212,9 +255,10 @@ namespace Connect4
             // rb8
             // 
             this.rb8.Image = ((System.Drawing.Image)(resources.GetObject("rb8.Image")));
-            this.rb8.Location = new System.Drawing.Point(50, 83);
+            this.rb8.Location = new System.Drawing.Point(100, 160);
+            this.rb8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb8.Name = "rb8";
-            this.rb8.Size = new System.Drawing.Size(38, 39);
+            this.rb8.Size = new System.Drawing.Size(76, 75);
             this.rb8.TabIndex = 11;
             this.rb8.UseVisualStyleBackColor = true;
             this.rb8.Visible = false;
@@ -222,9 +266,10 @@ namespace Connect4
             // rb1
             // 
             this.rb1.Image = ((System.Drawing.Image)(resources.GetObject("rb1.Image")));
-            this.rb1.Location = new System.Drawing.Point(50, 38);
+            this.rb1.Location = new System.Drawing.Point(100, 73);
+            this.rb1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb1.Name = "rb1";
-            this.rb1.Size = new System.Drawing.Size(38, 39);
+            this.rb1.Size = new System.Drawing.Size(76, 75);
             this.rb1.TabIndex = 12;
             this.rb1.UseVisualStyleBackColor = true;
             this.rb1.Visible = false;
@@ -232,9 +277,10 @@ namespace Connect4
             // rb2
             // 
             this.rb2.Image = ((System.Drawing.Image)(resources.GetObject("rb2.Image")));
-            this.rb2.Location = new System.Drawing.Point(94, 38);
+            this.rb2.Location = new System.Drawing.Point(188, 73);
+            this.rb2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb2.Name = "rb2";
-            this.rb2.Size = new System.Drawing.Size(38, 39);
+            this.rb2.Size = new System.Drawing.Size(76, 75);
             this.rb2.TabIndex = 18;
             this.rb2.UseVisualStyleBackColor = true;
             this.rb2.Visible = false;
@@ -242,9 +288,10 @@ namespace Connect4
             // rb9
             // 
             this.rb9.Image = ((System.Drawing.Image)(resources.GetObject("rb9.Image")));
-            this.rb9.Location = new System.Drawing.Point(94, 83);
+            this.rb9.Location = new System.Drawing.Point(188, 160);
+            this.rb9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb9.Name = "rb9";
-            this.rb9.Size = new System.Drawing.Size(38, 39);
+            this.rb9.Size = new System.Drawing.Size(76, 75);
             this.rb9.TabIndex = 17;
             this.rb9.UseVisualStyleBackColor = true;
             this.rb9.Visible = false;
@@ -252,9 +299,10 @@ namespace Connect4
             // rb16
             // 
             this.rb16.Image = ((System.Drawing.Image)(resources.GetObject("rb16.Image")));
-            this.rb16.Location = new System.Drawing.Point(94, 128);
+            this.rb16.Location = new System.Drawing.Point(188, 246);
+            this.rb16.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb16.Name = "rb16";
-            this.rb16.Size = new System.Drawing.Size(38, 39);
+            this.rb16.Size = new System.Drawing.Size(76, 75);
             this.rb16.TabIndex = 16;
             this.rb16.UseVisualStyleBackColor = true;
             this.rb16.Visible = false;
@@ -262,9 +310,10 @@ namespace Connect4
             // rb23
             // 
             this.rb23.Image = ((System.Drawing.Image)(resources.GetObject("rb23.Image")));
-            this.rb23.Location = new System.Drawing.Point(94, 173);
+            this.rb23.Location = new System.Drawing.Point(188, 333);
+            this.rb23.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb23.Name = "rb23";
-            this.rb23.Size = new System.Drawing.Size(38, 39);
+            this.rb23.Size = new System.Drawing.Size(76, 75);
             this.rb23.TabIndex = 15;
             this.rb23.UseVisualStyleBackColor = true;
             this.rb23.Visible = false;
@@ -272,9 +321,10 @@ namespace Connect4
             // rb30
             // 
             this.rb30.Image = ((System.Drawing.Image)(resources.GetObject("rb30.Image")));
-            this.rb30.Location = new System.Drawing.Point(94, 218);
+            this.rb30.Location = new System.Drawing.Point(188, 419);
+            this.rb30.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb30.Name = "rb30";
-            this.rb30.Size = new System.Drawing.Size(38, 39);
+            this.rb30.Size = new System.Drawing.Size(76, 75);
             this.rb30.TabIndex = 14;
             this.rb30.UseVisualStyleBackColor = true;
             this.rb30.Visible = false;
@@ -282,9 +332,10 @@ namespace Connect4
             // rb37
             // 
             this.rb37.Image = ((System.Drawing.Image)(resources.GetObject("rb37.Image")));
-            this.rb37.Location = new System.Drawing.Point(94, 263);
+            this.rb37.Location = new System.Drawing.Point(188, 506);
+            this.rb37.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb37.Name = "rb37";
-            this.rb37.Size = new System.Drawing.Size(38, 39);
+            this.rb37.Size = new System.Drawing.Size(76, 75);
             this.rb37.TabIndex = 13;
             this.rb37.UseVisualStyleBackColor = true;
             this.rb37.Visible = false;
@@ -292,9 +343,10 @@ namespace Connect4
             // rb3
             // 
             this.rb3.Image = ((System.Drawing.Image)(resources.GetObject("rb3.Image")));
-            this.rb3.Location = new System.Drawing.Point(138, 38);
+            this.rb3.Location = new System.Drawing.Point(276, 73);
+            this.rb3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb3.Name = "rb3";
-            this.rb3.Size = new System.Drawing.Size(38, 39);
+            this.rb3.Size = new System.Drawing.Size(76, 75);
             this.rb3.TabIndex = 24;
             this.rb3.UseVisualStyleBackColor = true;
             this.rb3.Visible = false;
@@ -302,9 +354,10 @@ namespace Connect4
             // rb10
             // 
             this.rb10.Image = ((System.Drawing.Image)(resources.GetObject("rb10.Image")));
-            this.rb10.Location = new System.Drawing.Point(138, 83);
+            this.rb10.Location = new System.Drawing.Point(276, 160);
+            this.rb10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb10.Name = "rb10";
-            this.rb10.Size = new System.Drawing.Size(38, 39);
+            this.rb10.Size = new System.Drawing.Size(76, 75);
             this.rb10.TabIndex = 23;
             this.rb10.UseVisualStyleBackColor = true;
             this.rb10.Visible = false;
@@ -312,9 +365,10 @@ namespace Connect4
             // rb17
             // 
             this.rb17.Image = ((System.Drawing.Image)(resources.GetObject("rb17.Image")));
-            this.rb17.Location = new System.Drawing.Point(138, 128);
+            this.rb17.Location = new System.Drawing.Point(276, 246);
+            this.rb17.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb17.Name = "rb17";
-            this.rb17.Size = new System.Drawing.Size(38, 39);
+            this.rb17.Size = new System.Drawing.Size(76, 75);
             this.rb17.TabIndex = 22;
             this.rb17.UseVisualStyleBackColor = true;
             this.rb17.Visible = false;
@@ -322,9 +376,10 @@ namespace Connect4
             // rb24
             // 
             this.rb24.Image = ((System.Drawing.Image)(resources.GetObject("rb24.Image")));
-            this.rb24.Location = new System.Drawing.Point(138, 173);
+            this.rb24.Location = new System.Drawing.Point(276, 333);
+            this.rb24.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb24.Name = "rb24";
-            this.rb24.Size = new System.Drawing.Size(38, 39);
+            this.rb24.Size = new System.Drawing.Size(76, 75);
             this.rb24.TabIndex = 21;
             this.rb24.UseVisualStyleBackColor = true;
             this.rb24.Visible = false;
@@ -332,9 +387,10 @@ namespace Connect4
             // rb31
             // 
             this.rb31.Image = ((System.Drawing.Image)(resources.GetObject("rb31.Image")));
-            this.rb31.Location = new System.Drawing.Point(138, 218);
+            this.rb31.Location = new System.Drawing.Point(276, 419);
+            this.rb31.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb31.Name = "rb31";
-            this.rb31.Size = new System.Drawing.Size(38, 39);
+            this.rb31.Size = new System.Drawing.Size(76, 75);
             this.rb31.TabIndex = 20;
             this.rb31.UseVisualStyleBackColor = true;
             this.rb31.Visible = false;
@@ -342,9 +398,10 @@ namespace Connect4
             // rb38
             // 
             this.rb38.Image = ((System.Drawing.Image)(resources.GetObject("rb38.Image")));
-            this.rb38.Location = new System.Drawing.Point(138, 263);
+            this.rb38.Location = new System.Drawing.Point(276, 506);
+            this.rb38.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb38.Name = "rb38";
-            this.rb38.Size = new System.Drawing.Size(38, 39);
+            this.rb38.Size = new System.Drawing.Size(76, 75);
             this.rb38.TabIndex = 19;
             this.rb38.UseVisualStyleBackColor = true;
             this.rb38.Visible = false;
@@ -352,9 +409,10 @@ namespace Connect4
             // rb4
             // 
             this.rb4.Image = ((System.Drawing.Image)(resources.GetObject("rb4.Image")));
-            this.rb4.Location = new System.Drawing.Point(182, 38);
+            this.rb4.Location = new System.Drawing.Point(364, 73);
+            this.rb4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb4.Name = "rb4";
-            this.rb4.Size = new System.Drawing.Size(38, 39);
+            this.rb4.Size = new System.Drawing.Size(76, 75);
             this.rb4.TabIndex = 30;
             this.rb4.UseVisualStyleBackColor = true;
             this.rb4.Visible = false;
@@ -362,9 +420,10 @@ namespace Connect4
             // rb11
             // 
             this.rb11.Image = ((System.Drawing.Image)(resources.GetObject("rb11.Image")));
-            this.rb11.Location = new System.Drawing.Point(182, 83);
+            this.rb11.Location = new System.Drawing.Point(364, 160);
+            this.rb11.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb11.Name = "rb11";
-            this.rb11.Size = new System.Drawing.Size(38, 39);
+            this.rb11.Size = new System.Drawing.Size(76, 75);
             this.rb11.TabIndex = 29;
             this.rb11.UseVisualStyleBackColor = true;
             this.rb11.Visible = false;
@@ -372,9 +431,10 @@ namespace Connect4
             // rb18
             // 
             this.rb18.Image = ((System.Drawing.Image)(resources.GetObject("rb18.Image")));
-            this.rb18.Location = new System.Drawing.Point(182, 128);
+            this.rb18.Location = new System.Drawing.Point(364, 246);
+            this.rb18.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb18.Name = "rb18";
-            this.rb18.Size = new System.Drawing.Size(38, 39);
+            this.rb18.Size = new System.Drawing.Size(76, 75);
             this.rb18.TabIndex = 28;
             this.rb18.UseVisualStyleBackColor = true;
             this.rb18.Visible = false;
@@ -382,9 +442,10 @@ namespace Connect4
             // rb25
             // 
             this.rb25.Image = ((System.Drawing.Image)(resources.GetObject("rb25.Image")));
-            this.rb25.Location = new System.Drawing.Point(182, 173);
+            this.rb25.Location = new System.Drawing.Point(364, 333);
+            this.rb25.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb25.Name = "rb25";
-            this.rb25.Size = new System.Drawing.Size(38, 39);
+            this.rb25.Size = new System.Drawing.Size(76, 75);
             this.rb25.TabIndex = 27;
             this.rb25.UseVisualStyleBackColor = true;
             this.rb25.Visible = false;
@@ -392,9 +453,10 @@ namespace Connect4
             // rb32
             // 
             this.rb32.Image = ((System.Drawing.Image)(resources.GetObject("rb32.Image")));
-            this.rb32.Location = new System.Drawing.Point(182, 218);
+            this.rb32.Location = new System.Drawing.Point(364, 419);
+            this.rb32.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb32.Name = "rb32";
-            this.rb32.Size = new System.Drawing.Size(38, 39);
+            this.rb32.Size = new System.Drawing.Size(76, 75);
             this.rb32.TabIndex = 26;
             this.rb32.UseVisualStyleBackColor = true;
             this.rb32.Visible = false;
@@ -402,9 +464,10 @@ namespace Connect4
             // rb39
             // 
             this.rb39.Image = ((System.Drawing.Image)(resources.GetObject("rb39.Image")));
-            this.rb39.Location = new System.Drawing.Point(182, 263);
+            this.rb39.Location = new System.Drawing.Point(364, 506);
+            this.rb39.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb39.Name = "rb39";
-            this.rb39.Size = new System.Drawing.Size(38, 39);
+            this.rb39.Size = new System.Drawing.Size(76, 75);
             this.rb39.TabIndex = 25;
             this.rb39.UseVisualStyleBackColor = true;
             this.rb39.Visible = false;
@@ -412,9 +475,10 @@ namespace Connect4
             // rb5
             // 
             this.rb5.Image = ((System.Drawing.Image)(resources.GetObject("rb5.Image")));
-            this.rb5.Location = new System.Drawing.Point(226, 38);
+            this.rb5.Location = new System.Drawing.Point(452, 73);
+            this.rb5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb5.Name = "rb5";
-            this.rb5.Size = new System.Drawing.Size(38, 39);
+            this.rb5.Size = new System.Drawing.Size(76, 75);
             this.rb5.TabIndex = 36;
             this.rb5.UseVisualStyleBackColor = true;
             this.rb5.Visible = false;
@@ -422,9 +486,10 @@ namespace Connect4
             // rb12
             // 
             this.rb12.Image = ((System.Drawing.Image)(resources.GetObject("rb12.Image")));
-            this.rb12.Location = new System.Drawing.Point(226, 83);
+            this.rb12.Location = new System.Drawing.Point(452, 160);
+            this.rb12.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb12.Name = "rb12";
-            this.rb12.Size = new System.Drawing.Size(38, 39);
+            this.rb12.Size = new System.Drawing.Size(76, 75);
             this.rb12.TabIndex = 35;
             this.rb12.UseVisualStyleBackColor = true;
             this.rb12.Visible = false;
@@ -432,9 +497,10 @@ namespace Connect4
             // rb19
             // 
             this.rb19.Image = ((System.Drawing.Image)(resources.GetObject("rb19.Image")));
-            this.rb19.Location = new System.Drawing.Point(226, 128);
+            this.rb19.Location = new System.Drawing.Point(452, 246);
+            this.rb19.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb19.Name = "rb19";
-            this.rb19.Size = new System.Drawing.Size(38, 39);
+            this.rb19.Size = new System.Drawing.Size(76, 75);
             this.rb19.TabIndex = 34;
             this.rb19.UseVisualStyleBackColor = true;
             this.rb19.Visible = false;
@@ -442,9 +508,10 @@ namespace Connect4
             // rb26
             // 
             this.rb26.Image = ((System.Drawing.Image)(resources.GetObject("rb26.Image")));
-            this.rb26.Location = new System.Drawing.Point(226, 173);
+            this.rb26.Location = new System.Drawing.Point(452, 333);
+            this.rb26.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb26.Name = "rb26";
-            this.rb26.Size = new System.Drawing.Size(38, 39);
+            this.rb26.Size = new System.Drawing.Size(76, 75);
             this.rb26.TabIndex = 33;
             this.rb26.UseVisualStyleBackColor = true;
             this.rb26.Visible = false;
@@ -452,9 +519,10 @@ namespace Connect4
             // rb33
             // 
             this.rb33.Image = ((System.Drawing.Image)(resources.GetObject("rb33.Image")));
-            this.rb33.Location = new System.Drawing.Point(226, 218);
+            this.rb33.Location = new System.Drawing.Point(452, 419);
+            this.rb33.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb33.Name = "rb33";
-            this.rb33.Size = new System.Drawing.Size(38, 39);
+            this.rb33.Size = new System.Drawing.Size(76, 75);
             this.rb33.TabIndex = 32;
             this.rb33.UseVisualStyleBackColor = true;
             this.rb33.Visible = false;
@@ -462,9 +530,10 @@ namespace Connect4
             // rb40
             // 
             this.rb40.Image = ((System.Drawing.Image)(resources.GetObject("rb40.Image")));
-            this.rb40.Location = new System.Drawing.Point(226, 263);
+            this.rb40.Location = new System.Drawing.Point(452, 506);
+            this.rb40.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb40.Name = "rb40";
-            this.rb40.Size = new System.Drawing.Size(38, 39);
+            this.rb40.Size = new System.Drawing.Size(76, 75);
             this.rb40.TabIndex = 31;
             this.rb40.UseVisualStyleBackColor = true;
             this.rb40.Visible = false;
@@ -472,9 +541,10 @@ namespace Connect4
             // rb6
             // 
             this.rb6.Image = ((System.Drawing.Image)(resources.GetObject("rb6.Image")));
-            this.rb6.Location = new System.Drawing.Point(270, 38);
+            this.rb6.Location = new System.Drawing.Point(540, 73);
+            this.rb6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb6.Name = "rb6";
-            this.rb6.Size = new System.Drawing.Size(38, 39);
+            this.rb6.Size = new System.Drawing.Size(76, 75);
             this.rb6.TabIndex = 42;
             this.rb6.UseVisualStyleBackColor = true;
             this.rb6.Visible = false;
@@ -482,9 +552,10 @@ namespace Connect4
             // rb13
             // 
             this.rb13.Image = ((System.Drawing.Image)(resources.GetObject("rb13.Image")));
-            this.rb13.Location = new System.Drawing.Point(270, 83);
+            this.rb13.Location = new System.Drawing.Point(540, 160);
+            this.rb13.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb13.Name = "rb13";
-            this.rb13.Size = new System.Drawing.Size(38, 39);
+            this.rb13.Size = new System.Drawing.Size(76, 75);
             this.rb13.TabIndex = 41;
             this.rb13.UseVisualStyleBackColor = true;
             this.rb13.Visible = false;
@@ -492,9 +563,10 @@ namespace Connect4
             // rb20
             // 
             this.rb20.Image = ((System.Drawing.Image)(resources.GetObject("rb20.Image")));
-            this.rb20.Location = new System.Drawing.Point(270, 128);
+            this.rb20.Location = new System.Drawing.Point(540, 246);
+            this.rb20.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb20.Name = "rb20";
-            this.rb20.Size = new System.Drawing.Size(38, 39);
+            this.rb20.Size = new System.Drawing.Size(76, 75);
             this.rb20.TabIndex = 40;
             this.rb20.UseVisualStyleBackColor = true;
             this.rb20.Visible = false;
@@ -502,9 +574,10 @@ namespace Connect4
             // rb27
             // 
             this.rb27.Image = ((System.Drawing.Image)(resources.GetObject("rb27.Image")));
-            this.rb27.Location = new System.Drawing.Point(270, 173);
+            this.rb27.Location = new System.Drawing.Point(540, 333);
+            this.rb27.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb27.Name = "rb27";
-            this.rb27.Size = new System.Drawing.Size(38, 39);
+            this.rb27.Size = new System.Drawing.Size(76, 75);
             this.rb27.TabIndex = 39;
             this.rb27.UseVisualStyleBackColor = true;
             this.rb27.Visible = false;
@@ -512,9 +585,10 @@ namespace Connect4
             // rb34
             // 
             this.rb34.Image = ((System.Drawing.Image)(resources.GetObject("rb34.Image")));
-            this.rb34.Location = new System.Drawing.Point(270, 218);
+            this.rb34.Location = new System.Drawing.Point(540, 419);
+            this.rb34.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb34.Name = "rb34";
-            this.rb34.Size = new System.Drawing.Size(38, 39);
+            this.rb34.Size = new System.Drawing.Size(76, 75);
             this.rb34.TabIndex = 38;
             this.rb34.UseVisualStyleBackColor = true;
             this.rb34.Visible = false;
@@ -522,9 +596,10 @@ namespace Connect4
             // rb41
             // 
             this.rb41.Image = ((System.Drawing.Image)(resources.GetObject("rb41.Image")));
-            this.rb41.Location = new System.Drawing.Point(270, 263);
+            this.rb41.Location = new System.Drawing.Point(540, 506);
+            this.rb41.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb41.Name = "rb41";
-            this.rb41.Size = new System.Drawing.Size(38, 39);
+            this.rb41.Size = new System.Drawing.Size(76, 75);
             this.rb41.TabIndex = 37;
             this.rb41.UseVisualStyleBackColor = true;
             this.rb41.Visible = false;
@@ -532,9 +607,10 @@ namespace Connect4
             // rb7
             // 
             this.rb7.Image = ((System.Drawing.Image)(resources.GetObject("rb7.Image")));
-            this.rb7.Location = new System.Drawing.Point(314, 38);
+            this.rb7.Location = new System.Drawing.Point(628, 73);
+            this.rb7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb7.Name = "rb7";
-            this.rb7.Size = new System.Drawing.Size(38, 39);
+            this.rb7.Size = new System.Drawing.Size(76, 75);
             this.rb7.TabIndex = 48;
             this.rb7.UseVisualStyleBackColor = true;
             this.rb7.Visible = false;
@@ -542,9 +618,10 @@ namespace Connect4
             // rb14
             // 
             this.rb14.Image = ((System.Drawing.Image)(resources.GetObject("rb14.Image")));
-            this.rb14.Location = new System.Drawing.Point(314, 83);
+            this.rb14.Location = new System.Drawing.Point(628, 160);
+            this.rb14.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb14.Name = "rb14";
-            this.rb14.Size = new System.Drawing.Size(38, 39);
+            this.rb14.Size = new System.Drawing.Size(76, 75);
             this.rb14.TabIndex = 47;
             this.rb14.UseVisualStyleBackColor = true;
             this.rb14.Visible = false;
@@ -552,9 +629,10 @@ namespace Connect4
             // rb21
             // 
             this.rb21.Image = ((System.Drawing.Image)(resources.GetObject("rb21.Image")));
-            this.rb21.Location = new System.Drawing.Point(314, 128);
+            this.rb21.Location = new System.Drawing.Point(628, 246);
+            this.rb21.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb21.Name = "rb21";
-            this.rb21.Size = new System.Drawing.Size(38, 39);
+            this.rb21.Size = new System.Drawing.Size(76, 75);
             this.rb21.TabIndex = 46;
             this.rb21.UseVisualStyleBackColor = true;
             this.rb21.Visible = false;
@@ -562,9 +640,10 @@ namespace Connect4
             // rb28
             // 
             this.rb28.Image = ((System.Drawing.Image)(resources.GetObject("rb28.Image")));
-            this.rb28.Location = new System.Drawing.Point(314, 173);
+            this.rb28.Location = new System.Drawing.Point(628, 333);
+            this.rb28.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb28.Name = "rb28";
-            this.rb28.Size = new System.Drawing.Size(38, 39);
+            this.rb28.Size = new System.Drawing.Size(76, 75);
             this.rb28.TabIndex = 45;
             this.rb28.UseVisualStyleBackColor = true;
             this.rb28.Visible = false;
@@ -572,9 +651,10 @@ namespace Connect4
             // rb35
             // 
             this.rb35.Image = ((System.Drawing.Image)(resources.GetObject("rb35.Image")));
-            this.rb35.Location = new System.Drawing.Point(314, 218);
+            this.rb35.Location = new System.Drawing.Point(628, 419);
+            this.rb35.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb35.Name = "rb35";
-            this.rb35.Size = new System.Drawing.Size(38, 39);
+            this.rb35.Size = new System.Drawing.Size(76, 75);
             this.rb35.TabIndex = 44;
             this.rb35.UseVisualStyleBackColor = true;
             this.rb35.Visible = false;
@@ -582,9 +662,10 @@ namespace Connect4
             // rb42
             // 
             this.rb42.Image = ((System.Drawing.Image)(resources.GetObject("rb42.Image")));
-            this.rb42.Location = new System.Drawing.Point(314, 263);
+            this.rb42.Location = new System.Drawing.Point(628, 506);
+            this.rb42.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rb42.Name = "rb42";
-            this.rb42.Size = new System.Drawing.Size(38, 39);
+            this.rb42.Size = new System.Drawing.Size(76, 75);
             this.rb42.TabIndex = 43;
             this.rb42.UseVisualStyleBackColor = true;
             this.rb42.Visible = false;
@@ -592,9 +673,10 @@ namespace Connect4
             // bb1
             // 
             this.bb1.Image = ((System.Drawing.Image)(resources.GetObject("bb1.Image")));
-            this.bb1.Location = new System.Drawing.Point(50, 38);
+            this.bb1.Location = new System.Drawing.Point(100, 73);
+            this.bb1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb1.Name = "bb1";
-            this.bb1.Size = new System.Drawing.Size(38, 39);
+            this.bb1.Size = new System.Drawing.Size(76, 75);
             this.bb1.TabIndex = 49;
             this.bb1.UseVisualStyleBackColor = true;
             this.bb1.Visible = false;
@@ -602,9 +684,10 @@ namespace Connect4
             // bb2
             // 
             this.bb2.Image = ((System.Drawing.Image)(resources.GetObject("bb2.Image")));
-            this.bb2.Location = new System.Drawing.Point(94, 38);
+            this.bb2.Location = new System.Drawing.Point(188, 73);
+            this.bb2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb2.Name = "bb2";
-            this.bb2.Size = new System.Drawing.Size(38, 39);
+            this.bb2.Size = new System.Drawing.Size(76, 75);
             this.bb2.TabIndex = 55;
             this.bb2.UseVisualStyleBackColor = true;
             this.bb2.Visible = false;
@@ -612,9 +695,10 @@ namespace Connect4
             // bb3
             // 
             this.bb3.Image = ((System.Drawing.Image)(resources.GetObject("bb3.Image")));
-            this.bb3.Location = new System.Drawing.Point(138, 38);
+            this.bb3.Location = new System.Drawing.Point(276, 73);
+            this.bb3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb3.Name = "bb3";
-            this.bb3.Size = new System.Drawing.Size(38, 39);
+            this.bb3.Size = new System.Drawing.Size(76, 75);
             this.bb3.TabIndex = 61;
             this.bb3.UseVisualStyleBackColor = true;
             this.bb3.Visible = false;
@@ -622,9 +706,10 @@ namespace Connect4
             // bb4
             // 
             this.bb4.Image = ((System.Drawing.Image)(resources.GetObject("bb4.Image")));
-            this.bb4.Location = new System.Drawing.Point(182, 38);
+            this.bb4.Location = new System.Drawing.Point(364, 73);
+            this.bb4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb4.Name = "bb4";
-            this.bb4.Size = new System.Drawing.Size(38, 39);
+            this.bb4.Size = new System.Drawing.Size(76, 75);
             this.bb4.TabIndex = 67;
             this.bb4.UseVisualStyleBackColor = true;
             this.bb4.Visible = false;
@@ -632,9 +717,10 @@ namespace Connect4
             // bb5
             // 
             this.bb5.Image = ((System.Drawing.Image)(resources.GetObject("bb5.Image")));
-            this.bb5.Location = new System.Drawing.Point(226, 38);
+            this.bb5.Location = new System.Drawing.Point(452, 73);
+            this.bb5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb5.Name = "bb5";
-            this.bb5.Size = new System.Drawing.Size(38, 39);
+            this.bb5.Size = new System.Drawing.Size(76, 75);
             this.bb5.TabIndex = 73;
             this.bb5.UseVisualStyleBackColor = true;
             this.bb5.Visible = false;
@@ -642,9 +728,10 @@ namespace Connect4
             // bb6
             // 
             this.bb6.Image = ((System.Drawing.Image)(resources.GetObject("bb6.Image")));
-            this.bb6.Location = new System.Drawing.Point(270, 38);
+            this.bb6.Location = new System.Drawing.Point(540, 73);
+            this.bb6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb6.Name = "bb6";
-            this.bb6.Size = new System.Drawing.Size(38, 39);
+            this.bb6.Size = new System.Drawing.Size(76, 75);
             this.bb6.TabIndex = 79;
             this.bb6.UseVisualStyleBackColor = true;
             this.bb6.Visible = false;
@@ -652,9 +739,10 @@ namespace Connect4
             // bb7
             // 
             this.bb7.Image = ((System.Drawing.Image)(resources.GetObject("bb7.Image")));
-            this.bb7.Location = new System.Drawing.Point(314, 38);
+            this.bb7.Location = new System.Drawing.Point(628, 73);
+            this.bb7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb7.Name = "bb7";
-            this.bb7.Size = new System.Drawing.Size(38, 39);
+            this.bb7.Size = new System.Drawing.Size(76, 75);
             this.bb7.TabIndex = 85;
             this.bb7.UseVisualStyleBackColor = true;
             this.bb7.Visible = false;
@@ -662,387 +750,430 @@ namespace Connect4
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(50, 38);
+            this.button1.Location = new System.Drawing.Point(100, 73);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 39);
+            this.button1.Size = new System.Drawing.Size(76, 75);
             this.button1.TabIndex = 91;
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
             this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.Location = new System.Drawing.Point(50, 83);
+            this.button8.Location = new System.Drawing.Point(100, 160);
+            this.button8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(38, 39);
+            this.button8.Size = new System.Drawing.Size(76, 75);
             this.button8.TabIndex = 92;
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button15
             // 
             this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.Location = new System.Drawing.Point(50, 128);
+            this.button15.Location = new System.Drawing.Point(100, 246);
+            this.button15.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(38, 39);
+            this.button15.Size = new System.Drawing.Size(76, 75);
             this.button15.TabIndex = 93;
             this.button15.UseVisualStyleBackColor = true;
             // 
             // button22
             // 
             this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
-            this.button22.Location = new System.Drawing.Point(50, 173);
+            this.button22.Location = new System.Drawing.Point(100, 333);
+            this.button22.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(38, 39);
+            this.button22.Size = new System.Drawing.Size(76, 75);
             this.button22.TabIndex = 94;
             this.button22.UseVisualStyleBackColor = true;
             // 
             // button29
             // 
             this.button29.Image = ((System.Drawing.Image)(resources.GetObject("button29.Image")));
-            this.button29.Location = new System.Drawing.Point(50, 218);
+            this.button29.Location = new System.Drawing.Point(100, 419);
+            this.button29.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(38, 39);
+            this.button29.Size = new System.Drawing.Size(76, 75);
             this.button29.TabIndex = 95;
             this.button29.UseVisualStyleBackColor = true;
             // 
             // button36
             // 
             this.button36.Image = ((System.Drawing.Image)(resources.GetObject("button36.Image")));
-            this.button36.Location = new System.Drawing.Point(50, 263);
+            this.button36.Location = new System.Drawing.Point(100, 506);
+            this.button36.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(38, 39);
+            this.button36.Size = new System.Drawing.Size(76, 75);
             this.button36.TabIndex = 96;
             this.button36.UseVisualStyleBackColor = true;
             // 
             // button37
             // 
             this.button37.Image = ((System.Drawing.Image)(resources.GetObject("button37.Image")));
-            this.button37.Location = new System.Drawing.Point(94, 263);
+            this.button37.Location = new System.Drawing.Point(188, 506);
+            this.button37.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(38, 39);
+            this.button37.Size = new System.Drawing.Size(76, 75);
             this.button37.TabIndex = 102;
             this.button37.UseVisualStyleBackColor = true;
             // 
             // button30
             // 
             this.button30.Image = ((System.Drawing.Image)(resources.GetObject("button30.Image")));
-            this.button30.Location = new System.Drawing.Point(94, 218);
+            this.button30.Location = new System.Drawing.Point(188, 419);
+            this.button30.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(38, 39);
+            this.button30.Size = new System.Drawing.Size(76, 75);
             this.button30.TabIndex = 101;
             this.button30.UseVisualStyleBackColor = true;
             // 
             // button23
             // 
             this.button23.Image = ((System.Drawing.Image)(resources.GetObject("button23.Image")));
-            this.button23.Location = new System.Drawing.Point(94, 173);
+            this.button23.Location = new System.Drawing.Point(188, 333);
+            this.button23.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(38, 39);
+            this.button23.Size = new System.Drawing.Size(76, 75);
             this.button23.TabIndex = 100;
             this.button23.UseVisualStyleBackColor = true;
             // 
             // button16
             // 
             this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.Location = new System.Drawing.Point(94, 128);
+            this.button16.Location = new System.Drawing.Point(188, 246);
+            this.button16.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(38, 39);
+            this.button16.Size = new System.Drawing.Size(76, 75);
             this.button16.TabIndex = 99;
             this.button16.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(94, 83);
+            this.button9.Location = new System.Drawing.Point(188, 160);
+            this.button9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(38, 39);
+            this.button9.Size = new System.Drawing.Size(76, 75);
             this.button9.TabIndex = 98;
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(94, 38);
+            this.button2.Location = new System.Drawing.Point(188, 73);
+            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(38, 39);
+            this.button2.Size = new System.Drawing.Size(76, 75);
             this.button2.TabIndex = 97;
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button38
             // 
             this.button38.Image = ((System.Drawing.Image)(resources.GetObject("button38.Image")));
-            this.button38.Location = new System.Drawing.Point(138, 263);
+            this.button38.Location = new System.Drawing.Point(276, 506);
+            this.button38.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(38, 39);
+            this.button38.Size = new System.Drawing.Size(76, 75);
             this.button38.TabIndex = 108;
             this.button38.UseVisualStyleBackColor = true;
             // 
             // button31
             // 
             this.button31.Image = ((System.Drawing.Image)(resources.GetObject("button31.Image")));
-            this.button31.Location = new System.Drawing.Point(138, 218);
+            this.button31.Location = new System.Drawing.Point(276, 419);
+            this.button31.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(38, 39);
+            this.button31.Size = new System.Drawing.Size(76, 75);
             this.button31.TabIndex = 107;
             this.button31.UseVisualStyleBackColor = true;
             // 
             // button24
             // 
             this.button24.Image = ((System.Drawing.Image)(resources.GetObject("button24.Image")));
-            this.button24.Location = new System.Drawing.Point(138, 173);
+            this.button24.Location = new System.Drawing.Point(276, 333);
+            this.button24.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(38, 39);
+            this.button24.Size = new System.Drawing.Size(76, 75);
             this.button24.TabIndex = 106;
             this.button24.UseVisualStyleBackColor = true;
             // 
             // button17
             // 
             this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.Location = new System.Drawing.Point(138, 128);
+            this.button17.Location = new System.Drawing.Point(276, 246);
+            this.button17.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(38, 39);
+            this.button17.Size = new System.Drawing.Size(76, 75);
             this.button17.TabIndex = 105;
             this.button17.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
             this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(138, 83);
+            this.button10.Location = new System.Drawing.Point(276, 160);
+            this.button10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(38, 39);
+            this.button10.Size = new System.Drawing.Size(76, 75);
             this.button10.TabIndex = 104;
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(138, 38);
+            this.button3.Location = new System.Drawing.Point(276, 73);
+            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(38, 39);
+            this.button3.Size = new System.Drawing.Size(76, 75);
             this.button3.TabIndex = 103;
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button39
             // 
             this.button39.Image = ((System.Drawing.Image)(resources.GetObject("button39.Image")));
-            this.button39.Location = new System.Drawing.Point(182, 263);
+            this.button39.Location = new System.Drawing.Point(364, 506);
+            this.button39.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(38, 39);
+            this.button39.Size = new System.Drawing.Size(76, 75);
             this.button39.TabIndex = 114;
             this.button39.UseVisualStyleBackColor = true;
             // 
             // button32
             // 
             this.button32.Image = ((System.Drawing.Image)(resources.GetObject("button32.Image")));
-            this.button32.Location = new System.Drawing.Point(182, 218);
+            this.button32.Location = new System.Drawing.Point(364, 419);
+            this.button32.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(38, 39);
+            this.button32.Size = new System.Drawing.Size(76, 75);
             this.button32.TabIndex = 113;
             this.button32.UseVisualStyleBackColor = true;
             // 
             // button25
             // 
             this.button25.Image = ((System.Drawing.Image)(resources.GetObject("button25.Image")));
-            this.button25.Location = new System.Drawing.Point(182, 173);
+            this.button25.Location = new System.Drawing.Point(364, 333);
+            this.button25.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(38, 39);
+            this.button25.Size = new System.Drawing.Size(76, 75);
             this.button25.TabIndex = 112;
             this.button25.UseVisualStyleBackColor = true;
             // 
             // button18
             // 
             this.button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            this.button18.Location = new System.Drawing.Point(182, 128);
+            this.button18.Location = new System.Drawing.Point(364, 246);
+            this.button18.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(38, 39);
+            this.button18.Size = new System.Drawing.Size(76, 75);
             this.button18.TabIndex = 111;
             this.button18.UseVisualStyleBackColor = true;
             // 
             // button11
             // 
             this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.Location = new System.Drawing.Point(182, 83);
+            this.button11.Location = new System.Drawing.Point(364, 160);
+            this.button11.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(38, 39);
+            this.button11.Size = new System.Drawing.Size(76, 75);
             this.button11.TabIndex = 110;
             this.button11.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(182, 38);
+            this.button4.Location = new System.Drawing.Point(364, 73);
+            this.button4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(38, 39);
+            this.button4.Size = new System.Drawing.Size(76, 75);
             this.button4.TabIndex = 109;
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button40
             // 
             this.button40.Image = ((System.Drawing.Image)(resources.GetObject("button40.Image")));
-            this.button40.Location = new System.Drawing.Point(226, 263);
+            this.button40.Location = new System.Drawing.Point(452, 506);
+            this.button40.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(38, 39);
+            this.button40.Size = new System.Drawing.Size(76, 75);
             this.button40.TabIndex = 120;
             this.button40.UseVisualStyleBackColor = true;
             // 
             // button33
             // 
             this.button33.Image = ((System.Drawing.Image)(resources.GetObject("button33.Image")));
-            this.button33.Location = new System.Drawing.Point(226, 218);
+            this.button33.Location = new System.Drawing.Point(452, 419);
+            this.button33.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(38, 39);
+            this.button33.Size = new System.Drawing.Size(76, 75);
             this.button33.TabIndex = 119;
             this.button33.UseVisualStyleBackColor = true;
             // 
             // button26
             // 
             this.button26.Image = ((System.Drawing.Image)(resources.GetObject("button26.Image")));
-            this.button26.Location = new System.Drawing.Point(226, 173);
+            this.button26.Location = new System.Drawing.Point(452, 333);
+            this.button26.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(38, 39);
+            this.button26.Size = new System.Drawing.Size(76, 75);
             this.button26.TabIndex = 118;
             this.button26.UseVisualStyleBackColor = true;
             // 
             // button19
             // 
             this.button19.Image = ((System.Drawing.Image)(resources.GetObject("button19.Image")));
-            this.button19.Location = new System.Drawing.Point(226, 128);
+            this.button19.Location = new System.Drawing.Point(452, 246);
+            this.button19.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(38, 39);
+            this.button19.Size = new System.Drawing.Size(76, 75);
             this.button19.TabIndex = 117;
             this.button19.UseVisualStyleBackColor = true;
             // 
             // button12
             // 
             this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.Location = new System.Drawing.Point(226, 83);
+            this.button12.Location = new System.Drawing.Point(452, 160);
+            this.button12.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(38, 39);
+            this.button12.Size = new System.Drawing.Size(76, 75);
             this.button12.TabIndex = 116;
             this.button12.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(226, 38);
+            this.button5.Location = new System.Drawing.Point(452, 73);
+            this.button5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(38, 39);
+            this.button5.Size = new System.Drawing.Size(76, 75);
             this.button5.TabIndex = 115;
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button41
             // 
             this.button41.Image = ((System.Drawing.Image)(resources.GetObject("button41.Image")));
-            this.button41.Location = new System.Drawing.Point(270, 263);
+            this.button41.Location = new System.Drawing.Point(540, 506);
+            this.button41.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(38, 39);
+            this.button41.Size = new System.Drawing.Size(76, 75);
             this.button41.TabIndex = 126;
             this.button41.UseVisualStyleBackColor = true;
             // 
             // button34
             // 
             this.button34.Image = ((System.Drawing.Image)(resources.GetObject("button34.Image")));
-            this.button34.Location = new System.Drawing.Point(270, 218);
+            this.button34.Location = new System.Drawing.Point(540, 419);
+            this.button34.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(38, 39);
+            this.button34.Size = new System.Drawing.Size(76, 75);
             this.button34.TabIndex = 125;
             this.button34.UseVisualStyleBackColor = true;
             // 
             // button27
             // 
             this.button27.Image = ((System.Drawing.Image)(resources.GetObject("button27.Image")));
-            this.button27.Location = new System.Drawing.Point(270, 173);
+            this.button27.Location = new System.Drawing.Point(540, 333);
+            this.button27.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(38, 39);
+            this.button27.Size = new System.Drawing.Size(76, 75);
             this.button27.TabIndex = 124;
             this.button27.UseVisualStyleBackColor = true;
             // 
             // button20
             // 
             this.button20.Image = ((System.Drawing.Image)(resources.GetObject("button20.Image")));
-            this.button20.Location = new System.Drawing.Point(270, 128);
+            this.button20.Location = new System.Drawing.Point(540, 246);
+            this.button20.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(38, 39);
+            this.button20.Size = new System.Drawing.Size(76, 75);
             this.button20.TabIndex = 123;
             this.button20.UseVisualStyleBackColor = true;
             // 
             // button13
             // 
             this.button13.Image = ((System.Drawing.Image)(resources.GetObject("button13.Image")));
-            this.button13.Location = new System.Drawing.Point(270, 83);
+            this.button13.Location = new System.Drawing.Point(540, 160);
+            this.button13.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(38, 39);
+            this.button13.Size = new System.Drawing.Size(76, 75);
             this.button13.TabIndex = 122;
             this.button13.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(270, 38);
+            this.button6.Location = new System.Drawing.Point(540, 73);
+            this.button6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(38, 39);
+            this.button6.Size = new System.Drawing.Size(76, 75);
             this.button6.TabIndex = 121;
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button42
             // 
             this.button42.Image = ((System.Drawing.Image)(resources.GetObject("button42.Image")));
-            this.button42.Location = new System.Drawing.Point(314, 263);
+            this.button42.Location = new System.Drawing.Point(628, 506);
+            this.button42.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(38, 39);
+            this.button42.Size = new System.Drawing.Size(76, 75);
             this.button42.TabIndex = 132;
             this.button42.UseVisualStyleBackColor = true;
             // 
             // button35
             // 
             this.button35.Image = ((System.Drawing.Image)(resources.GetObject("button35.Image")));
-            this.button35.Location = new System.Drawing.Point(314, 218);
+            this.button35.Location = new System.Drawing.Point(628, 419);
+            this.button35.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(38, 39);
+            this.button35.Size = new System.Drawing.Size(76, 75);
             this.button35.TabIndex = 131;
             this.button35.UseVisualStyleBackColor = true;
             // 
             // button28
             // 
             this.button28.Image = ((System.Drawing.Image)(resources.GetObject("button28.Image")));
-            this.button28.Location = new System.Drawing.Point(314, 173);
+            this.button28.Location = new System.Drawing.Point(628, 333);
+            this.button28.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(38, 39);
+            this.button28.Size = new System.Drawing.Size(76, 75);
             this.button28.TabIndex = 130;
             this.button28.UseVisualStyleBackColor = true;
             // 
             // button21
             // 
             this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
-            this.button21.Location = new System.Drawing.Point(314, 128);
+            this.button21.Location = new System.Drawing.Point(628, 246);
+            this.button21.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(38, 39);
+            this.button21.Size = new System.Drawing.Size(76, 75);
             this.button21.TabIndex = 129;
             this.button21.UseVisualStyleBackColor = true;
             // 
             // button14
             // 
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.Location = new System.Drawing.Point(314, 83);
+            this.button14.Location = new System.Drawing.Point(628, 160);
+            this.button14.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(38, 39);
+            this.button14.Size = new System.Drawing.Size(76, 75);
             this.button14.TabIndex = 128;
             this.button14.UseVisualStyleBackColor = true;
             // 
             // button7
             // 
             this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.Location = new System.Drawing.Point(314, 38);
+            this.button7.Location = new System.Drawing.Point(628, 73);
+            this.button7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(38, 39);
+            this.button7.Size = new System.Drawing.Size(76, 75);
             this.button7.TabIndex = 127;
             this.button7.UseVisualStyleBackColor = true;
             // 
             // bb14
             // 
             this.bb14.Image = ((System.Drawing.Image)(resources.GetObject("bb14.Image")));
-            this.bb14.Location = new System.Drawing.Point(314, 83);
+            this.bb14.Location = new System.Drawing.Point(628, 160);
+            this.bb14.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb14.Name = "bb14";
-            this.bb14.Size = new System.Drawing.Size(38, 39);
+            this.bb14.Size = new System.Drawing.Size(76, 75);
             this.bb14.TabIndex = 139;
             this.bb14.UseVisualStyleBackColor = true;
             this.bb14.Visible = false;
@@ -1050,9 +1181,10 @@ namespace Connect4
             // bb13
             // 
             this.bb13.Image = ((System.Drawing.Image)(resources.GetObject("bb13.Image")));
-            this.bb13.Location = new System.Drawing.Point(270, 83);
+            this.bb13.Location = new System.Drawing.Point(540, 160);
+            this.bb13.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb13.Name = "bb13";
-            this.bb13.Size = new System.Drawing.Size(38, 39);
+            this.bb13.Size = new System.Drawing.Size(76, 75);
             this.bb13.TabIndex = 138;
             this.bb13.UseVisualStyleBackColor = true;
             this.bb13.Visible = false;
@@ -1060,9 +1192,10 @@ namespace Connect4
             // bb12
             // 
             this.bb12.Image = ((System.Drawing.Image)(resources.GetObject("bb12.Image")));
-            this.bb12.Location = new System.Drawing.Point(226, 83);
+            this.bb12.Location = new System.Drawing.Point(452, 160);
+            this.bb12.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb12.Name = "bb12";
-            this.bb12.Size = new System.Drawing.Size(38, 39);
+            this.bb12.Size = new System.Drawing.Size(76, 75);
             this.bb12.TabIndex = 137;
             this.bb12.UseVisualStyleBackColor = true;
             this.bb12.Visible = false;
@@ -1070,9 +1203,10 @@ namespace Connect4
             // bb11
             // 
             this.bb11.Image = ((System.Drawing.Image)(resources.GetObject("bb11.Image")));
-            this.bb11.Location = new System.Drawing.Point(182, 83);
+            this.bb11.Location = new System.Drawing.Point(364, 160);
+            this.bb11.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb11.Name = "bb11";
-            this.bb11.Size = new System.Drawing.Size(38, 39);
+            this.bb11.Size = new System.Drawing.Size(76, 75);
             this.bb11.TabIndex = 136;
             this.bb11.UseVisualStyleBackColor = true;
             this.bb11.Visible = false;
@@ -1080,9 +1214,10 @@ namespace Connect4
             // bb10
             // 
             this.bb10.Image = ((System.Drawing.Image)(resources.GetObject("bb10.Image")));
-            this.bb10.Location = new System.Drawing.Point(138, 83);
+            this.bb10.Location = new System.Drawing.Point(276, 160);
+            this.bb10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb10.Name = "bb10";
-            this.bb10.Size = new System.Drawing.Size(38, 39);
+            this.bb10.Size = new System.Drawing.Size(76, 75);
             this.bb10.TabIndex = 135;
             this.bb10.UseVisualStyleBackColor = true;
             this.bb10.Visible = false;
@@ -1090,9 +1225,10 @@ namespace Connect4
             // bb9
             // 
             this.bb9.Image = ((System.Drawing.Image)(resources.GetObject("bb9.Image")));
-            this.bb9.Location = new System.Drawing.Point(94, 83);
+            this.bb9.Location = new System.Drawing.Point(188, 160);
+            this.bb9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb9.Name = "bb9";
-            this.bb9.Size = new System.Drawing.Size(38, 39);
+            this.bb9.Size = new System.Drawing.Size(76, 75);
             this.bb9.TabIndex = 134;
             this.bb9.UseVisualStyleBackColor = true;
             this.bb9.Visible = false;
@@ -1100,9 +1236,10 @@ namespace Connect4
             // bb8
             // 
             this.bb8.Image = ((System.Drawing.Image)(resources.GetObject("bb8.Image")));
-            this.bb8.Location = new System.Drawing.Point(50, 83);
+            this.bb8.Location = new System.Drawing.Point(100, 160);
+            this.bb8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb8.Name = "bb8";
-            this.bb8.Size = new System.Drawing.Size(38, 39);
+            this.bb8.Size = new System.Drawing.Size(76, 75);
             this.bb8.TabIndex = 133;
             this.bb8.UseVisualStyleBackColor = true;
             this.bb8.Visible = false;
@@ -1110,9 +1247,10 @@ namespace Connect4
             // bb21
             // 
             this.bb21.Image = ((System.Drawing.Image)(resources.GetObject("bb21.Image")));
-            this.bb21.Location = new System.Drawing.Point(314, 128);
+            this.bb21.Location = new System.Drawing.Point(628, 246);
+            this.bb21.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb21.Name = "bb21";
-            this.bb21.Size = new System.Drawing.Size(38, 39);
+            this.bb21.Size = new System.Drawing.Size(76, 75);
             this.bb21.TabIndex = 146;
             this.bb21.UseVisualStyleBackColor = true;
             this.bb21.Visible = false;
@@ -1120,9 +1258,10 @@ namespace Connect4
             // bb20
             // 
             this.bb20.Image = ((System.Drawing.Image)(resources.GetObject("bb20.Image")));
-            this.bb20.Location = new System.Drawing.Point(270, 128);
+            this.bb20.Location = new System.Drawing.Point(540, 246);
+            this.bb20.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb20.Name = "bb20";
-            this.bb20.Size = new System.Drawing.Size(38, 39);
+            this.bb20.Size = new System.Drawing.Size(76, 75);
             this.bb20.TabIndex = 145;
             this.bb20.UseVisualStyleBackColor = true;
             this.bb20.Visible = false;
@@ -1130,9 +1269,10 @@ namespace Connect4
             // bb19
             // 
             this.bb19.Image = ((System.Drawing.Image)(resources.GetObject("bb19.Image")));
-            this.bb19.Location = new System.Drawing.Point(226, 128);
+            this.bb19.Location = new System.Drawing.Point(452, 246);
+            this.bb19.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb19.Name = "bb19";
-            this.bb19.Size = new System.Drawing.Size(38, 39);
+            this.bb19.Size = new System.Drawing.Size(76, 75);
             this.bb19.TabIndex = 144;
             this.bb19.UseVisualStyleBackColor = true;
             this.bb19.Visible = false;
@@ -1140,9 +1280,10 @@ namespace Connect4
             // bb18
             // 
             this.bb18.Image = ((System.Drawing.Image)(resources.GetObject("bb18.Image")));
-            this.bb18.Location = new System.Drawing.Point(182, 128);
+            this.bb18.Location = new System.Drawing.Point(364, 246);
+            this.bb18.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb18.Name = "bb18";
-            this.bb18.Size = new System.Drawing.Size(38, 39);
+            this.bb18.Size = new System.Drawing.Size(76, 75);
             this.bb18.TabIndex = 143;
             this.bb18.UseVisualStyleBackColor = true;
             this.bb18.Visible = false;
@@ -1150,9 +1291,10 @@ namespace Connect4
             // bb17
             // 
             this.bb17.Image = ((System.Drawing.Image)(resources.GetObject("bb17.Image")));
-            this.bb17.Location = new System.Drawing.Point(138, 128);
+            this.bb17.Location = new System.Drawing.Point(276, 246);
+            this.bb17.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb17.Name = "bb17";
-            this.bb17.Size = new System.Drawing.Size(38, 39);
+            this.bb17.Size = new System.Drawing.Size(76, 75);
             this.bb17.TabIndex = 142;
             this.bb17.UseVisualStyleBackColor = true;
             this.bb17.Visible = false;
@@ -1160,9 +1302,10 @@ namespace Connect4
             // bb16
             // 
             this.bb16.Image = ((System.Drawing.Image)(resources.GetObject("bb16.Image")));
-            this.bb16.Location = new System.Drawing.Point(94, 128);
+            this.bb16.Location = new System.Drawing.Point(188, 246);
+            this.bb16.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb16.Name = "bb16";
-            this.bb16.Size = new System.Drawing.Size(38, 39);
+            this.bb16.Size = new System.Drawing.Size(76, 75);
             this.bb16.TabIndex = 141;
             this.bb16.UseVisualStyleBackColor = true;
             this.bb16.Visible = false;
@@ -1170,9 +1313,10 @@ namespace Connect4
             // bb15
             // 
             this.bb15.Image = ((System.Drawing.Image)(resources.GetObject("bb15.Image")));
-            this.bb15.Location = new System.Drawing.Point(50, 128);
+            this.bb15.Location = new System.Drawing.Point(100, 246);
+            this.bb15.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb15.Name = "bb15";
-            this.bb15.Size = new System.Drawing.Size(38, 39);
+            this.bb15.Size = new System.Drawing.Size(76, 75);
             this.bb15.TabIndex = 140;
             this.bb15.UseVisualStyleBackColor = true;
             this.bb15.Visible = false;
@@ -1180,9 +1324,10 @@ namespace Connect4
             // bb28
             // 
             this.bb28.Image = ((System.Drawing.Image)(resources.GetObject("bb28.Image")));
-            this.bb28.Location = new System.Drawing.Point(314, 173);
+            this.bb28.Location = new System.Drawing.Point(628, 333);
+            this.bb28.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb28.Name = "bb28";
-            this.bb28.Size = new System.Drawing.Size(38, 39);
+            this.bb28.Size = new System.Drawing.Size(76, 75);
             this.bb28.TabIndex = 153;
             this.bb28.UseVisualStyleBackColor = true;
             this.bb28.Visible = false;
@@ -1190,9 +1335,10 @@ namespace Connect4
             // bb27
             // 
             this.bb27.Image = ((System.Drawing.Image)(resources.GetObject("bb27.Image")));
-            this.bb27.Location = new System.Drawing.Point(270, 173);
+            this.bb27.Location = new System.Drawing.Point(540, 333);
+            this.bb27.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb27.Name = "bb27";
-            this.bb27.Size = new System.Drawing.Size(38, 39);
+            this.bb27.Size = new System.Drawing.Size(76, 75);
             this.bb27.TabIndex = 152;
             this.bb27.UseVisualStyleBackColor = true;
             this.bb27.Visible = false;
@@ -1200,9 +1346,10 @@ namespace Connect4
             // bb26
             // 
             this.bb26.Image = ((System.Drawing.Image)(resources.GetObject("bb26.Image")));
-            this.bb26.Location = new System.Drawing.Point(226, 173);
+            this.bb26.Location = new System.Drawing.Point(452, 333);
+            this.bb26.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb26.Name = "bb26";
-            this.bb26.Size = new System.Drawing.Size(38, 39);
+            this.bb26.Size = new System.Drawing.Size(76, 75);
             this.bb26.TabIndex = 151;
             this.bb26.UseVisualStyleBackColor = true;
             this.bb26.Visible = false;
@@ -1210,9 +1357,10 @@ namespace Connect4
             // bb25
             // 
             this.bb25.Image = ((System.Drawing.Image)(resources.GetObject("bb25.Image")));
-            this.bb25.Location = new System.Drawing.Point(182, 173);
+            this.bb25.Location = new System.Drawing.Point(364, 333);
+            this.bb25.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb25.Name = "bb25";
-            this.bb25.Size = new System.Drawing.Size(38, 39);
+            this.bb25.Size = new System.Drawing.Size(76, 75);
             this.bb25.TabIndex = 150;
             this.bb25.UseVisualStyleBackColor = true;
             this.bb25.Visible = false;
@@ -1220,9 +1368,10 @@ namespace Connect4
             // bb24
             // 
             this.bb24.Image = ((System.Drawing.Image)(resources.GetObject("bb24.Image")));
-            this.bb24.Location = new System.Drawing.Point(138, 173);
+            this.bb24.Location = new System.Drawing.Point(276, 333);
+            this.bb24.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb24.Name = "bb24";
-            this.bb24.Size = new System.Drawing.Size(38, 39);
+            this.bb24.Size = new System.Drawing.Size(76, 75);
             this.bb24.TabIndex = 149;
             this.bb24.UseVisualStyleBackColor = true;
             this.bb24.Visible = false;
@@ -1230,9 +1379,10 @@ namespace Connect4
             // bb23
             // 
             this.bb23.Image = ((System.Drawing.Image)(resources.GetObject("bb23.Image")));
-            this.bb23.Location = new System.Drawing.Point(94, 173);
+            this.bb23.Location = new System.Drawing.Point(188, 333);
+            this.bb23.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb23.Name = "bb23";
-            this.bb23.Size = new System.Drawing.Size(38, 39);
+            this.bb23.Size = new System.Drawing.Size(76, 75);
             this.bb23.TabIndex = 148;
             this.bb23.UseVisualStyleBackColor = true;
             this.bb23.Visible = false;
@@ -1240,9 +1390,10 @@ namespace Connect4
             // bb22
             // 
             this.bb22.Image = ((System.Drawing.Image)(resources.GetObject("bb22.Image")));
-            this.bb22.Location = new System.Drawing.Point(50, 173);
+            this.bb22.Location = new System.Drawing.Point(100, 333);
+            this.bb22.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb22.Name = "bb22";
-            this.bb22.Size = new System.Drawing.Size(38, 39);
+            this.bb22.Size = new System.Drawing.Size(76, 75);
             this.bb22.TabIndex = 147;
             this.bb22.UseVisualStyleBackColor = true;
             this.bb22.Visible = false;
@@ -1250,9 +1401,10 @@ namespace Connect4
             // bb35
             // 
             this.bb35.Image = ((System.Drawing.Image)(resources.GetObject("bb35.Image")));
-            this.bb35.Location = new System.Drawing.Point(314, 218);
+            this.bb35.Location = new System.Drawing.Point(628, 419);
+            this.bb35.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb35.Name = "bb35";
-            this.bb35.Size = new System.Drawing.Size(38, 39);
+            this.bb35.Size = new System.Drawing.Size(76, 75);
             this.bb35.TabIndex = 160;
             this.bb35.UseVisualStyleBackColor = true;
             this.bb35.Visible = false;
@@ -1260,9 +1412,10 @@ namespace Connect4
             // bb34
             // 
             this.bb34.Image = ((System.Drawing.Image)(resources.GetObject("bb34.Image")));
-            this.bb34.Location = new System.Drawing.Point(270, 218);
+            this.bb34.Location = new System.Drawing.Point(540, 419);
+            this.bb34.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb34.Name = "bb34";
-            this.bb34.Size = new System.Drawing.Size(38, 39);
+            this.bb34.Size = new System.Drawing.Size(76, 75);
             this.bb34.TabIndex = 159;
             this.bb34.UseVisualStyleBackColor = true;
             this.bb34.Visible = false;
@@ -1270,9 +1423,10 @@ namespace Connect4
             // bb33
             // 
             this.bb33.Image = ((System.Drawing.Image)(resources.GetObject("bb33.Image")));
-            this.bb33.Location = new System.Drawing.Point(226, 218);
+            this.bb33.Location = new System.Drawing.Point(452, 419);
+            this.bb33.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb33.Name = "bb33";
-            this.bb33.Size = new System.Drawing.Size(38, 39);
+            this.bb33.Size = new System.Drawing.Size(76, 75);
             this.bb33.TabIndex = 158;
             this.bb33.UseVisualStyleBackColor = true;
             this.bb33.Visible = false;
@@ -1280,9 +1434,10 @@ namespace Connect4
             // bb32
             // 
             this.bb32.Image = ((System.Drawing.Image)(resources.GetObject("bb32.Image")));
-            this.bb32.Location = new System.Drawing.Point(182, 218);
+            this.bb32.Location = new System.Drawing.Point(364, 419);
+            this.bb32.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb32.Name = "bb32";
-            this.bb32.Size = new System.Drawing.Size(38, 39);
+            this.bb32.Size = new System.Drawing.Size(76, 75);
             this.bb32.TabIndex = 157;
             this.bb32.UseVisualStyleBackColor = true;
             this.bb32.Visible = false;
@@ -1290,9 +1445,10 @@ namespace Connect4
             // bb31
             // 
             this.bb31.Image = ((System.Drawing.Image)(resources.GetObject("bb31.Image")));
-            this.bb31.Location = new System.Drawing.Point(138, 218);
+            this.bb31.Location = new System.Drawing.Point(276, 419);
+            this.bb31.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb31.Name = "bb31";
-            this.bb31.Size = new System.Drawing.Size(38, 39);
+            this.bb31.Size = new System.Drawing.Size(76, 75);
             this.bb31.TabIndex = 156;
             this.bb31.UseVisualStyleBackColor = true;
             this.bb31.Visible = false;
@@ -1300,9 +1456,10 @@ namespace Connect4
             // bb30
             // 
             this.bb30.Image = ((System.Drawing.Image)(resources.GetObject("bb30.Image")));
-            this.bb30.Location = new System.Drawing.Point(94, 218);
+            this.bb30.Location = new System.Drawing.Point(188, 419);
+            this.bb30.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb30.Name = "bb30";
-            this.bb30.Size = new System.Drawing.Size(38, 39);
+            this.bb30.Size = new System.Drawing.Size(76, 75);
             this.bb30.TabIndex = 155;
             this.bb30.UseVisualStyleBackColor = true;
             this.bb30.Visible = false;
@@ -1310,9 +1467,10 @@ namespace Connect4
             // bb29
             // 
             this.bb29.Image = ((System.Drawing.Image)(resources.GetObject("bb29.Image")));
-            this.bb29.Location = new System.Drawing.Point(50, 218);
+            this.bb29.Location = new System.Drawing.Point(100, 419);
+            this.bb29.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb29.Name = "bb29";
-            this.bb29.Size = new System.Drawing.Size(38, 39);
+            this.bb29.Size = new System.Drawing.Size(76, 75);
             this.bb29.TabIndex = 154;
             this.bb29.UseVisualStyleBackColor = true;
             this.bb29.Visible = false;
@@ -1320,9 +1478,10 @@ namespace Connect4
             // bb42
             // 
             this.bb42.Image = ((System.Drawing.Image)(resources.GetObject("bb42.Image")));
-            this.bb42.Location = new System.Drawing.Point(314, 263);
+            this.bb42.Location = new System.Drawing.Point(628, 506);
+            this.bb42.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb42.Name = "bb42";
-            this.bb42.Size = new System.Drawing.Size(38, 39);
+            this.bb42.Size = new System.Drawing.Size(76, 75);
             this.bb42.TabIndex = 167;
             this.bb42.UseVisualStyleBackColor = true;
             this.bb42.Visible = false;
@@ -1330,9 +1489,10 @@ namespace Connect4
             // bb41
             // 
             this.bb41.Image = ((System.Drawing.Image)(resources.GetObject("bb41.Image")));
-            this.bb41.Location = new System.Drawing.Point(270, 263);
+            this.bb41.Location = new System.Drawing.Point(540, 506);
+            this.bb41.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb41.Name = "bb41";
-            this.bb41.Size = new System.Drawing.Size(38, 39);
+            this.bb41.Size = new System.Drawing.Size(76, 75);
             this.bb41.TabIndex = 166;
             this.bb41.UseVisualStyleBackColor = true;
             this.bb41.Visible = false;
@@ -1340,9 +1500,10 @@ namespace Connect4
             // bb40
             // 
             this.bb40.Image = ((System.Drawing.Image)(resources.GetObject("bb40.Image")));
-            this.bb40.Location = new System.Drawing.Point(226, 263);
+            this.bb40.Location = new System.Drawing.Point(452, 506);
+            this.bb40.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb40.Name = "bb40";
-            this.bb40.Size = new System.Drawing.Size(38, 39);
+            this.bb40.Size = new System.Drawing.Size(76, 75);
             this.bb40.TabIndex = 165;
             this.bb40.UseVisualStyleBackColor = true;
             this.bb40.Visible = false;
@@ -1350,9 +1511,10 @@ namespace Connect4
             // bb39
             // 
             this.bb39.Image = ((System.Drawing.Image)(resources.GetObject("bb39.Image")));
-            this.bb39.Location = new System.Drawing.Point(182, 263);
+            this.bb39.Location = new System.Drawing.Point(364, 506);
+            this.bb39.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb39.Name = "bb39";
-            this.bb39.Size = new System.Drawing.Size(38, 39);
+            this.bb39.Size = new System.Drawing.Size(76, 75);
             this.bb39.TabIndex = 164;
             this.bb39.UseVisualStyleBackColor = true;
             this.bb39.Visible = false;
@@ -1360,9 +1522,10 @@ namespace Connect4
             // bb38
             // 
             this.bb38.Image = ((System.Drawing.Image)(resources.GetObject("bb38.Image")));
-            this.bb38.Location = new System.Drawing.Point(138, 263);
+            this.bb38.Location = new System.Drawing.Point(276, 506);
+            this.bb38.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb38.Name = "bb38";
-            this.bb38.Size = new System.Drawing.Size(38, 39);
+            this.bb38.Size = new System.Drawing.Size(76, 75);
             this.bb38.TabIndex = 163;
             this.bb38.UseVisualStyleBackColor = true;
             this.bb38.Visible = false;
@@ -1370,9 +1533,10 @@ namespace Connect4
             // bb37
             // 
             this.bb37.Image = ((System.Drawing.Image)(resources.GetObject("bb37.Image")));
-            this.bb37.Location = new System.Drawing.Point(94, 263);
+            this.bb37.Location = new System.Drawing.Point(188, 506);
+            this.bb37.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb37.Name = "bb37";
-            this.bb37.Size = new System.Drawing.Size(38, 39);
+            this.bb37.Size = new System.Drawing.Size(76, 75);
             this.bb37.TabIndex = 162;
             this.bb37.UseVisualStyleBackColor = true;
             this.bb37.Visible = false;
@@ -1380,18 +1544,245 @@ namespace Connect4
             // bb36
             // 
             this.bb36.Image = ((System.Drawing.Image)(resources.GetObject("bb36.Image")));
-            this.bb36.Location = new System.Drawing.Point(50, 263);
+            this.bb36.Location = new System.Drawing.Point(100, 506);
+            this.bb36.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.bb36.Name = "bb36";
-            this.bb36.Size = new System.Drawing.Size(38, 39);
+            this.bb36.Size = new System.Drawing.Size(76, 75);
             this.bb36.TabIndex = 161;
             this.bb36.UseVisualStyleBackColor = true;
             this.bb36.Visible = false;
             // 
+            // col0
+            // 
+            this.col0.BackColor = System.Drawing.Color.Yellow;
+            this.col0.Controls.Add(this.pBox00P1);
+            this.col0.Controls.Add(this.pBox01P2);
+            this.col0.Controls.Add(this.pBox00P2);
+            this.col0.Controls.Add(this.pBox00P0);
+            this.col0.Controls.Add(this.pBox01P0);
+            this.col0.Controls.Add(this.pBox01P1);
+            this.col0.Controls.Add(this.pBox02P0);
+            this.col0.Controls.Add(this.pBox02P1);
+            this.col0.Controls.Add(this.pBox02P2);
+            this.col0.Controls.Add(this.pBox03P0);
+            this.col0.Controls.Add(this.pBox04P0);
+            this.col0.Controls.Add(this.pBox04P1);
+            this.col0.Controls.Add(this.pBox05P0);
+            this.col0.Controls.Add(this.pBox03P1);
+            this.col0.Controls.Add(this.pBox03P2);
+            this.col0.Controls.Add(this.pBox04P2);
+            this.col0.Controls.Add(this.pBox05P1);
+            this.col0.Controls.Add(this.pBox05P2);
+            this.col0.Location = new System.Drawing.Point(987, 98);
+            this.col0.Margin = new System.Windows.Forms.Padding(4);
+            this.col0.Name = "col0";
+            this.col0.Size = new System.Drawing.Size(72, 429);
+            this.col0.TabIndex = 168;
+            // 
+            // pBox03P1
+            // 
+            this.pBox03P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox03P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox03P1.Location = new System.Drawing.Point(4, 150);
+            this.pBox03P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox03P1.Name = "pBox03P1";
+            this.pBox03P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox03P1.TabIndex = 16;
+            this.pBox03P1.TabStop = false;
+            // 
+            // pBox00P1
+            // 
+            this.pBox00P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox00P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox00P1.Location = new System.Drawing.Point(4, 361);
+            this.pBox00P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox00P1.Name = "pBox00P1";
+            this.pBox00P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox00P1.TabIndex = 7;
+            this.pBox00P1.TabStop = false;
+            // 
+            // pBox01P2
+            // 
+            this.pBox01P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox01P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox01P2.Location = new System.Drawing.Point(4, 291);
+            this.pBox01P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox01P2.Name = "pBox01P2";
+            this.pBox01P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox01P2.TabIndex = 8;
+            this.pBox01P2.TabStop = false;
+            // 
+            // pBox00P2
+            // 
+            this.pBox00P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox00P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox00P2.Location = new System.Drawing.Point(4, 360);
+            this.pBox00P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox00P2.Name = "pBox00P2";
+            this.pBox00P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox00P2.TabIndex = 1;
+            this.pBox00P2.TabStop = false;
+            // 
+            // pBox00P0
+            // 
+            this.pBox00P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox00P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox00P0.Location = new System.Drawing.Point(4, 359);
+            this.pBox00P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox00P0.Name = "pBox00P0";
+            this.pBox00P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox00P0.TabIndex = 6;
+            this.pBox00P0.TabStop = false;
+            // 
+            // pBox01P0
+            // 
+            this.pBox01P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox01P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox01P0.Location = new System.Drawing.Point(4, 290);
+            this.pBox01P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox01P0.Name = "pBox01P0";
+            this.pBox01P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox01P0.TabIndex = 9;
+            this.pBox01P0.TabStop = false;
+            // 
+            // pBox01P1
+            // 
+            this.pBox01P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox01P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox01P1.Location = new System.Drawing.Point(4, 292);
+            this.pBox01P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox01P1.Name = "pBox01P1";
+            this.pBox01P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox01P1.TabIndex = 10;
+            this.pBox01P1.TabStop = false;
+            // 
+            // pBox02P0
+            // 
+            this.pBox02P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox02P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox02P0.Location = new System.Drawing.Point(4, 219);
+            this.pBox02P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox02P0.Name = "pBox02P0";
+            this.pBox02P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox02P0.TabIndex = 12;
+            this.pBox02P0.TabStop = false;
+            // 
+            // pBox02P1
+            // 
+            this.pBox02P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox02P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox02P1.Location = new System.Drawing.Point(4, 221);
+            this.pBox02P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox02P1.Name = "pBox02P1";
+            this.pBox02P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox02P1.TabIndex = 13;
+            this.pBox02P1.TabStop = false;
+            // 
+            // pBox02P2
+            // 
+            this.pBox02P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox02P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox02P2.Location = new System.Drawing.Point(4, 220);
+            this.pBox02P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox02P2.Name = "pBox02P2";
+            this.pBox02P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox02P2.TabIndex = 11;
+            this.pBox02P2.TabStop = false;
+            // 
+            // pBox03P2
+            // 
+            this.pBox03P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox03P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox03P2.Location = new System.Drawing.Point(4, 149);
+            this.pBox03P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox03P2.Name = "pBox03P2";
+            this.pBox03P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox03P2.TabIndex = 14;
+            this.pBox03P2.TabStop = false;
+            // 
+            // pBox03P0
+            // 
+            this.pBox03P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox03P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox03P0.Location = new System.Drawing.Point(4, 148);
+            this.pBox03P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox03P0.Name = "pBox03P0";
+            this.pBox03P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox03P0.TabIndex = 15;
+            this.pBox03P0.TabStop = false;
+            // 
+            // pBox04P2
+            // 
+            this.pBox04P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox04P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox04P2.Location = new System.Drawing.Point(4, 79);
+            this.pBox04P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox04P2.Name = "pBox04P2";
+            this.pBox04P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox04P2.TabIndex = 17;
+            this.pBox04P2.TabStop = false;
+            // 
+            // pBox04P0
+            // 
+            this.pBox04P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox04P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox04P0.Location = new System.Drawing.Point(4, 78);
+            this.pBox04P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox04P0.Name = "pBox04P0";
+            this.pBox04P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox04P0.TabIndex = 18;
+            this.pBox04P0.TabStop = false;
+            // 
+            // pBox04P1
+            // 
+            this.pBox04P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox04P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox04P1.Location = new System.Drawing.Point(4, 80);
+            this.pBox04P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox04P1.Name = "pBox04P1";
+            this.pBox04P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox04P1.TabIndex = 19;
+            this.pBox04P1.TabStop = false;
+            // 
+            // pBox05P1
+            // 
+            this.pBox05P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox05P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox05P1.Location = new System.Drawing.Point(3, 8);
+            this.pBox05P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox05P1.Name = "pBox05P1";
+            this.pBox05P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox05P1.TabIndex = 22;
+            this.pBox05P1.TabStop = false;
+            // 
+            // pBox05P2
+            // 
+            this.pBox05P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox05P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox05P2.Location = new System.Drawing.Point(3, 7);
+            this.pBox05P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox05P2.Name = "pBox05P2";
+            this.pBox05P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox05P2.TabIndex = 20;
+            this.pBox05P2.TabStop = false;
+            // 
+            // pBox05P0
+            // 
+            this.pBox05P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox05P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox05P0.Location = new System.Drawing.Point(3, 6);
+            this.pBox05P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox05P0.Name = "pBox05P0";
+            this.pBox05P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox05P0.TabIndex = 21;
+            this.pBox05P0.TabStop = false;
+            // 
             // GameBoard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 325);
+            this.ClientSize = new System.Drawing.Size(2046, 625);
+            this.Controls.Add(this.col0);
             this.Controls.Add(this.button42);
             this.Controls.Add(this.button35);
             this.Controls.Add(this.button28);
@@ -1519,8 +1910,28 @@ namespace Connect4
             this.Controls.Add(this.rb29);
             this.Controls.Add(this.rb36);
             this.Controls.Add(this.listView1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "GameBoard";
             this.Text = "GameBoard";
+            this.col0.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pBox03P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox01P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox01P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox01P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox02P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox02P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox02P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox03P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox03P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox04P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox04P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox04P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox05P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox05P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox05P0)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1654,5 +2065,24 @@ namespace Connect4
         private System.Windows.Forms.Button bb38;
         private System.Windows.Forms.Button bb37;
         private System.Windows.Forms.Button bb36;
+        private System.Windows.Forms.Panel col0;
+        private System.Windows.Forms.PictureBox pBox00P1;
+        private System.Windows.Forms.PictureBox pBox01P2;
+        private System.Windows.Forms.PictureBox pBox00P2;
+        private System.Windows.Forms.PictureBox pBox00P0;
+        private System.Windows.Forms.PictureBox pBox01P0;
+        private System.Windows.Forms.PictureBox pBox01P1;
+        private System.Windows.Forms.PictureBox pBox02P0;
+        private System.Windows.Forms.PictureBox pBox02P1;
+        private System.Windows.Forms.PictureBox pBox02P2;
+        private System.Windows.Forms.PictureBox pBox03P0;
+        private System.Windows.Forms.PictureBox pBox04P0;
+        private System.Windows.Forms.PictureBox pBox04P1;
+        private System.Windows.Forms.PictureBox pBox05P0;
+        private System.Windows.Forms.PictureBox pBox03P1;
+        private System.Windows.Forms.PictureBox pBox03P2;
+        private System.Windows.Forms.PictureBox pBox04P2;
+        private System.Windows.Forms.PictureBox pBox05P1;
+        private System.Windows.Forms.PictureBox pBox05P2;
     }
 }
