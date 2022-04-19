@@ -35,5 +35,11 @@ namespace CIS153_Connect4_Group3
             board.mouseLeave();
 
         }
+
+        private void StatButt_Click(object sender, EventArgs e)
+        {
+            Stats stats = new Stats();
+            stats.Show();
+        }
     }
 }
