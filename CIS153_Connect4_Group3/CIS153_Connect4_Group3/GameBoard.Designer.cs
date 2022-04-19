@@ -49,7 +49,7 @@ namespace Connect4
             this.pBox01P2 = new System.Windows.Forms.PictureBox();
             this.pBox00P1 = new System.Windows.Forms.PictureBox();
             this.col0 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.col1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -68,7 +68,7 @@ namespace Connect4
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.col2 = new System.Windows.Forms.Panel();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
@@ -87,7 +87,7 @@ namespace Connect4
             this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.pictureBox35 = new System.Windows.Forms.PictureBox();
             this.pictureBox36 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.col3 = new System.Windows.Forms.Panel();
             this.pictureBox37 = new System.Windows.Forms.PictureBox();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
             this.pictureBox39 = new System.Windows.Forms.PictureBox();
@@ -106,7 +106,7 @@ namespace Connect4
             this.pictureBox52 = new System.Windows.Forms.PictureBox();
             this.pictureBox53 = new System.Windows.Forms.PictureBox();
             this.pictureBox54 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.col6 = new System.Windows.Forms.Panel();
             this.pictureBox55 = new System.Windows.Forms.PictureBox();
             this.pictureBox56 = new System.Windows.Forms.PictureBox();
             this.pictureBox57 = new System.Windows.Forms.PictureBox();
@@ -125,7 +125,7 @@ namespace Connect4
             this.pictureBox70 = new System.Windows.Forms.PictureBox();
             this.pictureBox71 = new System.Windows.Forms.PictureBox();
             this.pictureBox72 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.col5 = new System.Windows.Forms.Panel();
             this.pictureBox73 = new System.Windows.Forms.PictureBox();
             this.pictureBox74 = new System.Windows.Forms.PictureBox();
             this.pictureBox75 = new System.Windows.Forms.PictureBox();
@@ -144,7 +144,7 @@ namespace Connect4
             this.pictureBox88 = new System.Windows.Forms.PictureBox();
             this.pictureBox89 = new System.Windows.Forms.PictureBox();
             this.pictureBox90 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.col4 = new System.Windows.Forms.Panel();
             this.pictureBox91 = new System.Windows.Forms.PictureBox();
             this.pictureBox92 = new System.Windows.Forms.PictureBox();
             this.pictureBox93 = new System.Windows.Forms.PictureBox();
@@ -182,7 +182,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pBox01P2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox00P1)).BeginInit();
             this.col0.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.col1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -201,7 +201,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.col2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
@@ -220,7 +220,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.col3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).BeginInit();
@@ -239,7 +239,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.col6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).BeginInit();
@@ -258,7 +258,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.col5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).BeginInit();
@@ -277,7 +277,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.col4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).BeginInit();
@@ -533,32 +533,32 @@ namespace Connect4
             this.col0.Size = new System.Drawing.Size(36, 223);
             this.col0.TabIndex = 168;
             // 
-            // panel1
+            // col1
             // 
-            this.panel1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox11);
-            this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Controls.Add(this.pictureBox13);
-            this.panel1.Controls.Add(this.pictureBox14);
-            this.panel1.Controls.Add(this.pictureBox15);
-            this.panel1.Controls.Add(this.pictureBox16);
-            this.panel1.Controls.Add(this.pictureBox17);
-            this.panel1.Controls.Add(this.pictureBox18);
-            this.panel1.Location = new System.Drawing.Point(72, 31);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(36, 223);
-            this.panel1.TabIndex = 169;
+            this.col1.BackColor = System.Drawing.Color.LemonChiffon;
+            this.col1.Controls.Add(this.pictureBox1);
+            this.col1.Controls.Add(this.pictureBox2);
+            this.col1.Controls.Add(this.pictureBox3);
+            this.col1.Controls.Add(this.pictureBox4);
+            this.col1.Controls.Add(this.pictureBox5);
+            this.col1.Controls.Add(this.pictureBox6);
+            this.col1.Controls.Add(this.pictureBox7);
+            this.col1.Controls.Add(this.pictureBox8);
+            this.col1.Controls.Add(this.pictureBox9);
+            this.col1.Controls.Add(this.pictureBox10);
+            this.col1.Controls.Add(this.pictureBox11);
+            this.col1.Controls.Add(this.pictureBox12);
+            this.col1.Controls.Add(this.pictureBox13);
+            this.col1.Controls.Add(this.pictureBox14);
+            this.col1.Controls.Add(this.pictureBox15);
+            this.col1.Controls.Add(this.pictureBox16);
+            this.col1.Controls.Add(this.pictureBox17);
+            this.col1.Controls.Add(this.pictureBox18);
+            this.col1.Location = new System.Drawing.Point(72, 31);
+            this.col1.Margin = new System.Windows.Forms.Padding(2);
+            this.col1.Name = "col1";
+            this.col1.Size = new System.Drawing.Size(36, 223);
+            this.col1.TabIndex = 169;
             // 
             // pictureBox1
             // 
@@ -758,32 +758,32 @@ namespace Connect4
             this.pictureBox18.TabIndex = 20;
             this.pictureBox18.TabStop = false;
             // 
-            // panel2
+            // col2
             // 
-            this.panel2.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel2.Controls.Add(this.pictureBox19);
-            this.panel2.Controls.Add(this.pictureBox20);
-            this.panel2.Controls.Add(this.pictureBox21);
-            this.panel2.Controls.Add(this.pictureBox22);
-            this.panel2.Controls.Add(this.pictureBox23);
-            this.panel2.Controls.Add(this.pictureBox24);
-            this.panel2.Controls.Add(this.pictureBox25);
-            this.panel2.Controls.Add(this.pictureBox26);
-            this.panel2.Controls.Add(this.pictureBox27);
-            this.panel2.Controls.Add(this.pictureBox28);
-            this.panel2.Controls.Add(this.pictureBox29);
-            this.panel2.Controls.Add(this.pictureBox30);
-            this.panel2.Controls.Add(this.pictureBox31);
-            this.panel2.Controls.Add(this.pictureBox32);
-            this.panel2.Controls.Add(this.pictureBox33);
-            this.panel2.Controls.Add(this.pictureBox34);
-            this.panel2.Controls.Add(this.pictureBox35);
-            this.panel2.Controls.Add(this.pictureBox36);
-            this.panel2.Location = new System.Drawing.Point(112, 31);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(36, 223);
-            this.panel2.TabIndex = 169;
+            this.col2.BackColor = System.Drawing.Color.LemonChiffon;
+            this.col2.Controls.Add(this.pictureBox19);
+            this.col2.Controls.Add(this.pictureBox20);
+            this.col2.Controls.Add(this.pictureBox21);
+            this.col2.Controls.Add(this.pictureBox22);
+            this.col2.Controls.Add(this.pictureBox23);
+            this.col2.Controls.Add(this.pictureBox24);
+            this.col2.Controls.Add(this.pictureBox25);
+            this.col2.Controls.Add(this.pictureBox26);
+            this.col2.Controls.Add(this.pictureBox27);
+            this.col2.Controls.Add(this.pictureBox28);
+            this.col2.Controls.Add(this.pictureBox29);
+            this.col2.Controls.Add(this.pictureBox30);
+            this.col2.Controls.Add(this.pictureBox31);
+            this.col2.Controls.Add(this.pictureBox32);
+            this.col2.Controls.Add(this.pictureBox33);
+            this.col2.Controls.Add(this.pictureBox34);
+            this.col2.Controls.Add(this.pictureBox35);
+            this.col2.Controls.Add(this.pictureBox36);
+            this.col2.Location = new System.Drawing.Point(112, 31);
+            this.col2.Margin = new System.Windows.Forms.Padding(2);
+            this.col2.Name = "col2";
+            this.col2.Size = new System.Drawing.Size(36, 223);
+            this.col2.TabIndex = 169;
             // 
             // pictureBox19
             // 
@@ -983,32 +983,32 @@ namespace Connect4
             this.pictureBox36.TabIndex = 20;
             this.pictureBox36.TabStop = false;
             // 
-            // panel3
+            // col3
             // 
-            this.panel3.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel3.Controls.Add(this.pictureBox37);
-            this.panel3.Controls.Add(this.pictureBox38);
-            this.panel3.Controls.Add(this.pictureBox39);
-            this.panel3.Controls.Add(this.pictureBox40);
-            this.panel3.Controls.Add(this.pictureBox41);
-            this.panel3.Controls.Add(this.pictureBox42);
-            this.panel3.Controls.Add(this.pictureBox43);
-            this.panel3.Controls.Add(this.pictureBox44);
-            this.panel3.Controls.Add(this.pictureBox45);
-            this.panel3.Controls.Add(this.pictureBox46);
-            this.panel3.Controls.Add(this.pictureBox47);
-            this.panel3.Controls.Add(this.pictureBox48);
-            this.panel3.Controls.Add(this.pictureBox49);
-            this.panel3.Controls.Add(this.pictureBox50);
-            this.panel3.Controls.Add(this.pictureBox51);
-            this.panel3.Controls.Add(this.pictureBox52);
-            this.panel3.Controls.Add(this.pictureBox53);
-            this.panel3.Controls.Add(this.pictureBox54);
-            this.panel3.Location = new System.Drawing.Point(152, 31);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(36, 223);
-            this.panel3.TabIndex = 169;
+            this.col3.BackColor = System.Drawing.Color.LemonChiffon;
+            this.col3.Controls.Add(this.pictureBox37);
+            this.col3.Controls.Add(this.pictureBox38);
+            this.col3.Controls.Add(this.pictureBox39);
+            this.col3.Controls.Add(this.pictureBox40);
+            this.col3.Controls.Add(this.pictureBox41);
+            this.col3.Controls.Add(this.pictureBox42);
+            this.col3.Controls.Add(this.pictureBox43);
+            this.col3.Controls.Add(this.pictureBox44);
+            this.col3.Controls.Add(this.pictureBox45);
+            this.col3.Controls.Add(this.pictureBox46);
+            this.col3.Controls.Add(this.pictureBox47);
+            this.col3.Controls.Add(this.pictureBox48);
+            this.col3.Controls.Add(this.pictureBox49);
+            this.col3.Controls.Add(this.pictureBox50);
+            this.col3.Controls.Add(this.pictureBox51);
+            this.col3.Controls.Add(this.pictureBox52);
+            this.col3.Controls.Add(this.pictureBox53);
+            this.col3.Controls.Add(this.pictureBox54);
+            this.col3.Location = new System.Drawing.Point(152, 31);
+            this.col3.Margin = new System.Windows.Forms.Padding(2);
+            this.col3.Name = "col3";
+            this.col3.Size = new System.Drawing.Size(36, 223);
+            this.col3.TabIndex = 169;
             // 
             // pictureBox37
             // 
@@ -1208,32 +1208,32 @@ namespace Connect4
             this.pictureBox54.TabIndex = 20;
             this.pictureBox54.TabStop = false;
             // 
-            // panel4
+            // col6
             // 
-            this.panel4.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel4.Controls.Add(this.pictureBox55);
-            this.panel4.Controls.Add(this.pictureBox56);
-            this.panel4.Controls.Add(this.pictureBox57);
-            this.panel4.Controls.Add(this.pictureBox58);
-            this.panel4.Controls.Add(this.pictureBox59);
-            this.panel4.Controls.Add(this.pictureBox60);
-            this.panel4.Controls.Add(this.pictureBox61);
-            this.panel4.Controls.Add(this.pictureBox62);
-            this.panel4.Controls.Add(this.pictureBox63);
-            this.panel4.Controls.Add(this.pictureBox64);
-            this.panel4.Controls.Add(this.pictureBox65);
-            this.panel4.Controls.Add(this.pictureBox66);
-            this.panel4.Controls.Add(this.pictureBox67);
-            this.panel4.Controls.Add(this.pictureBox68);
-            this.panel4.Controls.Add(this.pictureBox69);
-            this.panel4.Controls.Add(this.pictureBox70);
-            this.panel4.Controls.Add(this.pictureBox71);
-            this.panel4.Controls.Add(this.pictureBox72);
-            this.panel4.Location = new System.Drawing.Point(272, 31);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(36, 223);
-            this.panel4.TabIndex = 170;
+            this.col6.BackColor = System.Drawing.Color.LemonChiffon;
+            this.col6.Controls.Add(this.pictureBox55);
+            this.col6.Controls.Add(this.pictureBox56);
+            this.col6.Controls.Add(this.pictureBox57);
+            this.col6.Controls.Add(this.pictureBox58);
+            this.col6.Controls.Add(this.pictureBox59);
+            this.col6.Controls.Add(this.pictureBox60);
+            this.col6.Controls.Add(this.pictureBox61);
+            this.col6.Controls.Add(this.pictureBox62);
+            this.col6.Controls.Add(this.pictureBox63);
+            this.col6.Controls.Add(this.pictureBox64);
+            this.col6.Controls.Add(this.pictureBox65);
+            this.col6.Controls.Add(this.pictureBox66);
+            this.col6.Controls.Add(this.pictureBox67);
+            this.col6.Controls.Add(this.pictureBox68);
+            this.col6.Controls.Add(this.pictureBox69);
+            this.col6.Controls.Add(this.pictureBox70);
+            this.col6.Controls.Add(this.pictureBox71);
+            this.col6.Controls.Add(this.pictureBox72);
+            this.col6.Location = new System.Drawing.Point(272, 31);
+            this.col6.Margin = new System.Windows.Forms.Padding(2);
+            this.col6.Name = "col6";
+            this.col6.Size = new System.Drawing.Size(36, 223);
+            this.col6.TabIndex = 170;
             // 
             // pictureBox55
             // 
@@ -1433,32 +1433,32 @@ namespace Connect4
             this.pictureBox72.TabIndex = 20;
             this.pictureBox72.TabStop = false;
             // 
-            // panel5
+            // col5
             // 
-            this.panel5.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel5.Controls.Add(this.pictureBox73);
-            this.panel5.Controls.Add(this.pictureBox74);
-            this.panel5.Controls.Add(this.pictureBox75);
-            this.panel5.Controls.Add(this.pictureBox76);
-            this.panel5.Controls.Add(this.pictureBox77);
-            this.panel5.Controls.Add(this.pictureBox78);
-            this.panel5.Controls.Add(this.pictureBox79);
-            this.panel5.Controls.Add(this.pictureBox80);
-            this.panel5.Controls.Add(this.pictureBox81);
-            this.panel5.Controls.Add(this.pictureBox82);
-            this.panel5.Controls.Add(this.pictureBox83);
-            this.panel5.Controls.Add(this.pictureBox84);
-            this.panel5.Controls.Add(this.pictureBox85);
-            this.panel5.Controls.Add(this.pictureBox86);
-            this.panel5.Controls.Add(this.pictureBox87);
-            this.panel5.Controls.Add(this.pictureBox88);
-            this.panel5.Controls.Add(this.pictureBox89);
-            this.panel5.Controls.Add(this.pictureBox90);
-            this.panel5.Location = new System.Drawing.Point(232, 31);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(36, 223);
-            this.panel5.TabIndex = 171;
+            this.col5.BackColor = System.Drawing.Color.LemonChiffon;
+            this.col5.Controls.Add(this.pictureBox73);
+            this.col5.Controls.Add(this.pictureBox74);
+            this.col5.Controls.Add(this.pictureBox75);
+            this.col5.Controls.Add(this.pictureBox76);
+            this.col5.Controls.Add(this.pictureBox77);
+            this.col5.Controls.Add(this.pictureBox78);
+            this.col5.Controls.Add(this.pictureBox79);
+            this.col5.Controls.Add(this.pictureBox80);
+            this.col5.Controls.Add(this.pictureBox81);
+            this.col5.Controls.Add(this.pictureBox82);
+            this.col5.Controls.Add(this.pictureBox83);
+            this.col5.Controls.Add(this.pictureBox84);
+            this.col5.Controls.Add(this.pictureBox85);
+            this.col5.Controls.Add(this.pictureBox86);
+            this.col5.Controls.Add(this.pictureBox87);
+            this.col5.Controls.Add(this.pictureBox88);
+            this.col5.Controls.Add(this.pictureBox89);
+            this.col5.Controls.Add(this.pictureBox90);
+            this.col5.Location = new System.Drawing.Point(232, 31);
+            this.col5.Margin = new System.Windows.Forms.Padding(2);
+            this.col5.Name = "col5";
+            this.col5.Size = new System.Drawing.Size(36, 223);
+            this.col5.TabIndex = 171;
             // 
             // pictureBox73
             // 
@@ -1658,32 +1658,32 @@ namespace Connect4
             this.pictureBox90.TabIndex = 20;
             this.pictureBox90.TabStop = false;
             // 
-            // panel6
+            // col4
             // 
-            this.panel6.BackColor = System.Drawing.Color.LemonChiffon;
-            this.panel6.Controls.Add(this.pictureBox91);
-            this.panel6.Controls.Add(this.pictureBox92);
-            this.panel6.Controls.Add(this.pictureBox93);
-            this.panel6.Controls.Add(this.pictureBox94);
-            this.panel6.Controls.Add(this.pictureBox95);
-            this.panel6.Controls.Add(this.pictureBox96);
-            this.panel6.Controls.Add(this.pictureBox97);
-            this.panel6.Controls.Add(this.pictureBox98);
-            this.panel6.Controls.Add(this.pictureBox99);
-            this.panel6.Controls.Add(this.pictureBox100);
-            this.panel6.Controls.Add(this.pictureBox101);
-            this.panel6.Controls.Add(this.pictureBox102);
-            this.panel6.Controls.Add(this.pictureBox103);
-            this.panel6.Controls.Add(this.pictureBox104);
-            this.panel6.Controls.Add(this.pictureBox105);
-            this.panel6.Controls.Add(this.pictureBox106);
-            this.panel6.Controls.Add(this.pictureBox107);
-            this.panel6.Controls.Add(this.pictureBox108);
-            this.panel6.Location = new System.Drawing.Point(192, 31);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(36, 223);
-            this.panel6.TabIndex = 172;
+            this.col4.BackColor = System.Drawing.Color.LemonChiffon;
+            this.col4.Controls.Add(this.pictureBox91);
+            this.col4.Controls.Add(this.pictureBox92);
+            this.col4.Controls.Add(this.pictureBox93);
+            this.col4.Controls.Add(this.pictureBox94);
+            this.col4.Controls.Add(this.pictureBox95);
+            this.col4.Controls.Add(this.pictureBox96);
+            this.col4.Controls.Add(this.pictureBox97);
+            this.col4.Controls.Add(this.pictureBox98);
+            this.col4.Controls.Add(this.pictureBox99);
+            this.col4.Controls.Add(this.pictureBox100);
+            this.col4.Controls.Add(this.pictureBox101);
+            this.col4.Controls.Add(this.pictureBox102);
+            this.col4.Controls.Add(this.pictureBox103);
+            this.col4.Controls.Add(this.pictureBox104);
+            this.col4.Controls.Add(this.pictureBox105);
+            this.col4.Controls.Add(this.pictureBox106);
+            this.col4.Controls.Add(this.pictureBox107);
+            this.col4.Controls.Add(this.pictureBox108);
+            this.col4.Location = new System.Drawing.Point(192, 31);
+            this.col4.Margin = new System.Windows.Forms.Padding(2);
+            this.col4.Name = "col4";
+            this.col4.Size = new System.Drawing.Size(36, 223);
+            this.col4.TabIndex = 172;
             // 
             // pictureBox91
             // 
@@ -1888,12 +1888,12 @@ namespace Connect4
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1027, 417);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.col6);
+            this.Controls.Add(this.col3);
+            this.Controls.Add(this.col5);
+            this.Controls.Add(this.col2);
+            this.Controls.Add(this.col4);
+            this.Controls.Add(this.col1);
             this.Controls.Add(this.col0);
             this.Controls.Add(this.listView1);
             this.Name = "GameBoard";
@@ -1917,7 +1917,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pBox01P2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox00P1)).EndInit();
             this.col0.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.col1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1936,7 +1936,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.col2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
@@ -1955,7 +1955,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox36)).EndInit();
-            this.panel3.ResumeLayout(false);
+            this.col3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox39)).EndInit();
@@ -1974,7 +1974,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox53)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox54)).EndInit();
-            this.panel4.ResumeLayout(false);
+            this.col6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox55)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox56)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox57)).EndInit();
@@ -1993,7 +1993,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).EndInit();
-            this.panel5.ResumeLayout(false);
+            this.col5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox73)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox74)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox75)).EndInit();
@@ -2012,7 +2012,7 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox88)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox89)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox90)).EndInit();
-            this.panel6.ResumeLayout(false);
+            this.col4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox91)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox92)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox93)).EndInit();
@@ -2056,7 +2056,7 @@ namespace Connect4
         private System.Windows.Forms.PictureBox pBox01P2;
         private System.Windows.Forms.PictureBox pBox00P1;
         private System.Windows.Forms.Panel col0;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel col1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -2075,7 +2075,7 @@ namespace Connect4
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel col2;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.PictureBox pictureBox21;
@@ -2094,7 +2094,7 @@ namespace Connect4
         private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.PictureBox pictureBox35;
         private System.Windows.Forms.PictureBox pictureBox36;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel col3;
         private System.Windows.Forms.PictureBox pictureBox37;
         private System.Windows.Forms.PictureBox pictureBox38;
         private System.Windows.Forms.PictureBox pictureBox39;
@@ -2113,7 +2113,7 @@ namespace Connect4
         private System.Windows.Forms.PictureBox pictureBox52;
         private System.Windows.Forms.PictureBox pictureBox53;
         private System.Windows.Forms.PictureBox pictureBox54;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel col6;
         private System.Windows.Forms.PictureBox pictureBox55;
         private System.Windows.Forms.PictureBox pictureBox56;
         private System.Windows.Forms.PictureBox pictureBox57;
@@ -2132,7 +2132,7 @@ namespace Connect4
         private System.Windows.Forms.PictureBox pictureBox70;
         private System.Windows.Forms.PictureBox pictureBox71;
         private System.Windows.Forms.PictureBox pictureBox72;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel col5;
         private System.Windows.Forms.PictureBox pictureBox73;
         private System.Windows.Forms.PictureBox pictureBox74;
         private System.Windows.Forms.PictureBox pictureBox75;
@@ -2151,7 +2151,7 @@ namespace Connect4
         private System.Windows.Forms.PictureBox pictureBox88;
         private System.Windows.Forms.PictureBox pictureBox89;
         private System.Windows.Forms.PictureBox pictureBox90;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel col4;
         private System.Windows.Forms.PictureBox pictureBox91;
         private System.Windows.Forms.PictureBox pictureBox92;
         private System.Windows.Forms.PictureBox pictureBox93;
