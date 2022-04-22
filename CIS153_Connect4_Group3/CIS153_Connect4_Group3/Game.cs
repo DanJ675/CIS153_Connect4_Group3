@@ -9,19 +9,8 @@ namespace CIS153_Connect4_Group3
     class Game
     {
 
-
-        private int playerNum = 0;
-        //private int compTurn = 0;
         private int maxValue = 1000;
-        private int winner;
 
-
-
-
-        public void startNewGame(int numPlayers)
-        {
-
-        }
 
         public void nextComputerMove()
         {
@@ -45,10 +34,70 @@ namespace CIS153_Connect4_Group3
             //return score;
         }
 
-        public int isGameOver()
+        public static bool checkWinner(Square[,] square, int player)
         {
-            //check for winner
-            //return whether winner is comp or human
+            bool winner = false;
+
+            //check for horizontal winner
+            for (int r = 0; r < 6; r++)
+            {
+                for (int c = 0; c < 7; c++)
+                {
+                    if (square[r,c].getPlayerNum() == player &&
+                        square[r,c + 1].getPlayerNum() == player &&
+                        square [r,c + 2].getPlayerNum() == player&&
+                        square [r,c + 3].getPlayerNum() == player)
+                    {
+                        winner = true;
+                    }
+                }
+            }
+
+            //check for vertical winner
+            for (int r = 0; r < 6; r++)
+            {
+                for (int c = 0; c < 7; c++)
+                {
+                    if (square[r, c].getPlayerNum() == player &&
+                        square[r + 1, c].getPlayerNum() == player &&
+                        square[r + 2, c].getPlayerNum() == player &&
+                        square[r + 3, c].getPlayerNum() == player)
+                    {
+                        winner = true;
+                    }
+                }
+            }
+
+            //check for downward diagonal
+            for (int r = 0; r < 6; r++)
+            {
+                for (int c = 0; c < 7; c++)
+                {
+                    if (square[r, c].getPlayerNum() == player &&
+                        square[r + 1, c + 1].getPlayerNum() == player &&
+                        square[r + 2, c + 2].getPlayerNum() == player &&
+                        square[r + 3, c + 3].getPlayerNum() == player)
+                    {
+                        winner = true;
+                    }
+                }
+            }
+
+            //check for upward diagonal
+            for (int r = 0; r < 6; r++)
+            {
+                for (int c = 0; c < 7; c++)
+                {
+                    if (square[r, c].getPlayerNum() == player &&
+                        square[r + 1, c - 1].getPlayerNum() == player &&
+                        square[r + 2, c - 2].getPlayerNum() == player &&
+                        square[r + 3, c - 3].getPlayerNum() == player)
+                    {
+                        winner = true;
+                    }
+                }
+            }
+
 
             return winner;
         }
