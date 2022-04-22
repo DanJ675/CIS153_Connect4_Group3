@@ -31,6 +31,7 @@ namespace CIS153_Connect4_Group3
         {
             this.StatL = new System.Windows.Forms.Label();
             this.StatLB = new System.Windows.Forms.ListBox();
+            this.MenuButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StatL
@@ -49,8 +50,19 @@ namespace CIS153_Connect4_Group3
             this.StatLB.FormattingEnabled = true;
             this.StatLB.Location = new System.Drawing.Point(28, 99);
             this.StatLB.Name = "StatLB";
-            this.StatLB.Size = new System.Drawing.Size(405, 368);
+            this.StatLB.Size = new System.Drawing.Size(405, 342);
             this.StatLB.TabIndex = 1;
+            // 
+            // MenuButton
+            // 
+            this.MenuButton.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MenuButton.Location = new System.Drawing.Point(156, 447);
+            this.MenuButton.Name = "MenuButton";
+            this.MenuButton.Size = new System.Drawing.Size(127, 42);
+            this.MenuButton.TabIndex = 2;
+            this.MenuButton.Text = "Menu";
+            this.MenuButton.UseVisualStyleBackColor = true;
+            this.MenuButton.Click += new System.EventHandler(this.MenuButton_Click);
             // 
             // Stats
             // 
@@ -58,6 +70,7 @@ namespace CIS153_Connect4_Group3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(477, 498);
+            this.Controls.Add(this.MenuButton);
             this.Controls.Add(this.StatLB);
             this.Controls.Add(this.StatL);
             this.Name = "Stats";
@@ -71,5 +84,6 @@ namespace CIS153_Connect4_Group3
 
         private System.Windows.Forms.Label StatL;
         private System.Windows.Forms.ListBox StatLB;
+        private System.Windows.Forms.Button MenuButton;
     }
 }

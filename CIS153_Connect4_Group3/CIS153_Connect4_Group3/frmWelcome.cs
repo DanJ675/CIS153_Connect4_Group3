@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Connect4;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,8 +39,18 @@ namespace CIS153_Connect4_Group3
 
         private void StatButt_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Stats stats = new Stats();
+            stats.FormClosed += (s, args) => this.Close();
             stats.Show();
+        }
+
+        private void Start_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            GameBoard board = new GameBoard();
+            board.FormClosed += (s, args) => this.Close();
+            board.Show();
         }
     }
 }

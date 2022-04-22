@@ -16,5 +16,13 @@ namespace CIS153_Connect4_Group3
         {
             InitializeComponent();
         }
+
+        private void MenuButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmWelcome menu = new frmWelcome();
+            menu.FormClosed += (s, args) => this.Close();
+            menu.Show();
+        }
     }
 }
