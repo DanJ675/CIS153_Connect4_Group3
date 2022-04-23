@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Board.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Stats.cs">
       <SubType>Form</SubType>
     </Compile>
