@@ -8,67 +8,67 @@ namespace CIS153_Connect4_Group3
 {
     class Game
     {
+        private Player player1;
+        private Player player2;
         private Board board = new Board();
-        private int player;
-        private int computer = 2;
-
-
-
-
-
-
-        public void nextComputerMove(Square[,] square, int player)
+        public Game(Player p1, Player p2)
         {
-            //if the middle square is open, take it, or take the one above for the first move
-            if (square[0, 3].getPlayerNum() == 0)
+            player1 = p1;
+            player2 = p2;
+            Board board = new Board();
+            board.getBoard();
+            for (int i = 0; i < 6; i++)
             {
-                square[0, 3].setPlayerNum(computer);
+                for (int j = 0; j < 7; j++)
+                {
+                    board.getBoard();
+                }
             }
-            else if (square[1,3].getPlayerNum() == 0)
-            {
-                square[1, 3].setPlayerNum(computer);
-            }
+
+        }
+
+
+        public void nextComputerMove(Board board)
+        {
+            Square[,] square = new Square[7, 6];   //  Creates the square
+            square = board.getBoard(); // Fills the square with the board information
 
             //check for pieces in a row
-            if(threePlusTwo(square, player)) //places winning piece
+            if (threePlusTwo(square)) //sends the square with the board information to threePlusTwo
             {
-                checkWinner(square, player);
+                return;
             }
-            else if (threePlusTwo(square, 1)) //blocker if player 1 has 3 in a row
+            else if (twoPlusTwo(square)) //sends the square with the board information to twoPlusTwo
             {
-                checkWinner(square, player);
+                return;
             }
-            else if (twoPlusTwo(square, player))
+            else if (onePlusTwo(square)) //sends the square with the board information to onePlueTwo
             {
-                checkWinner(square, player);
-            }
-            else if (twoPlusTwo(square, 1))
-            {
-                checkWinner(square, player);
-            }
-            else if (onePlusTwo(square, player))
-            {
-                checkWinner(square, player);
+                return;
             }
 
 
         }
 
-        public static int checkWinner(Square[,] square, int player) //check for 4 in a row winner after board updates
+        public int checkWinner(Square[,] square) //check for 4 in a row winner after board updates
         {
-            int winner = 0;
-
-            //check for horizontal winner
             for (int r = 0; r < 6; r++)
             {
                 for (int c = 0; c < 4; c++)
                 {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r, c + 1].getPlayerNum() == player &&
-                        square[r, c + 2].getPlayerNum() == player &&
-                        square[r, c + 3].getPlayerNum() == player)
+                    if (square[r, c].getPlayerNum() == 1 &&
+                        square[r, c + 1].getPlayerNum() == 1 &&
+                        square[r, c + 2].getPlayerNum() == 1 &&
+                        square[r, c + 3].getPlayerNum() == 1)
                     {
-                        winner = player;
+                        return 1; //returns player 1 won
+                    }
+                    if (square[r, c].getPlayerNum() == 2 &&
+                        square[r, c + 1].getPlayerNum() == 2 &&
+                        square[r, c + 2].getPlayerNum() == 2 &&
+                        square[r, c + 3].getPlayerNum() == 2)
+                    {
+                        return 2; //returns player 2 won
                     }
                 }
             }
@@ -78,27 +78,42 @@ namespace CIS153_Connect4_Group3
             {
                 for (int c = 0; c < 7; c++)
                 {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r + 1, c].getPlayerNum() == player &&
-                        square[r + 2, c].getPlayerNum() == player &&
-                        square[r + 3, c].getPlayerNum() == player)
+                    if (square[r, c].getPlayerNum() == 1 &&
+                        square[r + 1, c].getPlayerNum() == 1 &&
+                        square[r + 2, c].getPlayerNum() == 1 &&
+                        square[r + 3, c].getPlayerNum() == 1)
                     {
-                        winner = player;
+                        return 1; //returns player 1 won
+                    }
+                    if (square[r, c].getPlayerNum() == 2 &&
+                        square[r + 1, c].getPlayerNum() == 2 &&
+                        square[r + 2, c].getPlayerNum() == 2 &&
+                        square[r + 3, c].getPlayerNum() == 2)
+                    {
+                        return 2; //returns player 2 won
                     }
                 }
             }
 
-            //check for upward diagonal
+            ////check for upward diagonal
             for (int r = 3; r < 6; r++)
             {
                 for (int c = 0; c < 3; c++)
                 {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r + 1, c + 1].getPlayerNum() == player &&
-                        square[r + 2, c + 2].getPlayerNum() == player &&
-                        square[r + 3, c + 3].getPlayerNum() == player)
+                    if (square[r, c].getPlayerNum() == 1 &&
+                        square[r + 1, c + 1].getPlayerNum() == 1 &&
+                        square[r + 2, c + 2].getPlayerNum() == 1 &&
+                        square[r + 3, c + 3].getPlayerNum() == 1)
                     {
-                        winner = player;
+                        return 1; //returns player 1 won
+                    }
+
+                    if (square[r, c].getPlayerNum() == 2 &&
+                        square[r + 1, c + 1].getPlayerNum() == 2 &&
+                        square[r + 2, c + 2].getPlayerNum() == 2 &&
+                        square[r + 3, c + 3].getPlayerNum() == 2)
+                    {
+                        return 2; //returns player 2 won
                     }
                 }
             }
@@ -108,268 +123,419 @@ namespace CIS153_Connect4_Group3
             {
                 for (int c = 4; c < 7; c++)
                 {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r + 1, c - 1].getPlayerNum() == player &&
-                        square[r + 2, c - 2].getPlayerNum() == player &&
-                        square[r + 3, c - 3].getPlayerNum() == player)
+                    if (square[r, c].getPlayerNum() == 1 &&
+                        square[r + 1, c - 1].getPlayerNum() == 1 &&
+                        square[r + 2, c - 2].getPlayerNum() == 1 &&
+                        square[r + 3, c - 3].getPlayerNum() == 1)
                     {
-                        winner = player;
+                        return 1; //returns player 1 won
+                    }
+
+                    if (square[r, c].getPlayerNum() == 2 &&
+                        square[r + 1, c - 1].getPlayerNum() == 2 &&
+                        square[r + 2, c - 2].getPlayerNum() == 2 &&
+                        square[r + 3, c - 3].getPlayerNum() == 2)
+                    {
+                        return 2; //returns player 2 won
                     }
                 }
             }
 
-            //is the board full?
+            //is the board full ?
             for (int r = 0; r < 6; r++)
             {
                 for (int c = 0; c < 7; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0)
                     {
-                        winner = 0;
+                        return 0;
                     }
                 }
             }
 
 
-            return winner;
+            return 0;
         }
 
-        public bool threePlusTwo(Square[,] square, int player)
+        public bool threePlusTwo(Square[,] square)  // we know we are player 2 becase this is for the ai
         {
-            //ai checking for three in a row. 1st time through is for the ai to win, second time through is to block the human player
-            bool moveMade = false;
-            //check for horizontal 3
-            for (int r = 0; r < 6; r++)
-            {
-                for (int c = 0; c < 4; c++)
-                {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r, c + 1].getPlayerNum() == player &&
-                        square[r, c + 2].getPlayerNum() == player)
-                    {
-                        if (square[r-1,c+3].getPlayerNum() == 0)
-                        {
-                            //if the square after the 3 found has a piece under it
-                            square[r - 1, c + 3].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                        if (square[r - 1, c - 1].getPlayerNum() == 0)
-                        {
-                            //if the square before the 3 found has a piece under it
-                            square[r - 1, c - 1].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                    }
-                }
-            }
-
-            //check for vertical 3
-            for (int r = 0; r < 3; r++)
-            {
-                for (int c = 0; c < 7; c++)
-                {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r + 1, c].getPlayerNum() == player &&
-                        square[r + 2, c].getPlayerNum() == player)
-                    {
-                        if (square[r + 3, c].getPlayerNum() == 0)
-                        {
-                            //if the square above is empty
-                            square[r + 3, c].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                    }
-                }
-            }
-
-            //check for upward diagonal
-            for (int r = 3; r < 6; r++)
-            {
-                for (int c = 0; c < 3; c++)
-                {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r + 1, c + 1].getPlayerNum() == player &&
-                        square[r + 2, c + 2].getPlayerNum() == player)
-                    {
-                        if(square[r + 3, c + 3].getPlayerNum() == 0)
-                        {
-                            square[r + 3, c + 3].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                        if(square[r - 1,c - 1].getPlayerNum() == 0)
-                        {
-                            square[r - 1, c - 1].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                    }
-                }
-            }
-
-            //check for downward diagonal
-            for (int r = 0; r < 3; r++)
-            {
-                for (int c = 4; c < 7; c++)
-                {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r + 1, c - 1].getPlayerNum() == player &&
-                        square[r + 2, c - 2].getPlayerNum() == player)
-                    {
-                        if (square[r + 3, c - 3].getPlayerNum() == 0)
-                        {
-                            square[r + 3, c - 3].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                        if (square[r - 1, c + 1].getPlayerNum() == 0)
-                        {
-                            square[r - 1, c + 1].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                    }
-                }
-            }
-
-            return moveMade;
-
-        }
-
-
-
-        public bool twoPlusTwo(Square[,] square, int player)
-        {
-            //checks for 2 in a row. First time through is for the ai to place a piece to continue, second time through is to block the human
-            bool moveMade = false;
-            //check for horizontal 2
-            for (int r = 0; r < 6; r++)
-            {
-                for (int c = 0; c < 4; c++)
-                {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r, c + 1].getPlayerNum() == player)
-                    {
-                        if (square[r - 1, c + 2].getPlayerNum() != 0 && square[r, c + 2].getPlayerNum() == 0 && square[r , c + 3].getPlayerNum() == 0)
-                        {
-                            //if the square after the 2 found has a piece under it
-                            square[r, c + 2].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                        if (square[r - 1, c - 1].getPlayerNum() != 0 && square[r, c + 2].getPlayerNum() == 0 && square[r, c - 1].getPlayerNum() == 0)
-                        {
-                            //if the square before the 2 found has a piece under it
-                            square[r, c + 1].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                    }
-                }
-            }
-
-            //check for vertical 2
-            for (int r = 0; r < 3; r++)
-            {
-                for (int c = 0; c < 7; c++)
-                {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r + 1, c].getPlayerNum() == player)
-                    {
-                        if (square[r + 2, c].getPlayerNum() == 0 && square[r + 3, c].getPlayerNum() == 0)
-                        {
-                            //if the square above is empty
-                            square[r + 2, c].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                    }
-                }
-            }
-
-            //check for upward diagonal
-            for (int r = 3; r < 6; r++)
-            {
-                for (int c = 0; c < 3; c++)
-                {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r + 1, c + 1].getPlayerNum() == player)
-                    {
-                        if (square[r + 2, c + 2].getPlayerNum() == 0 && square[r + 3, c + 3].getPlayerNum() == 0 && square[r + 1, c + 2].getPlayerNum() != 0)
-                        {
-                            square[r + 2, c + 2].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                        if (square[r - 1, c - 1].getPlayerNum() == 0 && square[r - 2, c - 1].getPlayerNum() != 0 && square[r + 2, c + 2].getPlayerNum() == 0)
-                        {
-                            square[r - 1, c - 1].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                    }
-                }
-            }
-
-            //check for downward diagonal
-            for (int r = 0; r < 3; r++)
-            {
-                for (int c = 4; c < 7; c++)
-                {
-                    if (square[r, c].getPlayerNum() == player &&
-                        square[r + 1, c - 1].getPlayerNum() == player)
-                    {
-                        if (square[r + 2, c - 2].getPlayerNum() == 0 && square[r + 3, c - 3].getPlayerNum() == 0 && square[r + 2, c - 3].getPlayerNum() != 0)
-                        {
-                            square[r + 2, c - 2].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                        if (square[r - 1, c + 1].getPlayerNum() == 0 && square[r + 2, c - 2].getPlayerNum() == 0 && square[r - 2, c + 1].getPlayerNum() != 0)
-                        {
-                            square[r - 1, c + 1].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                    }
-                }
-            }
-
-            return moveMade;
-
-        }
-
-
-
-        public bool onePlusTwo(Square[,] square, int player)
-        {
-            //checks for 1 plus 2 empty in a row, ai will place a piece next to the previous
-            bool moveMade = false;
             //check for horizontal
             for (int r = 0; r < 6; r++)
             {
-                for (int c = 0; c < 4; c++)
+                for (int c = 0; c < 3; c++)
                 {
-                    if (square[r, c].getPlayerNum() == player)
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r, c + 1].getPlayerNum() == 2 &&
+                        square[r, c + 2].getPlayerNum() == 2 &&
+                        square[r, c + 3].getPlayerNum() == 0 &&
+                        square[r, c + 4].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c + 4].getPlayerNum() != 0 &&
+                                    square[r - 1, c + 3].getPlayerNum() != 0 &&
+                                    square[r - 1, c].getPlayerNum() != 0)))
+
                     {
-                        if (square[r + 1, c].getPlayerNum() == 0)
-                        {
-                            //vertical
-                            square[r + 1, c].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                        else if (square[r, c + 1].getPlayerNum() == 0 && square[r, c + 2].getPlayerNum() == 0 && square[r - 1, c + 1].getPlayerNum() != 0)
-                        {
-                            square[r, c + 1].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                        else if (square[r + 1, c + 1].getPlayerNum() == 0 && square[r + 2, c + 2].getPlayerNum() == 0 && square[r + 1, c].getPlayerNum() != 0)
-                        {
-                            square[r + 1, c + 1].setPlayerNum(computer);
-                            moveMade = true;
-                        }
-                        else if (square[r + 1, c - 1].getPlayerNum() == 0 && square[r + 2, c - 2].getPlayerNum() == 0 && square[r + 1, c -2].getPlayerNum() != 0)
-                        {
-                            square[r + 1, c - 1].setPlayerNum(computer);
-                            moveMade = true;
-                        }
+                        square[r, c + 3].setPlayerNum(2); // make move
+                        return true; //successful move, stop three plus two;
+                    }
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r, c + 1].getPlayerNum() == 1 &&
+                        square[r, c + 2].getPlayerNum() == 1 &&
+                        square[r, c + 3].getPlayerNum() == 0 &&
+                        square[r, c + 4].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c + 4].getPlayerNum() != 0 &&
+                                    square[r - 1, c + 3].getPlayerNum() != 0 &&
+                                    square[r - 1, c].getPlayerNum() != 0)))
+
+                    {
+                        square[r, c + 3].setPlayerNum(2);  //make move to block
+                        return true; //successful move, stop three plus two;
                     }
                 }
             }
 
+            //check for vertical
+            for (int r = 0; r < 3; r++)
+            {
+                for (int c = 0; c < 7; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c].getPlayerNum() == 2 &&
+                        square[r + 2, c].getPlayerNum() == 2 &&
+                        square[r + 3, c].getPlayerNum() == 0 &&
+                        square[r + 4, c].getPlayerNum() == 0)
+                    {
+                            square[r + 3, c].setPlayerNum(2); //make move
+                            return true; //successful move, stop three plus two
+                    }
+
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c].getPlayerNum() == 1 &&
+                        square[r + 2, c].getPlayerNum() == 1 &&
+                        square[r + 3, c].getPlayerNum() == 0 &&
+                        square[r + 4, c].getPlayerNum() == 0)
+                    {
+                            square[r + 3, c].setPlayerNum(2); //block
+                            return true; //successful move, stop three plus two
+                    }
+                }
+            }
+
+            //check for upward diagonal
+            for (int r = 3; r < 6; r++)
+            {
+                for (int c = 0; c < 3; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c + 1].getPlayerNum() == 2 &&
+                        square[r + 2, c + 2].getPlayerNum() == 2 &&
+                        square[r + 3, c + 3].getPlayerNum() == 0 &&
+                        square[r + 4, c + 4].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r + 2, c + 3].getPlayerNum() != 0 &&
+                                    square[r + 1, c + 2].getPlayerNum() != 0 &&
+                                    square[r, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r + 3, c + 3].setPlayerNum(2); // make move
+                        return true; //successful move, stop three plus two;
+                    }
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c + 1].getPlayerNum() == 1 &&
+                        square[r + 2, c + 2].getPlayerNum() == 1 &&
+                        square[r + 3, c + 3].getPlayerNum() == 0 &&
+                        square[r + 4, c + 4].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r + 2, c + 3].getPlayerNum() != 0 &&
+                                    square[r + 1, c + 2].getPlayerNum() != 0 &&
+                                    square[r, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r + 3, c + 3].setPlayerNum(2); // block
+                        return true; //successful move, stop three plus two;
+                    }
+                }
+            }
+
+            //check for downward diagonal
+            for (int r = 0; r < 3; r++)
+            {
+                for (int c = 4; c < 7; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r - 1, c + 1].getPlayerNum() == 2 &&
+                        square[r - 2, c + 2].getPlayerNum() == 2 &&
+                        square[r - 3, c + 3].getPlayerNum() == 0 &&
+                        square[r - 4, c + 4].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 4, c + 3].getPlayerNum() != 0 &&
+                                    square[r - 3, c + 2].getPlayerNum() != 0 &&
+                                    square[r - 2, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r - 3, c + 3].setPlayerNum(2); // make move
+                        return true; //successful move, stop three plus two;
+                    }
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r - 1, c + 1].getPlayerNum() == 1 &&
+                        square[r - 2, c + 2].getPlayerNum() == 1 &&
+                        square[r - 3, c + 3].getPlayerNum() == 0 &&
+                        square[r - 4, c + 4].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 4, c + 3].getPlayerNum() != 0 &&
+                                    square[r - 3, c + 2].getPlayerNum() != 0 &&
+                                    square[r - 2, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r - 3, c + 3].setPlayerNum(2); // block
+                        return true; //successful move, stop three plus two;
+                    }
+                }
+            }
+            return false;
+        }
 
 
 
-            return moveMade;
+        public bool twoPlusTwo(Square[,] square)
+        {
+            //check for horizontal
+            for (int r = 0; r < 6; r++)
+            {
+                for (int c = 0; c < 3; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r, c + 1].getPlayerNum() == 2 &&
+                        square[r, c + 2].getPlayerNum() == 2 &&
+                        square[r, c + 3].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c + 3].getPlayerNum() != 0 &&
+                                    square[r - 1, c].getPlayerNum() != 0)))
+
+                    {
+                        square[r, c + 2].setPlayerNum(2); // make move
+                        return true; //successful move, stop three plus two;
+                    }
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r, c + 1].getPlayerNum() == 1 &&
+                        square[r, c + 2].getPlayerNum() == 1 &&
+                        square[r, c + 3].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c + 3].getPlayerNum() != 0 &&
+                                    square[r - 1, c].getPlayerNum() != 0)))
+
+                    {
+                        square[r, c + 2].setPlayerNum(2);  //make move to block
+                        return true; //successful move, stop two plus two;
+                    }
+                }
+            }
+
+            //check for vertical 
+            for (int r = 0; r < 3; r++)
+            {
+                for (int c = 0; c < 7; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c].getPlayerNum() == 2 &&
+                        square[r + 2, c].getPlayerNum() == 2 &&
+                        square[r + 3, c].getPlayerNum() == 0)
+                    {
+                            square[r + 2, c].setPlayerNum(2); //make move
+                            return true; //successful move, stop two plus two;
+                    }
+
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c].getPlayerNum() == 1 &&
+                        square[r + 2, c].getPlayerNum() == 1 &&
+                        square[r + 3, c].getPlayerNum() == 0)
+                    {
+                            square[r + 2, c].setPlayerNum(2); //block
+                            return true; //successful move, stop two plus two;
+                    }
+                }
+            }
+
+            //check for upward diagonal
+            for (int r = 3; r < 6; r++)
+            {
+                for (int c = 0; c < 3; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c + 1].getPlayerNum() == 2 &&
+                        square[r + 2, c + 2].getPlayerNum() == 2 &&
+                        square[r + 3, c + 3].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 && 
+                                    square[r + 1, c + 2].getPlayerNum() != 0 &&
+                                    square[r, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r + 2, c + 2].setPlayerNum(2); // make move
+                        return true; //successful move, stop two plus two;
+                    }
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c + 1].getPlayerNum() == 1 &&
+                        square[r + 2, c + 2].getPlayerNum() == 1 &&
+                        square[r + 3, c + 3].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 && 
+                                    square[r + 1, c + 2].getPlayerNum() != 0 &&
+                                    square[r, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r + 2, c + 2].setPlayerNum(2); // make move
+                        return true; //successful move, stop two plus two;
+                    }
+                }
+            }
+
+            //check for downward diagonal
+            for (int r = 0; r < 3; r++)
+            {
+                for (int c = 4; c < 7; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r - 1, c + 1].getPlayerNum() == 2 &&
+                        square[r - 2, c + 2].getPlayerNum() == 2 &&
+                        square[r - 3, c + 3].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 && 
+                                    square[r - 3, c + 2].getPlayerNum() != 0 &&
+                                    square[r - 2, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r - 2, c + 2].setPlayerNum(2); // make move
+                        return true; //successful move, stop two plus two;
+                    }
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r - 1, c + 1].getPlayerNum() == 1 &&
+                        square[r - 2, c + 2].getPlayerNum() == 1 &&
+                        square[r - 3, c + 3].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 && 
+                                    square[r - 3, c + 2].getPlayerNum() != 0 &&
+                                    square[r - 2, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r - 2, c + 2].setPlayerNum(2); // make move
+                        return true; //successful move, stop two plus two;
+                    }
+                }
+            }
+            return false;
+        }
+
+
+
+
+
+
+
+        public bool onePlusTwo(Square[,] square)
+        {
+            //check for horizontal 
+            for (int r = 0; r < 6; r++)
+            {
+                for (int c = 0; c < 3; c++) 
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r, c + 1].getPlayerNum() == 2 &&
+                        square[r, c + 2].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 && 
+                                    square[r - 1, c + 2].getPlayerNum() != 0 &&
+                                    square[r - 1, c].getPlayerNum() != 0)))
+
+                    {
+                        square[r, c + 2].setPlayerNum(2); // make move
+                        return true; //successful move, stop one plus two;
+                    }
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r, c + 1].getPlayerNum() == 1 &&
+                        square[r, c + 2].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 &&
+                                    square[r - 1, c + 2].getPlayerNum() != 0 &&
+                                    square[r - 1, c].getPlayerNum() != 0)))
+
+                    {
+                        square[r, c + 2].setPlayerNum(2);  //make move to block
+                        return true; //successful move, stop one plus two;
+                    }
+                }
+            }
+
+            //check for vertical 
+            for (int r = 0; r < 3; r++)
+            {
+                for (int c = 0; c < 7; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c].getPlayerNum() == 2 &&
+                        square[r + 2, c].getPlayerNum() == 0)
+                    {
+                        square[r + 2, c].setPlayerNum(2); //make move
+                        return true; //successful move, stop one plus two;
+                    }
+
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c].getPlayerNum() == 1 &&
+                        square[r + 2, c].getPlayerNum() == 0)
+                    {
+                        square[r + 2, c].setPlayerNum(2); //block
+                        return true; //successful move, stop one plus two;
+                    }
+                }
+            }
+
+            //check for upward diagonal
+            for (int r = 3; r < 6; r++)
+            {
+                for (int c = 0; c < 3; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c + 1].getPlayerNum() == 2 &&
+                        square[r + 2, c + 2].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 && 
+                                    square[r + 1, c + 2].getPlayerNum() != 0 &&
+                                    square[r, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r + 2, c + 2].setPlayerNum(2); // make move
+                        return true; //successful move, stop one plus two;
+                    }
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r + 1, c + 1].getPlayerNum() == 1 &&
+                        square[r + 2, c + 2].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 && 
+                                    square[r + 1, c + 2].getPlayerNum() != 0 &&
+                                    square[r, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r + 2, c + 2].setPlayerNum(2); // block
+                        return true; //successful move, stop one plus two;
+                    }
+                }
+            }
+
+            //check for downward diagonal
+            for (int r = 0; r < 3; r++)
+            {
+                for (int c = 4; c < 7; c++)
+                {
+                    if (square[r, c].getPlayerNum() == 0 &&
+                        square[r - 1, c + 1].getPlayerNum() == 2 &&
+                        square[r - 2, c + 2].getPlayerNum() == 0 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 && 
+                                    square[r - 3, c + 2].getPlayerNum() != 0 &&
+                                    square[r - 2, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r - 2, c + 2].setPlayerNum(2); // make move
+                        return true; //successful move, stop one plus two;
+                    }
+                    else if (square[r, c].getPlayerNum() == 0 &&
+                        square[r - 1, c + 1].getPlayerNum() == 1 &&
+                        square[r - 2, c + 2].getPlayerNum() == 1 &&
+                        (r == 0 || (square[r - 1, c].getPlayerNum() != 0 &&
+                                    square[r - 3, c + 2].getPlayerNum() != 0 &&
+                                    square[r - 2, c + 1].getPlayerNum() != 0)))
+
+                    {
+                        square[r - 2, c + 2].setPlayerNum(2); // block
+                        return true; //successful move, stop one plus two;
+                    }
+                }
+            }
+            return false;
         }
 
 
