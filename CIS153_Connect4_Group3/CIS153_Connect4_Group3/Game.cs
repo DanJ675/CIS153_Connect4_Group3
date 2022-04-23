@@ -12,11 +12,11 @@ namespace CIS153_Connect4_Group3
         private Player player1;
         private Player player2;
         private Square[,] square = new Square[7,6];
+        private Board board = new Board();
         public Game(Player p1, Player p2)
         {
             player1 = p1;
             player2 = p2;
-            Board board = new Board();
             square = board.getBoard();
             //for(int i = 0; i < 6; i++)
             //{
@@ -31,9 +31,9 @@ namespace CIS153_Connect4_Group3
         {
             return square;
         }
-        public void nextComputerMove(Board board)
+        public void nextComputerMove(Square[,] square)
         {
-            square = board.getBoard(); // Fills the square with the board information
+            //square = board.getBoard(); // Fills the square with the board information
 
             //check for pieces in a row
             if(threePlusTwo(square)) //sends the square with the board information to the threePlusTwoMoveAttempt
@@ -185,16 +185,16 @@ namespace CIS153_Connect4_Group3
             //}
 
             //is the board full ?
-            for (int r = 0; r < 6; r++)
-            {
-                for (int c = 0; c < 7; c++)
-                {
-                    if (square[r, c].getPlayerNum() == 0)
-                    {
-                        return 0;
-                    }
-                }
-            }
+            //for (int r = 0; r < 6; r++)
+            //{
+            //    for (int c = 0; c < 7; c++)
+            //    {
+            //        if (square[r, c].getPlayerNum() == 0)
+            //        {
+            //            return 0;
+            //        }
+            //    }
+            //}
 
 
             return 0;
