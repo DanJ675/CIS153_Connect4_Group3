@@ -51,15 +51,6 @@ namespace CIS153_Connect4_Group3
 
 
         }
-
-        private void StatButt_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Stats stats = new Stats();
-            stats.FormClosed += (s, args) => this.Close();
-            stats.Show();
-        }
-
         private void Start_Click(object sender, EventArgs e)
         {
             Player player1 = new Player(cmbPlayer1.SelectedItem.ToString());
@@ -82,6 +73,16 @@ namespace CIS153_Connect4_Group3
             cmbPlayer2.Items.Add(tbAdd.Text);
             tbAdd.Text = "";
             
+        }
+
+        private void StatButt_Click(object sender, EventArgs e)
+        {
+            {
+                this.Hide();
+                Stats stats = new Stats();
+                stats.FormClosed += (s, args) => this.Close();
+                stats.Show();
+            }
         }
     }
 }
