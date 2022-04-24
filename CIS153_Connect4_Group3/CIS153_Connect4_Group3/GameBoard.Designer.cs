@@ -1992,6 +1992,7 @@ namespace Connect4
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2054, 802);
+            this.Controls.Add(this.col0Panel);
             this.Controls.Add(this.col5Panel);
             this.Controls.Add(this.col4Panel);
             this.Controls.Add(this.col3Panel);
@@ -2005,7 +2006,6 @@ namespace Connect4
             this.Controls.Add(this.col6Panel);
             this.Controls.Add(this.col6);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.col0Panel);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "GameBoard";
             this.Text = "GameBoard";

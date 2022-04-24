@@ -15,6 +15,7 @@ namespace CIS153_Connect4_Group3
         private Board board = new Board();
         public Game(Player p1, Player p2)
         {
+            activePlayerNum = 1;
             player1 = p1;
             player2 = p2;
             square = board.getBoard();
@@ -27,11 +28,12 @@ namespace CIS153_Connect4_Group3
             //}
         }
         public void setActivePlayerNum(int i) { activePlayerNum = i; }
-        public Square[,] onClick(int col) 
+        public int getActivePlayerNum() { return activePlayerNum; }
+        public Square[,] onClick(int playerNum, int col) 
         {
             
             square = board.getShowBoard();
-            square = board.onClick(activePlayerNum, col);
+            square = board.onClick(playerNum, col);
             return square;
         }
         public Square[,] getSquare()

@@ -53,9 +53,9 @@ namespace CIS153_Connect4_Group3
         }
         private void Start_Click(object sender, EventArgs e)
         {
-            Player player1 = new Player(cmbPlayer1.SelectedItem.ToString());
-            Player player2 = new Player(cmbPlayer2.SelectedItem.ToString());
-            Game game = new Game(player1, player2);
+            //Player player1 = new Player(cmbPlayer1.SelectedItem.ToString());
+            //Player player2 = new Player(cmbPlayer2.SelectedItem.ToString());
+            //Game game = new Game(player1, player2);
             this.Hide();
             GameBoard board = new GameBoard();
             board.player1Name = cmbPlayer1.SelectedItem.ToString();

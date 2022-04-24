@@ -14,25 +14,27 @@ namespace Connect4
     {
         public string player1Name { get; set; }
         public string player2Name { get; set; }
-        private CIS153_Connect4_Group3.Game game { get; set; }
-        private CIS153_Connect4_Group3.Game showGame { get; set;}
+        private CIS153_Connect4_Group3.Game g { get; set; }
+        private CIS153_Connect4_Group3.Game sG { get; set;}
         private CIS153_Connect4_Group3.Player player1;
         private CIS153_Connect4_Group3.Player player2;
         public GameBoard()
         {
             InitializeComponent();
-        }
-
-        private void GameBoard_Load(object sender, EventArgs e)
-        {
             CIS153_Connect4_Group3.Square[,] squares;
             player1 = new CIS153_Connect4_Group3.Player(player1Name);
             player2 = new CIS153_Connect4_Group3.Player(player2Name);
             CIS153_Connect4_Group3.Game game = new CIS153_Connect4_Group3.Game(player1, player2);
-            
-            squares = game.getSquare();   // you use this to return the information to update the colors of the squares.
+            g = game;
+            squares = g.getSquare();   // you use this to return the information to update the colors of the squares.
             updateScreen(squares);
             CIS153_Connect4_Group3.Game showGame = new CIS153_Connect4_Group3.Game(player1, player2);
+            sG = showGame;
+
+        }
+
+        private void GameBoard_Load(object sender, EventArgs e)
+        {
 
             //showGame.getSquare();   // you use this to return the information to update the colors of the squares.
 
@@ -186,103 +188,116 @@ namespace Connect4
         
         private void col0_MouseHover(object sender, EventArgs e)
         {
-            
-            this.showGame.onClick(0);
+            sG.onClick(sG.getActivePlayerNum(), 0);
+            updateScreen(sG.getSquare());
         }
 
         private void col0_MouseLeave(object sender, EventArgs e)
         {
-            this.showGame = this.game;
+            updateScreen(g.getSquare());
         }
 
         private void col0_MouseClick(object sender, MouseEventArgs e)
         {
-            this.game.onClick(0);
+            g.onClick(g.getActivePlayerNum(), 0);
+            updateScreen(g.getSquare());
         }
 
         private void col1_MouseClick(object sender, MouseEventArgs e)
         {
-            this.game.onClick(1);
+            g.onClick(g.getActivePlayerNum(), 1);
+            updateScreen(g.getSquare());
         }
 
         private void col1_MouseHover(object sender, EventArgs e)
         {
-            this.showGame.onClick(1);
+            sG.onClick(sG.getActivePlayerNum(), 1);
+            updateScreen(sG.getSquare());
         }
 
         private void col1_MouseLeave(object sender, EventArgs e)
         {
-            this.showGame = this.game;
+            updateScreen(g.getSquare());
         }
         private void col2_MouseClick(object sender, MouseEventArgs e)
         {
-            this.game.onClick(2);
+            g.onClick(g.getActivePlayerNum(), 2);
+            updateScreen(g.getSquare());
         }
 
         private void col2_MouseHover(object sender, EventArgs e)
         {
-            this.showGame.onClick(2);
+            sG.onClick(sG.getActivePlayerNum(), 2);
+            updateScreen(sG.getSquare());
         }
 
         private void col2_MouseLeave(object sender, EventArgs e)
         {
-            this.showGame = this.game;
+            updateScreen(g.getSquare());
         }
         private void col3_MouseClick(object sender, MouseEventArgs e)
         {
-            this.game.onClick(3);
+            g.onClick(g.getActivePlayerNum(), 3);
+            updateScreen(g.getSquare());
         }
 
         private void col3_MouseHover(object sender, EventArgs e)
         {
-            this.showGame.onClick(3);
+            sG.onClick(sG.getActivePlayerNum(), 3);
+            updateScreen(sG.getSquare());
         }
 
         private void col3_MouseLeave(object sender, EventArgs e)
         {
-            this.showGame = this.game;
+            updateScreen(g.getSquare());
         }
         private void col4_MouseClick(object sender, MouseEventArgs e)
         {
-            this.game.onClick(4);
+            g.onClick(g.getActivePlayerNum(), 4);
+            updateScreen(g.getSquare());
         }
 
         private void col4_MouseHover(object sender, EventArgs e)
         {
-            this.showGame.onClick(4);
+            sG.onClick(sG.getActivePlayerNum(), 4);
+            updateScreen(sG.getSquare());
         }
 
         private void col4_MouseLeave(object sender, EventArgs e)
         {
-            this.showGame = this.game;
+            updateScreen(g.getSquare());
         }
         private void col5_MouseClick(object sender, MouseEventArgs e)
         {
-            this.game.onClick(5);
+            g.onClick(g.getActivePlayerNum(), 5);
+            updateScreen(g.getSquare());
         }
 
         private void col5_MouseHover(object sender, EventArgs e)
         {
-            this.showGame.onClick(5);
+            sG.onClick(sG.getActivePlayerNum(), 5);
+            updateScreen(sG.getSquare());
         }
 
         private void col5_MouseLeave(object sender, EventArgs e)
         {
-            this.showGame = this.game;
+            updateScreen(g.getSquare());
         }
         private void col6_MouseClick(object sender, MouseEventArgs e)
         {
-            this.game.onClick(6);
+            g.onClick(g.getActivePlayerNum(), 6);
+            updateScreen(g.getSquare());
         }
 
         private void col6_MouseHover(object sender, EventArgs e)
         {
-            this.showGame.onClick(6);
+            sG.onClick(sG.getActivePlayerNum(), 6);
+            updateScreen(sG.getSquare());
         }
 
         private void col6_MouseLeave(object sender, EventArgs e)
         {
-            this.showGame = this.game;
+            updateScreen(g.getSquare());
         }
     }
 }
