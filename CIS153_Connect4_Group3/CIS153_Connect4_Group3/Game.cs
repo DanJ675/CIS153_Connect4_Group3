@@ -27,6 +27,13 @@ namespace CIS153_Connect4_Group3
             //}
         }
         public void setActivePlayerNum(int i) { activePlayerNum = i; }
+        public Square[,] onClick(int col) 
+        {
+            
+            square = board.getShowBoard();
+            square = board.onClick(activePlayerNum, col);
+            return square;
+        }
         public Square[,] getSquare()
         {
             return square;
