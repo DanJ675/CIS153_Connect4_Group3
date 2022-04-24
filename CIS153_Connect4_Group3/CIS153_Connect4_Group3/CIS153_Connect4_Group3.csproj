@@ -76,6 +76,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TextFile.cs" />
     <EmbeddedResource Include="Result.resx">
       <DependentUpon>Result.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayerList" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
