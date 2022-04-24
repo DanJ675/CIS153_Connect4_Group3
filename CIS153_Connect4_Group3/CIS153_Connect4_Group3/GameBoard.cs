@@ -90,91 +90,91 @@ namespace Connect4
                 pBox00P1.Visible = false;
                 pBox00P2.Visible = true;
             }
-            if (squares[1, 0].getPlayerNum() == 0)
+            if (squares[0, 1].getPlayerNum() == 0)
             {
                 pBox10P0.Visible = true;
                 pBox10P1.Visible = false;
                 pBox10P2.Visible = false;
             }
-            else if (squares[1, 0].getPlayerNum() == 1)
+            else if (squares[0, 1].getPlayerNum() == 1)
             {
                 pBox10P0.Visible = false;
                 pBox10P1.Visible = true;
                 pBox10P2.Visible = false;
             }
-            else if (squares[1, 0].getPlayerNum() == 2)
+            else if (squares[0,1].getPlayerNum() == 2)
             {
                 pBox10P0.Visible = false;
                 pBox10P1.Visible = false;
                 pBox10P2.Visible = true;
             }
-            if (squares[2, 0].getPlayerNum() == 0)
+            if (squares[0 , 2].getPlayerNum() == 0)
             {
                 pBox20P0.Visible = true;
                 pBox20P1.Visible = false;
                 pBox20P2.Visible = false;
             }
-            else if (squares[2, 0].getPlayerNum() == 1)
+            else if (squares[0, 2].getPlayerNum() == 1)
             {
                 pBox20P0.Visible = false;
                 pBox20P1.Visible = true;
                 pBox20P2.Visible = false;
             }
-            else if (squares[2, 0].getPlayerNum() == 2)
+            else if (squares[0 , 2].getPlayerNum() == 2)
             {
                 pBox20P0.Visible = false;
                 pBox20P1.Visible = false;
                 pBox20P2.Visible = true;
             }
-            if (squares[3, 0].getPlayerNum() == 0)
+            if (squares[0, 3].getPlayerNum() == 0)
             {
                 pBox30P0.Visible = true;
                 pBox30P1.Visible = false;
                 pBox30P2.Visible = false;
             }
-            else if (squares[3, 0].getPlayerNum() == 1)
+            else if (squares[0, 3].getPlayerNum() == 1)
             {
                 pBox30P0.Visible = false;
                 pBox30P1.Visible = true;
                 pBox30P2.Visible = false;
             }
-            else if (squares[3, 0].getPlayerNum() == 2)
+            else if (squares[0, 3].getPlayerNum() == 2)
             {
                 pBox30P0.Visible = false;
                 pBox30P1.Visible = false;
                 pBox30P2.Visible = true;
             }
-            if (squares[4, 0].getPlayerNum() == 0)
+            if (squares[0, 4].getPlayerNum() == 0)
             {
                 pBox40P0.Visible = true;
                 pBox40P1.Visible = false;
                 pBox40P2.Visible = false;
             }
-            else if (squares[4, 0].getPlayerNum() == 1)
+            else if (squares[0, 4].getPlayerNum() == 1)
             {
                 pBox40P0.Visible = false;
                 pBox40P1.Visible = true;
                 pBox40P2.Visible = false;
             }
-            else if (squares[4, 0].getPlayerNum() == 2)
+            else if (squares[0, 4].getPlayerNum() == 2)
             {
                 pBox40P0.Visible = false;
                 pBox40P1.Visible = false;
                 pBox40P2.Visible = true;
             }
-            if (squares[5, 0].getPlayerNum() == 0)
+            if (squares[0, 5].getPlayerNum() == 0)
             {
                 pBox50P0.Visible = true;
                 pBox50P1.Visible = false;
                 pBox50P2.Visible = false;
             }
-            else if (squares[5, 0].getPlayerNum() == 1)
+            else if (squares[0, 5].getPlayerNum() == 1)
             {
                 pBox50P0.Visible = false;
                 pBox50P1.Visible = true;
                 pBox50P2.Visible = false;
             }
-            else if (squares[5, 0].getPlayerNum() == 2)
+            else if (squares[0, 5].getPlayerNum() == 2)
             {
                 pBox50P0.Visible = false;
                 pBox50P1.Visible = false;
