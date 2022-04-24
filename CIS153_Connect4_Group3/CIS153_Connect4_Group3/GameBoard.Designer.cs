@@ -30,26 +30,8 @@ namespace Connect4
         private void InitializeComponent()
         {
             this.listView1 = new System.Windows.Forms.ListView();
-            this.pBox50P2 = new System.Windows.Forms.PictureBox();
-            this.pBox50P1 = new System.Windows.Forms.PictureBox();
-            this.pBox40P2 = new System.Windows.Forms.PictureBox();
-            this.pBox30P2 = new System.Windows.Forms.PictureBox();
-            this.pBox30P1 = new System.Windows.Forms.PictureBox();
-            this.pBox50P0 = new System.Windows.Forms.PictureBox();
-            this.pBox40P1 = new System.Windows.Forms.PictureBox();
-            this.pBox40P0 = new System.Windows.Forms.PictureBox();
-            this.pBox30P0 = new System.Windows.Forms.PictureBox();
-            this.pBox20P2 = new System.Windows.Forms.PictureBox();
-            this.pBox20P1 = new System.Windows.Forms.PictureBox();
-            this.pBox20P0 = new System.Windows.Forms.PictureBox();
-            this.pBox10P1 = new System.Windows.Forms.PictureBox();
-            this.pBox10P0 = new System.Windows.Forms.PictureBox();
-            this.pBox00P0 = new System.Windows.Forms.PictureBox();
-            this.pBox00P2 = new System.Windows.Forms.PictureBox();
-            this.pBox10P2 = new System.Windows.Forms.PictureBox();
-            this.pBox00P1 = new System.Windows.Forms.PictureBox();
-            this.col0 = new System.Windows.Forms.Panel();
             this.col1 = new System.Windows.Forms.Panel();
+            this.col1Panel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -164,31 +146,29 @@ namespace Connect4
             this.pictureBox70 = new System.Windows.Forms.PictureBox();
             this.pictureBox71 = new System.Windows.Forms.PictureBox();
             this.pictureBox72 = new System.Windows.Forms.PictureBox();
-            this.col0Panel = new System.Windows.Forms.Panel();
-            this.col1Panel = new System.Windows.Forms.Panel();
             this.col2Panel = new System.Windows.Forms.Panel();
             this.col3Panel = new System.Windows.Forms.Panel();
             this.col4Panel = new System.Windows.Forms.Panel();
             this.col5Panel = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox50P2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox50P1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox40P2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox30P2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox30P1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox50P0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox40P1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox40P0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox30P0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox20P2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox20P1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox20P0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox10P1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox10P0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox00P0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox00P2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox10P2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox00P1)).BeginInit();
-            this.col0.SuspendLayout();
+            this.pBox50P2 = new System.Windows.Forms.PictureBox();
+            this.pBox50P1 = new System.Windows.Forms.PictureBox();
+            this.pBox40P2 = new System.Windows.Forms.PictureBox();
+            this.pBox30P2 = new System.Windows.Forms.PictureBox();
+            this.pBox30P1 = new System.Windows.Forms.PictureBox();
+            this.pBox50P0 = new System.Windows.Forms.PictureBox();
+            this.pBox40P1 = new System.Windows.Forms.PictureBox();
+            this.pBox40P0 = new System.Windows.Forms.PictureBox();
+            this.pBox30P0 = new System.Windows.Forms.PictureBox();
+            this.pBox20P2 = new System.Windows.Forms.PictureBox();
+            this.pBox20P1 = new System.Windows.Forms.PictureBox();
+            this.pBox20P0 = new System.Windows.Forms.PictureBox();
+            this.pBox10P1 = new System.Windows.Forms.PictureBox();
+            this.pBox10P0 = new System.Windows.Forms.PictureBox();
+            this.pBox00P0 = new System.Windows.Forms.PictureBox();
+            this.pBox00P2 = new System.Windows.Forms.PictureBox();
+            this.pBox10P2 = new System.Windows.Forms.PictureBox();
+            this.pBox00P1 = new System.Windows.Forms.PictureBox();
+            this.col0 = new System.Windows.Forms.Panel();
             this.col1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -303,246 +283,37 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox50P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox50P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox40P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox30P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox30P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox50P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox40P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox40P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox30P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox20P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox20P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox20P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox10P1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox10P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox10P2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P1)).BeginInit();
+            this.col0.SuspendLayout();
             this.SuspendLayout();
             // 
             // listView1
             // 
             this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(47, 48);
+            this.listView1.Location = new System.Drawing.Point(58, 71);
             this.listView1.Margin = new System.Windows.Forms.Padding(6);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(582, 464);
+            this.listView1.Size = new System.Drawing.Size(582, 495);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // pBox50P2
-            // 
-            this.pBox50P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
-            this.pBox50P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox50P2.Location = new System.Drawing.Point(4, 8);
-            this.pBox50P2.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox50P2.Name = "pBox50P2";
-            this.pBox50P2.Size = new System.Drawing.Size(66, 62);
-            this.pBox50P2.TabIndex = 20;
-            this.pBox50P2.TabStop = false;
-            // 
-            // pBox50P1
-            // 
-            this.pBox50P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
-            this.pBox50P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox50P1.Location = new System.Drawing.Point(4, 8);
-            this.pBox50P1.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox50P1.Name = "pBox50P1";
-            this.pBox50P1.Size = new System.Drawing.Size(66, 62);
-            this.pBox50P1.TabIndex = 22;
-            this.pBox50P1.TabStop = false;
-            // 
-            // pBox40P2
-            // 
-            this.pBox40P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
-            this.pBox40P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox40P2.Location = new System.Drawing.Point(4, 79);
-            this.pBox40P2.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox40P2.Name = "pBox40P2";
-            this.pBox40P2.Size = new System.Drawing.Size(66, 62);
-            this.pBox40P2.TabIndex = 17;
-            this.pBox40P2.TabStop = false;
-            // 
-            // pBox30P2
-            // 
-            this.pBox30P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
-            this.pBox30P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox30P2.Location = new System.Drawing.Point(4, 148);
-            this.pBox30P2.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox30P2.Name = "pBox30P2";
-            this.pBox30P2.Size = new System.Drawing.Size(66, 62);
-            this.pBox30P2.TabIndex = 14;
-            this.pBox30P2.TabStop = false;
-            // 
-            // pBox30P1
-            // 
-            this.pBox30P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
-            this.pBox30P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox30P1.Location = new System.Drawing.Point(4, 150);
-            this.pBox30P1.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox30P1.Name = "pBox30P1";
-            this.pBox30P1.Size = new System.Drawing.Size(66, 62);
-            this.pBox30P1.TabIndex = 16;
-            this.pBox30P1.TabStop = false;
-            // 
-            // pBox50P0
-            // 
-            this.pBox50P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
-            this.pBox50P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox50P0.Location = new System.Drawing.Point(4, 6);
-            this.pBox50P0.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox50P0.Name = "pBox50P0";
-            this.pBox50P0.Size = new System.Drawing.Size(66, 62);
-            this.pBox50P0.TabIndex = 21;
-            this.pBox50P0.TabStop = false;
-            // 
-            // pBox40P1
-            // 
-            this.pBox40P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
-            this.pBox40P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox40P1.Location = new System.Drawing.Point(4, 81);
-            this.pBox40P1.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox40P1.Name = "pBox40P1";
-            this.pBox40P1.Size = new System.Drawing.Size(66, 62);
-            this.pBox40P1.TabIndex = 19;
-            this.pBox40P1.TabStop = false;
-            // 
-            // pBox40P0
-            // 
-            this.pBox40P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
-            this.pBox40P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox40P0.Location = new System.Drawing.Point(4, 79);
-            this.pBox40P0.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox40P0.Name = "pBox40P0";
-            this.pBox40P0.Size = new System.Drawing.Size(66, 62);
-            this.pBox40P0.TabIndex = 18;
-            this.pBox40P0.TabStop = false;
-            // 
-            // pBox30P0
-            // 
-            this.pBox30P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
-            this.pBox30P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox30P0.Location = new System.Drawing.Point(4, 148);
-            this.pBox30P0.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox30P0.Name = "pBox30P0";
-            this.pBox30P0.Size = new System.Drawing.Size(66, 62);
-            this.pBox30P0.TabIndex = 15;
-            this.pBox30P0.TabStop = false;
-            // 
-            // pBox20P2
-            // 
-            this.pBox20P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
-            this.pBox20P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox20P2.Location = new System.Drawing.Point(4, 219);
-            this.pBox20P2.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox20P2.Name = "pBox20P2";
-            this.pBox20P2.Size = new System.Drawing.Size(66, 62);
-            this.pBox20P2.TabIndex = 11;
-            this.pBox20P2.TabStop = false;
-            // 
-            // pBox20P1
-            // 
-            this.pBox20P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
-            this.pBox20P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox20P1.Location = new System.Drawing.Point(4, 221);
-            this.pBox20P1.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox20P1.Name = "pBox20P1";
-            this.pBox20P1.Size = new System.Drawing.Size(66, 62);
-            this.pBox20P1.TabIndex = 13;
-            this.pBox20P1.TabStop = false;
-            // 
-            // pBox20P0
-            // 
-            this.pBox20P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
-            this.pBox20P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox20P0.Location = new System.Drawing.Point(4, 219);
-            this.pBox20P0.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox20P0.Name = "pBox20P0";
-            this.pBox20P0.Size = new System.Drawing.Size(66, 62);
-            this.pBox20P0.TabIndex = 12;
-            this.pBox20P0.TabStop = false;
-            // 
-            // pBox10P1
-            // 
-            this.pBox10P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
-            this.pBox10P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox10P1.Location = new System.Drawing.Point(4, 292);
-            this.pBox10P1.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox10P1.Name = "pBox10P1";
-            this.pBox10P1.Size = new System.Drawing.Size(66, 62);
-            this.pBox10P1.TabIndex = 10;
-            this.pBox10P1.TabStop = false;
-            // 
-            // pBox10P0
-            // 
-            this.pBox10P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
-            this.pBox10P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox10P0.Location = new System.Drawing.Point(4, 290);
-            this.pBox10P0.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox10P0.Name = "pBox10P0";
-            this.pBox10P0.Size = new System.Drawing.Size(66, 62);
-            this.pBox10P0.TabIndex = 9;
-            this.pBox10P0.TabStop = false;
-            // 
-            // pBox00P0
-            // 
-            this.pBox00P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
-            this.pBox00P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox00P0.Location = new System.Drawing.Point(4, 360);
-            this.pBox00P0.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox00P0.Name = "pBox00P0";
-            this.pBox00P0.Size = new System.Drawing.Size(66, 62);
-            this.pBox00P0.TabIndex = 6;
-            this.pBox00P0.TabStop = false;
-            // 
-            // pBox00P2
-            // 
-            this.pBox00P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
-            this.pBox00P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox00P2.Location = new System.Drawing.Point(4, 360);
-            this.pBox00P2.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox00P2.Name = "pBox00P2";
-            this.pBox00P2.Size = new System.Drawing.Size(66, 62);
-            this.pBox00P2.TabIndex = 1;
-            this.pBox00P2.TabStop = false;
-            // 
-            // pBox10P2
-            // 
-            this.pBox10P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
-            this.pBox10P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox10P2.Location = new System.Drawing.Point(4, 290);
-            this.pBox10P2.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox10P2.Name = "pBox10P2";
-            this.pBox10P2.Size = new System.Drawing.Size(66, 62);
-            this.pBox10P2.TabIndex = 8;
-            this.pBox10P2.TabStop = false;
-            // 
-            // pBox00P1
-            // 
-            this.pBox00P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
-            this.pBox00P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox00P1.Location = new System.Drawing.Point(4, 362);
-            this.pBox00P1.Margin = new System.Windows.Forms.Padding(4);
-            this.pBox00P1.Name = "pBox00P1";
-            this.pBox00P1.Size = new System.Drawing.Size(66, 62);
-            this.pBox00P1.TabIndex = 7;
-            this.pBox00P1.TabStop = false;
-            // 
-            // col0
-            // 
-            this.col0.BackColor = System.Drawing.Color.LemonChiffon;
-            this.col0.Controls.Add(this.pBox00P1);
-            this.col0.Controls.Add(this.pBox10P2);
-            this.col0.Controls.Add(this.pBox00P2);
-            this.col0.Controls.Add(this.pBox00P0);
-            this.col0.Controls.Add(this.pBox10P0);
-            this.col0.Controls.Add(this.pBox10P1);
-            this.col0.Controls.Add(this.pBox20P0);
-            this.col0.Controls.Add(this.pBox20P1);
-            this.col0.Controls.Add(this.pBox20P2);
-            this.col0.Controls.Add(this.pBox30P0);
-            this.col0.Controls.Add(this.pBox40P0);
-            this.col0.Controls.Add(this.pBox40P1);
-            this.col0.Controls.Add(this.pBox50P0);
-            this.col0.Controls.Add(this.pBox30P1);
-            this.col0.Controls.Add(this.pBox30P2);
-            this.col0.Controls.Add(this.pBox40P2);
-            this.col0.Controls.Add(this.pBox50P1);
-            this.col0.Controls.Add(this.pBox50P2);
-            this.col0.Location = new System.Drawing.Point(64, 60);
-            this.col0.Margin = new System.Windows.Forms.Padding(4);
-            this.col0.Name = "col0";
-            this.col0.Size = new System.Drawing.Size(72, 452);
-            this.col0.TabIndex = 168;
-            this.col0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
-            this.col0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
-            this.col0.MouseHover += new System.EventHandler(this.col0_MouseHover);
             // 
             // col1
             // 
@@ -566,7 +337,7 @@ namespace Connect4
             this.col1.Controls.Add(this.pictureBox16);
             this.col1.Controls.Add(this.pictureBox17);
             this.col1.Controls.Add(this.pictureBox18);
-            this.col1.Location = new System.Drawing.Point(144, 60);
+            this.col1.Location = new System.Drawing.Point(144, 99);
             this.col1.Margin = new System.Windows.Forms.Padding(4);
             this.col1.Name = "col1";
             this.col1.Size = new System.Drawing.Size(72, 452);
@@ -574,6 +345,19 @@ namespace Connect4
             this.col1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col1_MouseClick);
             this.col1.MouseLeave += new System.EventHandler(this.col1_MouseLeave);
             this.col1.MouseHover += new System.EventHandler(this.col1_MouseHover);
+            // 
+            // col1Panel
+            // 
+            this.col1Panel.BackColor = System.Drawing.Color.LemonChiffon;
+            this.col1Panel.Location = new System.Drawing.Point(4, 0);
+            this.col1Panel.Margin = new System.Windows.Forms.Padding(4);
+            this.col1Panel.Name = "col1Panel";
+            this.col1Panel.Size = new System.Drawing.Size(72, 452);
+            this.col1Panel.TabIndex = 173;
+            this.col1Panel.Visible = false;
+            this.col1Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col1_MouseClick);
+            this.col1Panel.MouseLeave += new System.EventHandler(this.col1_MouseLeave);
+            this.col1Panel.MouseHover += new System.EventHandler(this.col1_MouseHover);
             // 
             // pictureBox1
             // 
@@ -794,7 +578,7 @@ namespace Connect4
             this.col2.Controls.Add(this.pictureBox34);
             this.col2.Controls.Add(this.pictureBox35);
             this.col2.Controls.Add(this.pictureBox36);
-            this.col2.Location = new System.Drawing.Point(224, 60);
+            this.col2.Location = new System.Drawing.Point(224, 99);
             this.col2.Margin = new System.Windows.Forms.Padding(4);
             this.col2.Name = "col2";
             this.col2.Size = new System.Drawing.Size(72, 452);
@@ -1019,7 +803,7 @@ namespace Connect4
             this.col3.Controls.Add(this.pictureBox52);
             this.col3.Controls.Add(this.pictureBox53);
             this.col3.Controls.Add(this.pictureBox54);
-            this.col3.Location = new System.Drawing.Point(302, 60);
+            this.col3.Location = new System.Drawing.Point(302, 99);
             this.col3.Margin = new System.Windows.Forms.Padding(4);
             this.col3.Name = "col3";
             this.col3.Size = new System.Drawing.Size(72, 452);
@@ -1244,7 +1028,7 @@ namespace Connect4
             this.col5.Controls.Add(this.pictureBox88);
             this.col5.Controls.Add(this.pictureBox89);
             this.col5.Controls.Add(this.pictureBox90);
-            this.col5.Location = new System.Drawing.Point(458, 60);
+            this.col5.Location = new System.Drawing.Point(458, 99);
             this.col5.Margin = new System.Windows.Forms.Padding(4);
             this.col5.Name = "col5";
             this.col5.Size = new System.Drawing.Size(72, 452);
@@ -1469,7 +1253,7 @@ namespace Connect4
             this.col4.Controls.Add(this.pictureBox106);
             this.col4.Controls.Add(this.pictureBox107);
             this.col4.Controls.Add(this.pictureBox108);
-            this.col4.Location = new System.Drawing.Point(380, 60);
+            this.col4.Location = new System.Drawing.Point(380, 99);
             this.col4.Margin = new System.Windows.Forms.Padding(4);
             this.col4.Name = "col4";
             this.col4.Size = new System.Drawing.Size(72, 452);
@@ -1676,7 +1460,7 @@ namespace Connect4
             // col6Panel
             // 
             this.col6Panel.BackColor = System.Drawing.Color.LemonChiffon;
-            this.col6Panel.Location = new System.Drawing.Point(542, 56);
+            this.col6Panel.Location = new System.Drawing.Point(542, 95);
             this.col6Panel.Margin = new System.Windows.Forms.Padding(4);
             this.col6Panel.Name = "col6Panel";
             this.col6Panel.Size = new System.Drawing.Size(72, 452);
@@ -1705,7 +1489,7 @@ namespace Connect4
             this.col6.Controls.Add(this.pictureBox70);
             this.col6.Controls.Add(this.pictureBox71);
             this.col6.Controls.Add(this.pictureBox72);
-            this.col6.Location = new System.Drawing.Point(538, 60);
+            this.col6.Location = new System.Drawing.Point(538, 99);
             this.col6.Margin = new System.Windows.Forms.Padding(4);
             this.col6.Name = "col6";
             this.col6.Size = new System.Drawing.Size(72, 452);
@@ -1909,36 +1693,10 @@ namespace Connect4
             this.pictureBox72.TabIndex = 20;
             this.pictureBox72.TabStop = false;
             // 
-            // col0Panel
-            // 
-            this.col0Panel.BackColor = System.Drawing.Color.LemonChiffon;
-            this.col0Panel.Location = new System.Drawing.Point(64, 56);
-            this.col0Panel.Margin = new System.Windows.Forms.Padding(4);
-            this.col0Panel.Name = "col0Panel";
-            this.col0Panel.Size = new System.Drawing.Size(72, 452);
-            this.col0Panel.TabIndex = 172;
-            this.col0Panel.Visible = false;
-            this.col0Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
-            this.col0Panel.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
-            this.col0Panel.MouseHover += new System.EventHandler(this.col0_MouseHover);
-            // 
-            // col1Panel
-            // 
-            this.col1Panel.BackColor = System.Drawing.Color.LemonChiffon;
-            this.col1Panel.Location = new System.Drawing.Point(4, 0);
-            this.col1Panel.Margin = new System.Windows.Forms.Padding(4);
-            this.col1Panel.Name = "col1Panel";
-            this.col1Panel.Size = new System.Drawing.Size(72, 452);
-            this.col1Panel.TabIndex = 173;
-            this.col1Panel.Visible = false;
-            this.col1Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col1_MouseClick);
-            this.col1Panel.MouseLeave += new System.EventHandler(this.col1_MouseLeave);
-            this.col1Panel.MouseHover += new System.EventHandler(this.col1_MouseHover);
-            // 
             // col2Panel
             // 
             this.col2Panel.BackColor = System.Drawing.Color.LemonChiffon;
-            this.col2Panel.Location = new System.Drawing.Point(222, 60);
+            this.col2Panel.Location = new System.Drawing.Point(222, 99);
             this.col2Panel.Margin = new System.Windows.Forms.Padding(4);
             this.col2Panel.Name = "col2Panel";
             this.col2Panel.Size = new System.Drawing.Size(72, 452);
@@ -1951,7 +1709,7 @@ namespace Connect4
             // col3Panel
             // 
             this.col3Panel.BackColor = System.Drawing.Color.LemonChiffon;
-            this.col3Panel.Location = new System.Drawing.Point(300, 56);
+            this.col3Panel.Location = new System.Drawing.Point(300, 95);
             this.col3Panel.Margin = new System.Windows.Forms.Padding(4);
             this.col3Panel.Name = "col3Panel";
             this.col3Panel.Size = new System.Drawing.Size(72, 452);
@@ -1964,7 +1722,7 @@ namespace Connect4
             // col4Panel
             // 
             this.col4Panel.BackColor = System.Drawing.Color.LemonChiffon;
-            this.col4Panel.Location = new System.Drawing.Point(384, 56);
+            this.col4Panel.Location = new System.Drawing.Point(384, 95);
             this.col4Panel.Margin = new System.Windows.Forms.Padding(4);
             this.col4Panel.Name = "col4Panel";
             this.col4Panel.Size = new System.Drawing.Size(72, 452);
@@ -1977,7 +1735,7 @@ namespace Connect4
             // col5Panel
             // 
             this.col5Panel.BackColor = System.Drawing.Color.LemonChiffon;
-            this.col5Panel.Location = new System.Drawing.Point(458, 56);
+            this.col5Panel.Location = new System.Drawing.Point(458, 95);
             this.col5Panel.Margin = new System.Windows.Forms.Padding(4);
             this.col5Panel.Name = "col5Panel";
             this.col5Panel.Size = new System.Drawing.Size(72, 452);
@@ -1987,12 +1745,297 @@ namespace Connect4
             this.col5Panel.MouseLeave += new System.EventHandler(this.col5_MouseLeave);
             this.col5Panel.MouseHover += new System.EventHandler(this.col5_MouseHover);
             // 
+            // pBox50P2
+            // 
+            this.pBox50P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox50P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox50P2.Location = new System.Drawing.Point(4, 8);
+            this.pBox50P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox50P2.Name = "pBox50P2";
+            this.pBox50P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox50P2.TabIndex = 20;
+            this.pBox50P2.TabStop = false;
+            this.pBox50P2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox50P2.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox50P2.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox50P1
+            // 
+            this.pBox50P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox50P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox50P1.Location = new System.Drawing.Point(4, 8);
+            this.pBox50P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox50P1.Name = "pBox50P1";
+            this.pBox50P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox50P1.TabIndex = 22;
+            this.pBox50P1.TabStop = false;
+            this.pBox50P1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox50P1.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox50P1.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox40P2
+            // 
+            this.pBox40P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox40P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox40P2.Location = new System.Drawing.Point(4, 79);
+            this.pBox40P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox40P2.Name = "pBox40P2";
+            this.pBox40P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox40P2.TabIndex = 17;
+            this.pBox40P2.TabStop = false;
+            this.pBox40P2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox40P2.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox40P2.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox30P2
+            // 
+            this.pBox30P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox30P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox30P2.Location = new System.Drawing.Point(4, 148);
+            this.pBox30P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox30P2.Name = "pBox30P2";
+            this.pBox30P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox30P2.TabIndex = 14;
+            this.pBox30P2.TabStop = false;
+            this.pBox30P2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox30P2.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox30P2.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox30P1
+            // 
+            this.pBox30P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox30P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox30P1.Location = new System.Drawing.Point(4, 150);
+            this.pBox30P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox30P1.Name = "pBox30P1";
+            this.pBox30P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox30P1.TabIndex = 16;
+            this.pBox30P1.TabStop = false;
+            this.pBox30P1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox30P1.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox30P1.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox50P0
+            // 
+            this.pBox50P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox50P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox50P0.Location = new System.Drawing.Point(4, 6);
+            this.pBox50P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox50P0.Name = "pBox50P0";
+            this.pBox50P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox50P0.TabIndex = 21;
+            this.pBox50P0.TabStop = false;
+            this.pBox50P0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox50P0.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox50P0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox40P1
+            // 
+            this.pBox40P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox40P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox40P1.Location = new System.Drawing.Point(4, 81);
+            this.pBox40P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox40P1.Name = "pBox40P1";
+            this.pBox40P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox40P1.TabIndex = 19;
+            this.pBox40P1.TabStop = false;
+            this.pBox40P1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox40P1.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox40P1.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox40P0
+            // 
+            this.pBox40P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox40P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox40P0.Location = new System.Drawing.Point(4, 79);
+            this.pBox40P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox40P0.Name = "pBox40P0";
+            this.pBox40P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox40P0.TabIndex = 18;
+            this.pBox40P0.TabStop = false;
+            this.pBox40P0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox40P0.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox40P0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox30P0
+            // 
+            this.pBox30P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox30P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox30P0.Location = new System.Drawing.Point(4, 148);
+            this.pBox30P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox30P0.Name = "pBox30P0";
+            this.pBox30P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox30P0.TabIndex = 15;
+            this.pBox30P0.TabStop = false;
+            this.pBox30P0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox30P0.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox30P0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox20P2
+            // 
+            this.pBox20P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox20P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox20P2.Location = new System.Drawing.Point(4, 219);
+            this.pBox20P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox20P2.Name = "pBox20P2";
+            this.pBox20P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox20P2.TabIndex = 11;
+            this.pBox20P2.TabStop = false;
+            this.pBox20P2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox20P2.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox20P2.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox20P1
+            // 
+            this.pBox20P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox20P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox20P1.Location = new System.Drawing.Point(4, 221);
+            this.pBox20P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox20P1.Name = "pBox20P1";
+            this.pBox20P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox20P1.TabIndex = 13;
+            this.pBox20P1.TabStop = false;
+            this.pBox20P1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox20P1.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox20P1.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox20P0
+            // 
+            this.pBox20P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox20P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox20P0.Location = new System.Drawing.Point(4, 219);
+            this.pBox20P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox20P0.Name = "pBox20P0";
+            this.pBox20P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox20P0.TabIndex = 12;
+            this.pBox20P0.TabStop = false;
+            this.pBox20P0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox20P0.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox20P0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox10P1
+            // 
+            this.pBox10P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox10P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox10P1.Location = new System.Drawing.Point(4, 292);
+            this.pBox10P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox10P1.Name = "pBox10P1";
+            this.pBox10P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox10P1.TabIndex = 10;
+            this.pBox10P1.TabStop = false;
+            this.pBox10P1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox10P1.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox10P1.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox10P0
+            // 
+            this.pBox10P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox10P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox10P0.Location = new System.Drawing.Point(4, 290);
+            this.pBox10P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox10P0.Name = "pBox10P0";
+            this.pBox10P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox10P0.TabIndex = 9;
+            this.pBox10P0.TabStop = false;
+            this.pBox10P0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox10P0.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox10P0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox00P0
+            // 
+            this.pBox00P0.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.White;
+            this.pBox00P0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox00P0.Location = new System.Drawing.Point(4, 360);
+            this.pBox00P0.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox00P0.Name = "pBox00P0";
+            this.pBox00P0.Size = new System.Drawing.Size(66, 62);
+            this.pBox00P0.TabIndex = 6;
+            this.pBox00P0.TabStop = false;
+            this.pBox00P0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox00P0.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox00P0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            this.pBox00P0.MouseUp += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            // 
+            // pBox00P2
+            // 
+            this.pBox00P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox00P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox00P2.Location = new System.Drawing.Point(4, 360);
+            this.pBox00P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox00P2.Name = "pBox00P2";
+            this.pBox00P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox00P2.TabIndex = 1;
+            this.pBox00P2.TabStop = false;
+            this.pBox00P2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox00P2.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox00P2.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            this.pBox00P2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            // 
+            // pBox10P2
+            // 
+            this.pBox10P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBox10P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox10P2.Location = new System.Drawing.Point(4, 290);
+            this.pBox10P2.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox10P2.Name = "pBox10P2";
+            this.pBox10P2.Size = new System.Drawing.Size(66, 62);
+            this.pBox10P2.TabIndex = 8;
+            this.pBox10P2.TabStop = false;
+            this.pBox10P2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox10P2.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox10P2.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // pBox00P1
+            // 
+            this.pBox00P1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBox00P1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBox00P1.Location = new System.Drawing.Point(4, 362);
+            this.pBox00P1.Margin = new System.Windows.Forms.Padding(4);
+            this.pBox00P1.Name = "pBox00P1";
+            this.pBox00P1.Size = new System.Drawing.Size(66, 62);
+            this.pBox00P1.TabIndex = 7;
+            this.pBox00P1.TabStop = false;
+            this.pBox00P1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox00P1.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.pBox00P1.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            this.pBox00P1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            // 
+            // col0
+            // 
+            this.col0.BackColor = System.Drawing.Color.LemonChiffon;
+            this.col0.Controls.Add(this.pBox00P1);
+            this.col0.Controls.Add(this.pBox10P2);
+            this.col0.Controls.Add(this.pBox00P2);
+            this.col0.Controls.Add(this.pBox00P0);
+            this.col0.Controls.Add(this.pBox10P0);
+            this.col0.Controls.Add(this.pBox10P1);
+            this.col0.Controls.Add(this.pBox20P0);
+            this.col0.Controls.Add(this.pBox20P1);
+            this.col0.Controls.Add(this.pBox20P2);
+            this.col0.Controls.Add(this.pBox30P0);
+            this.col0.Controls.Add(this.pBox40P0);
+            this.col0.Controls.Add(this.pBox40P1);
+            this.col0.Controls.Add(this.pBox50P0);
+            this.col0.Controls.Add(this.pBox30P1);
+            this.col0.Controls.Add(this.pBox30P2);
+            this.col0.Controls.Add(this.pBox40P2);
+            this.col0.Controls.Add(this.pBox50P1);
+            this.col0.Controls.Add(this.pBox50P2);
+            this.col0.Location = new System.Drawing.Point(67, 95);
+            this.col0.Margin = new System.Windows.Forms.Padding(4);
+            this.col0.Name = "col0";
+            this.col0.Size = new System.Drawing.Size(72, 452);
+            this.col0.TabIndex = 168;
+            this.col0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.col0.MouseEnter += new System.EventHandler(this.col0_MouseHover);
+            this.col0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            // 
             // GameBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2054, 802);
-            this.Controls.Add(this.col0Panel);
+            this.Controls.Add(this.col0);
             this.Controls.Add(this.col5Panel);
             this.Controls.Add(this.col4Panel);
             this.Controls.Add(this.col3Panel);
@@ -2002,7 +2045,6 @@ namespace Connect4
             this.Controls.Add(this.col3);
             this.Controls.Add(this.col2);
             this.Controls.Add(this.col1);
-            this.Controls.Add(this.col0);
             this.Controls.Add(this.col6Panel);
             this.Controls.Add(this.col6);
             this.Controls.Add(this.listView1);
@@ -2010,25 +2052,6 @@ namespace Connect4
             this.Name = "GameBoard";
             this.Text = "GameBoard";
             this.Load += new System.EventHandler(this.GameBoard_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pBox50P2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox50P1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox40P2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox30P2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox30P1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox50P0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox40P1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox40P0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox30P0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox20P2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox20P1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox20P0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox10P1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox10P0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox00P0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox00P2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox10P2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBox00P1)).EndInit();
-            this.col0.ResumeLayout(false);
             this.col1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -2143,31 +2166,31 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox70)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox71)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox72)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox50P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox50P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox40P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox30P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox30P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox50P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox40P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox40P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox30P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox20P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox20P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox20P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox10P1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox10P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox10P2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBox00P1)).EndInit();
+            this.col0.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.PictureBox pBox50P2;
-        private System.Windows.Forms.PictureBox pBox50P1;
-        private System.Windows.Forms.PictureBox pBox40P2;
-        private System.Windows.Forms.PictureBox pBox30P2;
-        private System.Windows.Forms.PictureBox pBox30P1;
-        private System.Windows.Forms.PictureBox pBox50P0;
-        private System.Windows.Forms.PictureBox pBox40P1;
-        private System.Windows.Forms.PictureBox pBox40P0;
-        private System.Windows.Forms.PictureBox pBox30P0;
-        private System.Windows.Forms.PictureBox pBox20P2;
-        private System.Windows.Forms.PictureBox pBox20P1;
-        private System.Windows.Forms.PictureBox pBox20P0;
-        private System.Windows.Forms.PictureBox pBox10P1;
-        private System.Windows.Forms.PictureBox pBox10P0;
-        private System.Windows.Forms.PictureBox pBox00P0;
-        private System.Windows.Forms.PictureBox pBox00P2;
-        private System.Windows.Forms.PictureBox pBox10P2;
-        private System.Windows.Forms.PictureBox pBox00P1;
-        private System.Windows.Forms.Panel col0;
         private System.Windows.Forms.Panel col1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -2284,10 +2307,28 @@ namespace Connect4
         private System.Windows.Forms.PictureBox pictureBox71;
         private System.Windows.Forms.PictureBox pictureBox72;
         private System.Windows.Forms.Panel col1Panel;
-        private System.Windows.Forms.Panel col0Panel;
         private System.Windows.Forms.Panel col2Panel;
         private System.Windows.Forms.Panel col3Panel;
         private System.Windows.Forms.Panel col4Panel;
         private System.Windows.Forms.Panel col5Panel;
+        private System.Windows.Forms.PictureBox pBox50P2;
+        private System.Windows.Forms.PictureBox pBox50P1;
+        private System.Windows.Forms.PictureBox pBox40P2;
+        private System.Windows.Forms.PictureBox pBox30P2;
+        private System.Windows.Forms.PictureBox pBox30P1;
+        private System.Windows.Forms.PictureBox pBox50P0;
+        private System.Windows.Forms.PictureBox pBox40P1;
+        private System.Windows.Forms.PictureBox pBox40P0;
+        private System.Windows.Forms.PictureBox pBox30P0;
+        private System.Windows.Forms.PictureBox pBox20P2;
+        private System.Windows.Forms.PictureBox pBox20P1;
+        private System.Windows.Forms.PictureBox pBox20P0;
+        private System.Windows.Forms.PictureBox pBox10P1;
+        private System.Windows.Forms.PictureBox pBox10P0;
+        private System.Windows.Forms.PictureBox pBox00P0;
+        private System.Windows.Forms.PictureBox pBox00P2;
+        private System.Windows.Forms.PictureBox pBox10P2;
+        private System.Windows.Forms.PictureBox pBox00P1;
+        private System.Windows.Forms.Panel col0;
     }
 }

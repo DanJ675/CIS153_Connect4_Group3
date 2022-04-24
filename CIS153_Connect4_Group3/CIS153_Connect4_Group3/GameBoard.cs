@@ -201,12 +201,28 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 0);
             updateScreen(g.getSquare());
+            if(g.getActivePlayerNum() == 1)
+            {
+                g.setActivePlayerNum(2);
+            }
+            else
+            {
+                g.setActivePlayerNum(1);
+            }
         }
 
         private void col1_MouseClick(object sender, MouseEventArgs e)
         {
             g.onClick(g.getActivePlayerNum(), 1);
             updateScreen(g.getSquare());
+            if (g.getActivePlayerNum() == 1)
+            {
+                g.setActivePlayerNum(2);
+            }
+            else
+            {
+                g.setActivePlayerNum(1);
+            }
         }
 
         private void col1_MouseHover(object sender, EventArgs e)
@@ -239,6 +255,14 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 3);
             updateScreen(g.getSquare());
+            if (g.getActivePlayerNum() == 1)
+            {
+                g.setActivePlayerNum(2);
+            }
+            else
+            {
+                g.setActivePlayerNum(1);
+            }
         }
 
         private void col3_MouseHover(object sender, EventArgs e)
@@ -255,6 +279,14 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 4);
             updateScreen(g.getSquare());
+            if (g.getActivePlayerNum() == 1)
+            {
+                g.setActivePlayerNum(2);
+            }
+            else
+            {
+                g.setActivePlayerNum(1);
+            }
         }
 
         private void col4_MouseHover(object sender, EventArgs e)
@@ -271,6 +303,14 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 5);
             updateScreen(g.getSquare());
+            if (g.getActivePlayerNum() == 1)
+            {
+                g.setActivePlayerNum(2);
+            }
+            else
+            {
+                g.setActivePlayerNum(1);
+            }
         }
 
         private void col5_MouseHover(object sender, EventArgs e)
@@ -287,6 +327,14 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 6);
             updateScreen(g.getSquare());
+            if (g.getActivePlayerNum() == 1)
+            {
+                g.setActivePlayerNum(2);
+            }
+            else
+            {
+                g.setActivePlayerNum(1);
+            }
         }
 
         private void col6_MouseHover(object sender, EventArgs e)
