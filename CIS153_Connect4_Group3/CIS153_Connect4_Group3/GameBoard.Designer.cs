@@ -1952,8 +1952,8 @@ namespace Connect4
             this.pBox00P0.TabIndex = 6;
             this.pBox00P0.TabStop = false;
             this.pBox00P0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
-            this.pBox00P0.MouseEnter += new System.EventHandler(this.col0_MouseHover);
             this.pBox00P0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            this.pBox00P0.MouseHover += new System.EventHandler(this.col0_MouseHover);
             this.pBox00P0.MouseUp += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
             // 
             // pBox00P2
@@ -1967,8 +1967,8 @@ namespace Connect4
             this.pBox00P2.TabIndex = 1;
             this.pBox00P2.TabStop = false;
             this.pBox00P2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
-            this.pBox00P2.MouseEnter += new System.EventHandler(this.col0_MouseHover);
             this.pBox00P2.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            this.pBox00P2.MouseHover += new System.EventHandler(this.col0_MouseHover);
             this.pBox00P2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
             // 
             // pBox10P2
@@ -1996,9 +1996,8 @@ namespace Connect4
             this.pBox00P1.TabIndex = 7;
             this.pBox00P1.TabStop = false;
             this.pBox00P1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
-            this.pBox00P1.MouseEnter += new System.EventHandler(this.col0_MouseHover);
             this.pBox00P1.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
-            this.pBox00P1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.pBox00P1.MouseHover += new System.EventHandler(this.col0_MouseHover);
             // 
             // col0
             // 
@@ -2024,7 +2023,7 @@ namespace Connect4
             this.col0.Location = new System.Drawing.Point(67, 95);
             this.col0.Margin = new System.Windows.Forms.Padding(4);
             this.col0.Name = "col0";
-            this.col0.Size = new System.Drawing.Size(72, 452);
+            this.col0.Size = new System.Drawing.Size(73, 452);
             this.col0.TabIndex = 168;
             this.col0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
             this.col0.MouseEnter += new System.EventHandler(this.col0_MouseHover);

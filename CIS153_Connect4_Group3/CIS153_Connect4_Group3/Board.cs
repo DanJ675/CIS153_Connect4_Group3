@@ -41,6 +41,7 @@ namespace CIS153_Connect4_Group3
         }
         public Square[,] mouseHover(int playerNum, int column)
         {
+            copyBoard();
             bool addedPiece = false;
             //fill from bottom up
             for (int c = 0; c < 7; c++)
@@ -76,6 +77,16 @@ namespace CIS153_Connect4_Group3
         }
 
         public void mouseLeave()
+        {
+            for (int column = 0; column < 7; column++)
+            {
+                for (int row = 0; row < 6; row++)
+                {
+                    showBoard[column, row] = board[column, row];
+                }
+            }
+        }
+        private void copyBoard()
         {
             for (int column = 0; column < 7; column++)
             {
@@ -122,6 +133,7 @@ namespace CIS153_Connect4_Group3
                 }
 
             }
+            copyBoard();
             return board;
         }
     }

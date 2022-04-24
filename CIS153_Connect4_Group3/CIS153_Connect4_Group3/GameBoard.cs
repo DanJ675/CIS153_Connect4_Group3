@@ -188,8 +188,8 @@ namespace Connect4
         
         private void col0_MouseHover(object sender, EventArgs e)
         {
-            sG.onClick(sG.getActivePlayerNum(), 0);
-            updateScreen(sG.getSquare());
+            g.onHover(g.getActivePlayerNum(), 0);
+            updateScreen(g.getShowSquare());
         }
 
         private void col0_MouseLeave(object sender, EventArgs e)
