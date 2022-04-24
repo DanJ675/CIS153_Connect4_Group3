@@ -64,5 +64,11 @@ namespace CIS153_Connect4_Group3
         public void addWinVsAi() { winsVsAi++; }
         public void addLossVsAi() { lossesVsAi++; }
         public void addTieVsAi() { tiesVsAi++; }
+        public int getWins() { return wins; }
+        public int getLosses() { return losses; }
+        public int getTies() { return ties; }
+        public int getWinsVsAi() { return winsVsAi; }
+        public int getLossesVsAi() { return lossesVsAi; }
+        public int getTiesVsAi() { return tiesVsAi; }
     }
 }

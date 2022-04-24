@@ -75,14 +75,43 @@ namespace CIS153_Connect4_Group3
             
         }
 
-        private void StatButt_Click(object sender, EventArgs e)
+        private void ExitButt_Click(object sender, EventArgs e)
         {
-            {
-                this.Hide();
-                Stats stats = new Stats();
-                stats.FormClosed += (s, args) => this.Close();
-                stats.Show();
-            }
+            Application.Exit();
+        }
+
+        private void btnPlayer1Stats_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Stats stats = new Stats();
+            // This list starts at the second player
+            int index = cmbPlayer1.SelectedIndex + 1;
+            stats.setPlayerName(playerList[index].getName());
+            stats.setWins(playerList[index].getWins());
+            stats.setLosses(playerList[index].getLosses());
+            stats.setTies(playerList[index].getTies());
+            stats.setWinsVsAi(playerList[index].getWinsVsAi());
+            stats.setLossesVsAi(playerList[index].getLossesVsAi());
+            stats.setTiesVsAi(playerList[index].getTiesVsAi());
+            stats.FormClosed += (s, args) => this.Close();
+            stats.Show();
+        }
+
+        private void btnPlayer2Stats_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Stats stats = new Stats();
+            int index = cmbPlayer1.SelectedIndex;
+            stats.setPlayerName(playerList[index].getName());
+            stats.setWins(playerList[index].getWins());
+            stats.setLosses(playerList[index].getLosses());
+            stats.setTies(playerList[index].getTies());
+            stats.setWinsVsAi(playerList[index].getWinsVsAi());
+            stats.setLossesVsAi(playerList[index].getLossesVsAi());
+            stats.setTiesVsAi(playerList[index].getTiesVsAi());
+            stats.FormClosed += (s, args) => this.Close();
+            stats.Show();
+
         }
     }
 }
