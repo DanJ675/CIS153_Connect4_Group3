@@ -5,4 +5,4 @@ This is a 2 player connect-4 game where you can choose either two players or pla
 
 Computer player is still manual.
 Hover above all columns to place successfully.
-Diagonal wins also don't work.
+All modes save to Player stats
