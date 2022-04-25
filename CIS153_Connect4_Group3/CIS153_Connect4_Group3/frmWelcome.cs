@@ -14,7 +14,7 @@ namespace CIS153_Connect4_Group3
     public partial class frmWelcome : Form
     {
         private List<Player> playerList = new List<Player>(new Player[] { });
-        //private TextFile textFile = new TextFile("../../Resources/PlayerList.txt", ',');
+        private TextFile textFile = new TextFile("../../Resources/PlayerList.txt", ',');
 
         public frmWelcome()
         {
@@ -24,7 +24,10 @@ namespace CIS153_Connect4_Group3
         private void frmWelcome_Load(object sender, EventArgs e)
         {
             //This code fills the playerList. This needs to be handled by reading the contents of a file in a routine
-
+            //---------------------------------------
+            //old code now, just read from text file
+            //---------------------------------------
+            /*
             Player computer = new Player("Computer");
             Player tim = new Player("Tim");
             Player bob = new Player("Bob");
@@ -34,9 +37,11 @@ namespace CIS153_Connect4_Group3
             playerList.Add(tim);
             playerList.Add(bob);
             playerList.Add(lisa);
+            */
 
+            //Read text file, also syntax for writing if anyone needs it
             //textFile.WriteList(playerList);
-            //playerList = textFile.ReadList();
+            playerList = textFile.ReadList();
 
             for(int i = 1; i < playerList.Count(); i++)
             {
@@ -76,6 +81,9 @@ namespace CIS153_Connect4_Group3
             cmbPlayer1.Items.Add(tbAdd.Text);
             cmbPlayer2.Items.Add(tbAdd.Text);
             tbAdd.Text = "";
+
+            //update text file
+            textFile.WriteList(playerList);
             
         }
 
