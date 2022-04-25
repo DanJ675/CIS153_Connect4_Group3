@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CIS153_Connect4_Group3;
+using Connect4;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,14 +30,15 @@ namespace CIS153_Connect4_Group3
         private void StatButt_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Stats stats = new Stats();
-            stats.FormClosed += (s, args) => this.Close();
-            stats.Show();
+            GameBoard board = new GameBoard();
+            board.setActiveBoard(false);
+            board.FormClosed += (s, args) => this.Close();
+            board.Show();
         }
 
         private void ExitButt_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

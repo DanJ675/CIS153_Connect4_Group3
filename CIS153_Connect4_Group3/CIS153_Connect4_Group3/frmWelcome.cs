@@ -67,6 +67,7 @@ namespace CIS153_Connect4_Group3
             //Game game = new Game(player1, player2);
             this.Hide();
             GameBoard board = new GameBoard();
+            board.setActiveBoard(true);
             board.player1Name = cmbPlayer1.SelectedItem.ToString();
             board.player2Name = cmbPlayer2.SelectedItem.ToString();
             //board.game = game;

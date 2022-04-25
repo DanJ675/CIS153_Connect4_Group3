@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CIS153_Connect4_Group3;
+using Connect4;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +16,7 @@ namespace CIS153_Connect4_Group3
     {
         public string player1Name { get; set; }
         public string player2Name { get; set; }
+        private bool activeBoard = true;
         private CIS153_Connect4_Group3.Game g { get; set; }
 //        private CIS153_Connect4_Group3.Game sG { get; set;}
         private CIS153_Connect4_Group3.Player player1;
@@ -32,7 +35,7 @@ namespace CIS153_Connect4_Group3
             //sG = showGame;
 
         }
-
+        public void setActiveBoard(bool a) { activeBoard = a; }
         private void GameBoard_Load(object sender, EventArgs e)
         {
 
@@ -862,37 +865,121 @@ namespace CIS153_Connect4_Group3
 
         private void col0_MouseClick(object sender, MouseEventArgs e)
         {
-            if(g.getPlayerNum(5,0) == 0)
+            if(g.getPlayerNum(5,0) == 0 && activeBoard)
             {
                 g.onClick(g.getActivePlayerNum(), 0);
                 updateScreen(g.getSquare());
                 switchPlayers();
             }
-            if (g.checkWinner() > 0)
+            if (g.checkWinner() > 0 && activeBoard)
             {
-                // winner stuff
+                switchPlayers();
+                if(g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
-            if(g.checkDraw())
+            if (g.checkDraw() && activeBoard)
             {
-                // ties stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addTieVsAi();
+                    player2.addTies();
+                }
+                else
+                {
+                    player1.addTies();
+                    player2.addTies();
+                }
+                if (g.getActivePlayerNum() == 2)
+                {
+                    player2.addTies();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
         }
 
         private void col1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 1) == 0)
+            if (g.getPlayerNum(5, 1) == 0 && activeBoard)
             {
                 g.onClick(g.getActivePlayerNum(), 1);
                 updateScreen(g.getSquare());
                 switchPlayers();
             }
-            if (g.checkWinner() > 0)
+            if (g.checkWinner() > 0 && activeBoard)
             {
-                // winner stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
-            if (g.checkDraw())
+            if (g.checkDraw() && activeBoard)
             {
-                // ties stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addTieVsAi();
+                    player2.addTies();
+                }
+                else
+                {
+                    player1.addTies();
+                    player2.addTies();
+                }
+                if (g.getActivePlayerNum() == 2)
+                {
+                    player2.addTies();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
         }
 
@@ -908,19 +995,61 @@ namespace CIS153_Connect4_Group3
         }
         private void col2_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 2) == 0)
+            if (g.getPlayerNum(5, 2) == 0 && activeBoard)
             {
                 g.onClick(g.getActivePlayerNum(), 2);
                 updateScreen(g.getSquare());
                 switchPlayers();
             }
-            if (g.checkWinner() > 0)
+            if (g.checkWinner() > 0 && activeBoard)
             {
-                // winner stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
-            if (g.checkDraw())
+            if (g.checkDraw() && activeBoard)
             {
-                // ties stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addTieVsAi();
+                    player2.addTies();
+                }
+                else
+                {
+                    player1.addTies();
+                    player2.addTies();
+                }
+                if (g.getActivePlayerNum() == 2)
+                {
+                    player2.addTies();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
         }
 
@@ -936,19 +1065,61 @@ namespace CIS153_Connect4_Group3
         }
         private void col3_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 3) == 0)
+            if (g.getPlayerNum(5, 3) == 0 && activeBoard)
             {
                 g.onClick(g.getActivePlayerNum(), 3);
                 updateScreen(g.getSquare());
                 switchPlayers();
             }
-            if (g.checkWinner() > 0)
+            if (g.checkWinner() > 0 && activeBoard)
             {
-                // winner stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
-            if (g.checkDraw())
+            if (g.checkDraw() && activeBoard)
             {
-                // ties stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addTieVsAi();
+                    player2.addTies();
+                }
+                else
+                {
+                    player1.addTies();
+                    player2.addTies();
+                }
+                if (g.getActivePlayerNum() == 2)
+                {
+                    player2.addTies();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
         }
 
@@ -964,19 +1135,61 @@ namespace CIS153_Connect4_Group3
         }
         private void col4_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 4) == 0)
+            if (g.getPlayerNum(5, 4) == 0 && activeBoard)
             {
                 g.onClick(g.getActivePlayerNum(), 4);
                 updateScreen(g.getSquare());
                 switchPlayers();
             }
-            if (g.checkWinner() > 0)
+            if (g.checkWinner() > 0 && activeBoard)
             {
-                // winner stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
-            if (g.checkDraw())
+            if (g.checkDraw() && activeBoard)
             {
-                // ties stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addTieVsAi();
+                    player2.addTies();
+                }
+                else
+                {
+                    player1.addTies();
+                    player2.addTies();
+                }
+                if (g.getActivePlayerNum() == 2)
+                {
+                    player2.addTies();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
         }
 
@@ -992,19 +1205,61 @@ namespace CIS153_Connect4_Group3
         }
         private void col5_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 5) == 0)
+            if (g.getPlayerNum(5, 5) == 0 && activeBoard)
             {
                 g.onClick(g.getActivePlayerNum(), 5);
                 updateScreen(g.getSquare());
                 switchPlayers();
             }
-            if (g.checkWinner() > 0)
+            if (g.checkWinner() > 0 && activeBoard)
             {
-                // winner stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
-            if (g.checkDraw())
+            if (g.checkDraw() && activeBoard)
             {
-                // ties stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addTieVsAi();
+                    player2.addTies();
+                }
+                else
+                {
+                    player1.addTies();
+                    player2.addTies();
+                }
+                if (g.getActivePlayerNum() == 2)
+                {
+                    player2.addTies();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
         }
 
@@ -1020,19 +1275,61 @@ namespace CIS153_Connect4_Group3
         }
         private void col6_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 2) == 0)
+            if (g.getPlayerNum(5, 2) == 0 && activeBoard)
             {
                 g.onClick(g.getActivePlayerNum(), 6);
                 updateScreen(g.getSquare());
                 switchPlayers();
             }
-            if (g.checkWinner() > 0)
+            if (g.checkWinner() > 0 && activeBoard)
             {
-                // winner stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
+                {
+                    player1.addWinVsAi();
+                    player2.addLoss();
+                }
+                else
+                {
+                    player1.addWin();
+                    player2.addLoss();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
-            if (g.checkDraw())
+            if (g.checkDraw() && activeBoard)
             {
-                // ties stuff
+                switchPlayers();
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                {
+                    player1.addTieVsAi();
+                    player2.addTies();
+                }
+                else
+                {
+                    player1.addTies();
+                    player2.addTies();
+                }
+                if (g.getActivePlayerNum() == 2)
+                {
+                    player2.addTies();
+                }
+                this.Hide();
+                Result result = new Result();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
         }
 
