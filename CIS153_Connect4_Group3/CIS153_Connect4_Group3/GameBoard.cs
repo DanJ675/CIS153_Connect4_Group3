@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Connect4
+namespace CIS153_Connect4_Group3
 {
     public partial class GameBoard : Form
     {
