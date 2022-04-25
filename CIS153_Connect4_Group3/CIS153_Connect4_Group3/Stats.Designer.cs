@@ -243,8 +243,10 @@ namespace CIS153_Connect4_Group3
             this.Controls.Add(this.pvcw);
             this.Controls.Add(this.pvpl);
             this.Controls.Add(this.pvpw);
+            this.Location = new System.Drawing.Point(100, 100);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Stats";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Player Stats";
             this.Load += new System.EventHandler(this.Stats_Load);
             this.ResumeLayout(false);

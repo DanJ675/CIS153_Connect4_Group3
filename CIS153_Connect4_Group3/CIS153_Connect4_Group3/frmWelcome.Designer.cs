@@ -50,7 +50,7 @@ namespace CIS153_Connect4_Group3
             this.ExitButt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ExitButt.Font = new System.Drawing.Font("Times New Roman", 20F);
             this.ExitButt.Location = new System.Drawing.Point(596, 388);
-            this.ExitButt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExitButt.Margin = new System.Windows.Forms.Padding(4);
             this.ExitButt.Name = "ExitButt";
             this.ExitButt.Size = new System.Drawing.Size(248, 74);
             this.ExitButt.TabIndex = 1;
@@ -74,7 +74,7 @@ namespace CIS153_Connect4_Group3
             this.cmbPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlayer1.FormattingEnabled = true;
             this.cmbPlayer1.Location = new System.Drawing.Point(16, 161);
-            this.cmbPlayer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlayer1.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlayer1.Name = "cmbPlayer1";
             this.cmbPlayer1.Size = new System.Drawing.Size(247, 45);
             this.cmbPlayer1.TabIndex = 6;
@@ -84,7 +84,7 @@ namespace CIS153_Connect4_Group3
             this.cmbPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbPlayer2.FormattingEnabled = true;
             this.cmbPlayer2.Location = new System.Drawing.Point(315, 161);
-            this.cmbPlayer2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPlayer2.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlayer2.Name = "cmbPlayer2";
             this.cmbPlayer2.Size = new System.Drawing.Size(247, 45);
             this.cmbPlayer2.TabIndex = 7;
@@ -95,12 +95,12 @@ namespace CIS153_Connect4_Group3
             this.Start.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Start.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.Start.Font = new System.Drawing.Font("Times New Roman", 20F);
-            this.Start.Location = new System.Drawing.Point(596, 138);
-            this.Start.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Start.Location = new System.Drawing.Point(596, 149);
+            this.Start.Margin = new System.Windows.Forms.Padding(4);
             this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(248, 74);
+            this.Start.Size = new System.Drawing.Size(261, 71);
             this.Start.TabIndex = 9;
-            this.Start.Text = "Start Game";
+            this.Start.Text = "Start";
             this.Start.UseVisualStyleBackColor = false;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
@@ -191,7 +191,7 @@ namespace CIS153_Connect4_Group3
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkKhaki;
-            this.ClientSize = new System.Drawing.Size(864, 485);
+            this.ClientSize = new System.Drawing.Size(1080, 606);
             this.Controls.Add(this.btnPlayer2Stats);
             this.Controls.Add(this.btnPlayer1Stats);
             this.Controls.Add(this.btnAdd);
@@ -204,8 +204,10 @@ namespace CIS153_Connect4_Group3
             this.Controls.Add(this.cmbPlayer1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ExitButt);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Location = new System.Drawing.Point(100, 100);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmWelcome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Welcome";
             this.Load += new System.EventHandler(this.frmWelcome_Load);
             this.ResumeLayout(false);

@@ -2143,8 +2143,10 @@ namespace Connect4
             this.Controls.Add(this.col2Panel);
             this.Controls.Add(this.col1Panel);
             this.Controls.Add(this.listView1);
+            this.Location = new System.Drawing.Point(100, 100);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GameBoard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "GameBoard";
             this.Load += new System.EventHandler(this.GameBoard_Load);
             this.col6Panel.ResumeLayout(false);
