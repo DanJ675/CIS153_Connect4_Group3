@@ -78,13 +78,13 @@ namespace CIS153_Connect4_Group3
 
         }
 
-        public void UpdatePlayer(Player player, int type)
+        public void UpdatePlayer(String pName, int type)
         {
             List<Player> playerList = ReadList();
 
             foreach (Player p in playerList)
             {
-                if (player.getName() == p.getName())
+                if (pName == p.getName())
                 {
                     switch (type)
                     {
