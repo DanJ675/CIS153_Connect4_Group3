@@ -1175,7 +1175,7 @@ namespace Connect4
             // 
             this.pBox44P2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
             this.pBox44P2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pBox44P2.Location = new System.Drawing.Point(3, 52);
+            this.pBox44P2.Location = new System.Drawing.Point(6, 50);
             this.pBox44P2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pBox44P2.Name = "pBox44P2";
             this.pBox44P2.Size = new System.Drawing.Size(44, 39);
@@ -1745,9 +1745,6 @@ namespace Connect4
             this.col0.Name = "col0";
             this.col0.Size = new System.Drawing.Size(48, 289);
             this.col0.TabIndex = 168;
-            this.col0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
-            this.col0.MouseEnter += new System.EventHandler(this.col0_MouseHover);
-            this.col0.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
             // 
             // col5Panel
             // 
@@ -1775,6 +1772,9 @@ namespace Connect4
             this.col5Panel.Name = "col5Panel";
             this.col5Panel.Size = new System.Drawing.Size(48, 289);
             this.col5Panel.TabIndex = 169;
+            this.col5Panel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col6_MouseClick);
+            this.col5Panel.MouseLeave += new System.EventHandler(this.col6_MouseLeave);
+            this.col5Panel.MouseHover += new System.EventHandler(this.col6_MouseHover);
             // 
             // pBox56P1
             // 
@@ -2092,7 +2092,7 @@ namespace Connect4
             this.lblPlayer1Name.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1Name.Location = new System.Drawing.Point(21, 386);
             this.lblPlayer1Name.Name = "lblPlayer1Name";
-            this.lblPlayer1Name.Size = new System.Drawing.Size(112, 36);
+            this.lblPlayer1Name.Size = new System.Drawing.Size(139, 46);
             this.lblPlayer1Name.TabIndex = 194;
             this.lblPlayer1Name.Text = "Player1";
             // 
@@ -2102,7 +2102,7 @@ namespace Connect4
             this.lblPlayer2Name.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer2Name.Location = new System.Drawing.Point(172, 386);
             this.lblPlayer2Name.Name = "lblPlayer2Name";
-            this.lblPlayer2Name.Size = new System.Drawing.Size(112, 36);
+            this.lblPlayer2Name.Size = new System.Drawing.Size(139, 46);
             this.lblPlayer2Name.TabIndex = 195;
             this.lblPlayer2Name.Text = "Player2";
             // 

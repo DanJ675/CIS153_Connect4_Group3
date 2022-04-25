@@ -89,14 +89,15 @@ namespace CIS153_Connect4_Group3
 
         public int checkWinner() //check for 4 in a row winner after board updates
         {
+            //Horizontal
             for (int r = 0; r < 6; r++)
             {
                 for (int c = 0; c < 4; c++)
                 {
-                    if (square[r, c].getPlayerNum() == 1 &&
-                        square[r, c + 1].getPlayerNum() == 1 &&
-                        square[r, c + 2].getPlayerNum() == 1 &&
-                        square[r, c + 3].getPlayerNum() == 1)
+                    if (square[c , r].getPlayerNum() == 1 &&
+                        square[c + 1, r].getPlayerNum() == 1 &&
+                        square[c + 2, r].getPlayerNum() == 1 &&
+                        square[c + 3, r].getPlayerNum() == 1)
                     {
                         if (player2.getName() == "Computer")
                         {
@@ -108,10 +109,10 @@ namespace CIS153_Connect4_Group3
                         }
                         return 1;
                     }
-                    if (square[r, c].getPlayerNum() == 2 &&
-                        square[r, c + 1].getPlayerNum() == 2 &&
-                        square[r, c + 2].getPlayerNum() == 2 &&
-                        square[r, c + 3].getPlayerNum() == 2)
+                    if (square[c, r].getPlayerNum() == 2 &&
+                        square[c + 1, r].getPlayerNum() == 2 &&
+                        square[c + 2, r].getPlayerNum() == 2 &&
+                        square[c + 3, r].getPlayerNum() == 2)
                     {
                         if (player2.getName() == "Computer")
                         {
@@ -129,12 +130,12 @@ namespace CIS153_Connect4_Group3
             //check for vertical winner
             for (int r = 0; r < 3; r++)
             {
-                for (int c = 0; c < 6; c++)
+                for (int c = 0; c < 7; c++)
                 {
-                    if (square[r, c].getPlayerNum() == 1 &&
-                        square[r + 1, c].getPlayerNum() == 1 &&
-                        square[r + 2, c].getPlayerNum() == 1 &&
-                        square[r + 3, c].getPlayerNum() == 1)
+                    if (square[c, r].getPlayerNum() == 1 &&
+                        square[c, r + 1].getPlayerNum() == 1 &&
+                        square[c, r + 2].getPlayerNum() == 1 &&
+                        square[c, r + 3].getPlayerNum() == 1)
                     {
                         if (player2.getName() == "Computer")
                         {
@@ -146,10 +147,10 @@ namespace CIS153_Connect4_Group3
                         }
                         return 1;
                     }
-                    if (square[r, c].getPlayerNum() == 2 &&
-                        square[r + 1, c].getPlayerNum() == 2 &&
-                        square[r + 2, c].getPlayerNum() == 2 &&
-                        square[r + 3, c].getPlayerNum() == 2)
+                    if (square[c, r].getPlayerNum() == 2 &&
+                        square[c, r + 1].getPlayerNum() == 2 &&
+                        square[c, r + 2].getPlayerNum() == 2 &&
+                        square[c, r + 3].getPlayerNum() == 2)
                     {
                         if (player2.getName() == "Computer")
                         {
@@ -172,26 +173,28 @@ namespace CIS153_Connect4_Group3
             {
                 for (int c = 0; c < 3; c++)
                 {
-                    if (square[r, c].getPlayerNum() == 1 &&
-                        square[r + 1, c + 1].getPlayerNum() == 1 &&
-                        square[r + 2, c + 2].getPlayerNum() == 1 &&
-                        square[r + 3, c + 3].getPlayerNum() == 1)
+                    if (square[c , r].getPlayerNum() == 1 &&
+                        square[c + 1, r + 1].getPlayerNum() == 1 &&
+                        square[c + 2, r + 2].getPlayerNum() == 1 &&
+                        square[c + 3, r + 3].getPlayerNum() == 1)
                     {
                         if (player2.getName() == "Computer")
                         {
                             player1.addWinVsAi();
+                            player2.addLoss();
                         }
                         else
                         {
                             player1.addWin();
+                            player2.addLoss();
                         }
                         return 1;
                     }
 
-                    if (square[r, c].getPlayerNum() == 2 &&
-                        square[r + 1, c + 1].getPlayerNum() == 2 &&
-                        square[r + 2, c + 2].getPlayerNum() == 2 &&
-                        square[r + 3, c + 3].getPlayerNum() == 2)
+                    if (square[c, r].getPlayerNum() == 2 &&
+                        square[c + 1 , r + 1].getPlayerNum() == 2 &&
+                        square[c + 2, r + 2].getPlayerNum() == 2 &&
+                        square[c + 3, r + 3].getPlayerNum() == 2)
                     {
                         if (player2.getName() == "Computer")
                         {
@@ -209,45 +212,45 @@ namespace CIS153_Connect4_Group3
             }
 
             //check for downward diagonal
-            //for (int r = 0; r < 7; r++)
-            //{
-            //    for (int c = 4; c < 7; c++)
-            //    {
-            //        if (square[r, c].getPlayerNum() == 1 &&
-            //            square[r + 1, c - 1].getPlayerNum() == 1 &&
-            //            square[r + 2, c - 2].getPlayerNum() == 1 &&
-            //            square[r + 3, c - 3].getPlayerNum() == 1)
-            //        {
-            //            if (player2.getName() == "Computer")
-            //            {
-            //                player1.addWinVsAi();
-            //            }
-            //            else
-            //            {
-            //                player1.addWin();
-            //            }
-            //            return 1;
-            //        }
+            for (int r = 5; r > 3; r--)
+            {
+                for (int c = 0; c < 4; c++)
+                {
+                    if (square[c, r].getPlayerNum() == 1 &&
+                        square[c - 1, r + 1].getPlayerNum() == 1 &&
+                        square[c - 2, r + 2].getPlayerNum() == 1 &&
+                        square[c - 3, r + 3].getPlayerNum() == 1)
+                    {
+                        if (player2.getName() == "Computer")
+                        {
+                            player1.addWinVsAi();
+                        }
+                        else
+                        {
+                            player1.addWin();
+                        }
+                        return 1;
+                    }
 
-            //        if (square[r, c].getPlayerNum() == 2 &&
-            //            square[r + 1, c - 1].getPlayerNum() == 2 &&
-            //            square[r + 2, c - 2].getPlayerNum() == 2 &&
-            //            square[r + 3, c - 3].getPlayerNum() == 2)
-            //        {
-            //            if (player2.getName() == "Computer")
-            //            {
-            //                player1.addLossVsAi();
-            //                player2.addWin();
-            //            }
-            //            else
-            //            {
-            //                player1.addLoss();
-            //                player2.addWin();
-            //            }
-            //            return 2;
-            //        }
-            //    }
-            //}
+                    if (square[c, r].getPlayerNum() == 2 &&
+                        square[c - 1, r + 1].getPlayerNum() == 2 &&
+                        square[c - 2, r + 2].getPlayerNum() == 2 &&
+                        square[c - 3, r + 3].getPlayerNum() == 2)
+                    {
+                        if (player2.getName() == "Computer")
+                        {
+                            player1.addLossVsAi();
+                            player2.addWin();
+                        }
+                        else
+                        {
+                            player1.addLoss();
+                            player2.addWin();
+                        }
+                        return 2;
+                    }
+                }
+            }
             return 0;
         }
         private void isBoardFull()
