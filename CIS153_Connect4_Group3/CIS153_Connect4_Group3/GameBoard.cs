@@ -833,7 +833,22 @@ namespace Connect4
         {
 
         }
-        
+        private void switchPlayers()
+        {
+            if (g.getActivePlayerNum() == 1)
+            {
+                g.setActivePlayerNum(2);
+                pBoxPlayer1.Visible = false;
+                pBoxPlayer2.Visible = true;
+            }
+            else
+            {
+                g.setActivePlayerNum(1);
+                pBoxPlayer1.Visible = true;
+                pBoxPlayer2.Visible = false;
+            }
+
+        }
         private void col0_MouseHover(object sender, EventArgs e)
         {
             g.onHover(g.getActivePlayerNum(), 0);
@@ -849,28 +864,14 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 0);
             updateScreen(g.getSquare());
-            if(g.getActivePlayerNum() == 1)
-            {
-                g.setActivePlayerNum(2);
-            }
-            else
-            {
-                g.setActivePlayerNum(1);
-            }
+            switchPlayers();
         }
 
         private void col1_MouseClick(object sender, MouseEventArgs e)
         {
             g.onClick(g.getActivePlayerNum(), 1);
             updateScreen(g.getSquare());
-            if (g.getActivePlayerNum() == 1)
-            {
-                g.setActivePlayerNum(2);
-            }
-            else
-            {
-                g.setActivePlayerNum(1);
-            }
+            switchPlayers();
         }
 
         private void col1_MouseHover(object sender, EventArgs e)
@@ -887,6 +888,7 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 2);
             updateScreen(g.getSquare());
+            switchPlayers();
         }
 
         private void col2_MouseHover(object sender, EventArgs e)
@@ -903,14 +905,7 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 3);
             updateScreen(g.getSquare());
-            if (g.getActivePlayerNum() == 1)
-            {
-                g.setActivePlayerNum(2);
-            }
-            else
-            {
-                g.setActivePlayerNum(1);
-            }
+            switchPlayers();
         }
 
         private void col3_MouseHover(object sender, EventArgs e)
@@ -927,14 +922,7 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 4);
             updateScreen(g.getSquare());
-            if (g.getActivePlayerNum() == 1)
-            {
-                g.setActivePlayerNum(2);
-            }
-            else
-            {
-                g.setActivePlayerNum(1);
-            }
+            switchPlayers();
         }
 
         private void col4_MouseHover(object sender, EventArgs e)
@@ -951,14 +939,7 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 5);
             updateScreen(g.getSquare());
-            if (g.getActivePlayerNum() == 1)
-            {
-                g.setActivePlayerNum(2);
-            }
-            else
-            {
-                g.setActivePlayerNum(1);
-            }
+            switchPlayers();
         }
 
         private void col5_MouseHover(object sender, EventArgs e)
@@ -975,14 +956,7 @@ namespace Connect4
         {
             g.onClick(g.getActivePlayerNum(), 6);
             updateScreen(g.getSquare());
-            if (g.getActivePlayerNum() == 1)
-            {
-                g.setActivePlayerNum(2);
-            }
-            else
-            {
-                g.setActivePlayerNum(1);
-            }
+            switchPlayers();
         }
 
         private void col6_MouseHover(object sender, EventArgs e)

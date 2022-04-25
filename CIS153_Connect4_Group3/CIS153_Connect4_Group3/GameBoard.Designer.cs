@@ -164,6 +164,18 @@ namespace Connect4
             this.pBox46P0 = new System.Windows.Forms.PictureBox();
             this.pBox56P0 = new System.Windows.Forms.PictureBox();
             this.ExitButt = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pBoxPlayer1 = new System.Windows.Forms.PictureBox();
+            this.lblPlayer1Name = new System.Windows.Forms.Label();
+            this.lblPlayer2Name = new System.Windows.Forms.Label();
+            this.pBoxPlayer2 = new System.Windows.Forms.PictureBox();
             this.col6Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBox51P1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox01P2)).BeginInit();
@@ -297,16 +309,19 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pBox36P0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox46P0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox56P0)).BeginInit();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPlayer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPlayer2)).BeginInit();
             this.SuspendLayout();
             // 
             // listView1
             // 
             this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(39, 46);
+            this.listView1.Location = new System.Drawing.Point(39, 32);
             this.listView1.Margin = new System.Windows.Forms.Padding(4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(389, 318);
+            this.listView1.Size = new System.Drawing.Size(389, 332);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -1974,11 +1989,151 @@ namespace Connect4
             this.ExitButt.UseVisualStyleBackColor = false;
             this.ExitButt.Click += new System.EventHandler(this.ExitButt_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel1.Location = new System.Drawing.Point(54, 37);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(47, 40);
+            this.panel1.TabIndex = 179;
+            this.panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
+            this.panel1.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
+            this.panel1.MouseHover += new System.EventHandler(this.col0_MouseLeave);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel2.Location = new System.Drawing.Point(107, 37);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(47, 40);
+            this.panel2.TabIndex = 180;
+            this.panel2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col1_MouseClick);
+            this.panel2.MouseLeave += new System.EventHandler(this.col1_MouseLeave);
+            this.panel2.MouseHover += new System.EventHandler(this.col1_MouseHover);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel3.Location = new System.Drawing.Point(160, 37);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(47, 40);
+            this.panel3.TabIndex = 180;
+            this.panel3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col2_MouseClick);
+            this.panel3.MouseLeave += new System.EventHandler(this.col2_MouseLeave);
+            this.panel3.MouseHover += new System.EventHandler(this.col2_MouseHover);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel4.Location = new System.Drawing.Point(214, 37);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(47, 40);
+            this.panel4.TabIndex = 180;
+            this.panel4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col3_MouseClick);
+            this.panel4.MouseLeave += new System.EventHandler(this.col3_MouseLeave);
+            this.panel4.MouseHover += new System.EventHandler(this.col3_MouseHover);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel5.Location = new System.Drawing.Point(266, 37);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(47, 40);
+            this.panel5.TabIndex = 180;
+            this.panel5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col4_MouseClick);
+            this.panel5.MouseLeave += new System.EventHandler(this.col4_MouseLeave);
+            this.panel5.MouseHover += new System.EventHandler(this.col4_MouseHover);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel6.Location = new System.Drawing.Point(316, 37);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(47, 40);
+            this.panel6.TabIndex = 180;
+            this.panel6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col5_MouseClick);
+            this.panel6.MouseLeave += new System.EventHandler(this.col5_MouseLeave);
+            this.panel6.MouseHover += new System.EventHandler(this.col5_MouseHover);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Location = new System.Drawing.Point(367, 37);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(47, 40);
+            this.panel7.TabIndex = 180;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel8.Location = new System.Drawing.Point(8, 8);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(47, 40);
+            this.panel8.TabIndex = 180;
+            this.panel8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col6_MouseClick);
+            this.panel8.MouseLeave += new System.EventHandler(this.col6_MouseLeave);
+            this.panel8.MouseHover += new System.EventHandler(this.col6_MouseHover);
+            // 
+            // pBoxPlayer1
+            // 
+            this.pBoxPlayer1.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Black;
+            this.pBoxPlayer1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBoxPlayer1.Location = new System.Drawing.Point(27, 424);
+            this.pBoxPlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pBoxPlayer1.Name = "pBoxPlayer1";
+            this.pBoxPlayer1.Size = new System.Drawing.Size(44, 39);
+            this.pBoxPlayer1.TabIndex = 193;
+            this.pBoxPlayer1.TabStop = false;
+            // 
+            // lblPlayer1Name
+            // 
+            this.lblPlayer1Name.AutoSize = true;
+            this.lblPlayer1Name.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer1Name.Location = new System.Drawing.Point(21, 386);
+            this.lblPlayer1Name.Name = "lblPlayer1Name";
+            this.lblPlayer1Name.Size = new System.Drawing.Size(112, 36);
+            this.lblPlayer1Name.TabIndex = 194;
+            this.lblPlayer1Name.Text = "Player1";
+            // 
+            // lblPlayer2Name
+            // 
+            this.lblPlayer2Name.AutoSize = true;
+            this.lblPlayer2Name.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer2Name.Location = new System.Drawing.Point(172, 386);
+            this.lblPlayer2Name.Name = "lblPlayer2Name";
+            this.lblPlayer2Name.Size = new System.Drawing.Size(112, 36);
+            this.lblPlayer2Name.TabIndex = 195;
+            this.lblPlayer2Name.Text = "Player2";
+            // 
+            // pBoxPlayer2
+            // 
+            this.pBoxPlayer2.BackgroundImage = global::CIS153_Connect4_Group3.Properties.Resources.Red;
+            this.pBoxPlayer2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pBoxPlayer2.Location = new System.Drawing.Point(178, 424);
+            this.pBoxPlayer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pBoxPlayer2.Name = "pBoxPlayer2";
+            this.pBoxPlayer2.Size = new System.Drawing.Size(44, 39);
+            this.pBoxPlayer2.TabIndex = 265;
+            this.pBoxPlayer2.TabStop = false;
+            this.pBoxPlayer2.Visible = false;
+            // 
             // GameBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 492);
+            this.Controls.Add(this.pBoxPlayer2);
+            this.Controls.Add(this.lblPlayer2Name);
+            this.Controls.Add(this.lblPlayer1Name);
+            this.Controls.Add(this.pBoxPlayer1);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.ExitButt);
             this.Controls.Add(this.col5Panel);
             this.Controls.Add(this.col6Panel);
@@ -2125,7 +2280,11 @@ namespace Connect4
             ((System.ComponentModel.ISupportInitialize)(this.pBox36P0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox46P0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox56P0)).EndInit();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPlayer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxPlayer2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -2265,5 +2424,17 @@ namespace Connect4
         private System.Windows.Forms.PictureBox pBox55P2;
         private System.Windows.Forms.PictureBox pBox55P0;
         private System.Windows.Forms.Button ExitButt;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.PictureBox pBoxPlayer1;
+        private System.Windows.Forms.Label lblPlayer1Name;
+        private System.Windows.Forms.Label lblPlayer2Name;
+        private System.Windows.Forms.PictureBox pBoxPlayer2;
     }
 }
