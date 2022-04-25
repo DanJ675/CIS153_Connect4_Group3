@@ -122,7 +122,7 @@
     <None Include="Resources\White.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\PlayerList" />
+    <Content Include="Resources\PlayerList.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
