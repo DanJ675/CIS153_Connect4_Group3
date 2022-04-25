@@ -18,12 +18,20 @@ namespace CIS153_Connect4_Group3
             StreamReader file = new StreamReader(fileName);
             String line = file.ReadLine();
             List<Player> playerList = new List<Player>();
-
+            int index = 0;
 
             while (line != null)
             {
                 //find first comma
-                int comma = line.IndexOf(delim);
+                int[] delimPos = {line.IndexOf(delim), 0, 0, 0, 0,};
+                for (int i = 1; i < 6; i++)
+                {
+                    delimPos[i] = line.IndexOf(delim, delimPos[i - 1]);
+                }
+                //create new player in list by name
+                playerList.Add(new Player(line.Substring(0, delimPos[0])));
+                playerList[index].setWins(Int32.Parse(line.Substring(delimPos[0], delimPos[1])));
+                index++;
             }
             return playerList;
         }

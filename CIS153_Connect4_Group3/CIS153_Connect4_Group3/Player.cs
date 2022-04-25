@@ -57,12 +57,12 @@ namespace CIS153_Connect4_Group3
             return outString;
         }
         private void setName(string setName) { name = setName; }
-        private void setWins(int num) { wins = num; }
-        private void setLosses(int num) { losses = num; }
-        private void setTies(int num) { ties = num; }
-        private void setWinsVsAi(int num) { winsVsAi = num; }
-        private void setLossesVsAi(int num) { lossesVsAi = num; }
-        private void setTiesVsAi(int num) { tiesVsAi = num; }
+        public void setWins(int num) { wins = num; }
+        public void setLosses(int num) { losses = num; }
+        public void setTies(int num) { ties = num; }
+        public void setWinsVsAi(int num) { winsVsAi = num; }
+        public void setLossesVsAi(int num) { lossesVsAi = num; }
+        public void setTiesVsAi(int num) { tiesVsAi = num; }
         public string getName() { return name; }
         public void addWin() { wins++; }
         public void addLoss() { losses++; }
