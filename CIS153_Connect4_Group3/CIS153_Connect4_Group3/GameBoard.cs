@@ -873,29 +873,33 @@ namespace Connect4
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
+                this.Hide();
+                Result result = new Result();
                 switchPlayers();
-                if(g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
+                if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
                 {
                     player1.addWinVsAi();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 else
                 {
                     player1.addWin();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
                     player1.addLossVsAi();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
                 else
                 {
                     player1.addLoss();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
-                this.Hide();
-                Result result = new Result();
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -918,6 +922,7 @@ namespace Connect4
                 }
                 this.Hide();
                 Result result = new Result();
+                result.setPlayerName(player1Name);
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -933,29 +938,33 @@ namespace Connect4
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
+                this.Hide();
+                Result result = new Result();
                 switchPlayers();
                 if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
                 {
                     player1.addWinVsAi();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 else
                 {
                     player1.addWin();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
                     player1.addLossVsAi();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
                 else
                 {
                     player1.addLoss();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
-                this.Hide();
-                Result result = new Result();
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -978,6 +987,7 @@ namespace Connect4
                 }
                 this.Hide();
                 Result result = new Result();
+                result.setPlayerName(player1Name);
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1003,29 +1013,33 @@ namespace Connect4
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
+                this.Hide();
+                Result result = new Result();
                 switchPlayers();
                 if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
                 {
                     player1.addWinVsAi();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 else
                 {
                     player1.addWin();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
                     player1.addLossVsAi();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
                 else
                 {
                     player1.addLoss();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
-                this.Hide();
-                Result result = new Result();
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1048,6 +1062,7 @@ namespace Connect4
                 }
                 this.Hide();
                 Result result = new Result();
+                result.setPlayerName(player1Name);
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1073,29 +1088,33 @@ namespace Connect4
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
+                this.Hide();
+                Result result = new Result();
                 switchPlayers();
                 if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
                 {
                     player1.addWinVsAi();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 else
                 {
                     player1.addWin();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
                     player1.addLossVsAi();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
                 else
                 {
                     player1.addLoss();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
-                this.Hide();
-                Result result = new Result();
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1118,6 +1137,7 @@ namespace Connect4
                 }
                 this.Hide();
                 Result result = new Result();
+                result.setPlayerName(player1Name);
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1143,29 +1163,33 @@ namespace Connect4
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
+                this.Hide();
+                Result result = new Result();
                 switchPlayers();
                 if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
                 {
                     player1.addWinVsAi();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 else
                 {
                     player1.addWin();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
                     player1.addLossVsAi();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
                 else
                 {
                     player1.addLoss();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
-                this.Hide();
-                Result result = new Result();
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1188,6 +1212,7 @@ namespace Connect4
                 }
                 this.Hide();
                 Result result = new Result();
+                result.setPlayerName(player1Name);
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1213,29 +1238,33 @@ namespace Connect4
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
+                this.Hide();
+                Result result = new Result();
                 switchPlayers();
                 if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
                 {
                     player1.addWinVsAi();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 else
                 {
                     player1.addWin();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
                     player1.addLossVsAi();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
                 else
                 {
                     player1.addLoss();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
-                this.Hide();
-                Result result = new Result();
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1258,6 +1287,7 @@ namespace Connect4
                 }
                 this.Hide();
                 Result result = new Result();
+                result.setPlayerName(player1Name);
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1283,29 +1313,33 @@ namespace Connect4
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
+                this.Hide();
+                Result result = new Result();
                 switchPlayers();
                 if (g.getActivePlayerNum() == 1 && player2.getName() == "Computer")
                 {
                     player1.addWinVsAi();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 else
                 {
                     player1.addWin();
                     player2.addLoss();
+                    result.setPlayerName(player1.getName());
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
                     player1.addLossVsAi();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
                 else
                 {
                     player1.addLoss();
                     player2.addWin();
+                    result.setPlayerName(player2.getName());
                 }
-                this.Hide();
-                Result result = new Result();
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
@@ -1328,6 +1362,7 @@ namespace Connect4
                 }
                 this.Hide();
                 Result result = new Result();
+                result.setPlayerName(player1Name);
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
