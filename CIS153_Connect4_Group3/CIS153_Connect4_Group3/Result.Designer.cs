@@ -33,7 +33,7 @@ namespace CIS153_Connect4_Group3
             this.ReturnButt = new System.Windows.Forms.Button();
             this.StatButt = new System.Windows.Forms.Button();
             this.ExitButt = new System.Windows.Forms.Button();
-            this.Message = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // NewButt
@@ -46,6 +46,7 @@ namespace CIS153_Connect4_Group3
             this.NewButt.TabIndex = 0;
             this.NewButt.Text = "New Game";
             this.NewButt.UseVisualStyleBackColor = true;
+            this.NewButt.Click += new System.EventHandler(this.NewButt_Click);
             // 
             // ReturnButt
             // 
@@ -83,17 +84,17 @@ namespace CIS153_Connect4_Group3
             this.ExitButt.UseVisualStyleBackColor = true;
             this.ExitButt.Click += new System.EventHandler(this.ExitButt_Click);
             // 
-            // Message
+            // lblName
             // 
-            this.Message.AutoSize = true;
-            this.Message.Font = new System.Drawing.Font("Times New Roman", 25F, System.Drawing.FontStyle.Bold);
-            this.Message.Location = new System.Drawing.Point(72, 11);
-            this.Message.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Message.Name = "Message";
-            this.Message.Size = new System.Drawing.Size(569, 76);
-            this.Message.TabIndex = 4;
-            this.Message.Text = "We have a winner!";
-            this.Message.Visible = false;
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Times New Roman", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(91, 43);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(310, 42);
+            this.lblName.TabIndex = 4;
+            this.lblName.Text = "We have a winner!";
+            this.lblName.Visible = false;
             // 
             // Result
             // 
@@ -101,7 +102,7 @@ namespace CIS153_Connect4_Group3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(517, 292);
-            this.Controls.Add(this.Message);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.ExitButt);
             this.Controls.Add(this.StatButt);
             this.Controls.Add(this.ReturnButt);
@@ -109,6 +110,7 @@ namespace CIS153_Connect4_Group3
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Result";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Result_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,6 +122,6 @@ namespace CIS153_Connect4_Group3
         private System.Windows.Forms.Button ReturnButt;
         private System.Windows.Forms.Button StatButt;
         private System.Windows.Forms.Button ExitButt;
-        private System.Windows.Forms.Label Message;
+        private System.Windows.Forms.Label lblName;
     }
 }
