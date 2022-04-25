@@ -14,6 +14,7 @@ namespace CIS153_Connect4_Group3
     public partial class frmWelcome : Form
     {
         private List<Player> playerList = new List<Player>(new Player[] { });
+        //private TextFile textFile = new TextFile("../../Resources/PlayerList.txt", ',');
 
         public frmWelcome()
         {
@@ -33,6 +34,9 @@ namespace CIS153_Connect4_Group3
             playerList.Add(tim);
             playerList.Add(bob);
             playerList.Add(lisa);
+
+            //textFile.WriteList(playerList);
+            //playerList = textFile.ReadList();
 
             for(int i = 1; i < playerList.Count(); i++)
             {
