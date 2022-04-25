@@ -94,7 +94,6 @@ namespace CIS153_Connect4_Group3
             this.lblName.Size = new System.Drawing.Size(310, 42);
             this.lblName.TabIndex = 4;
             this.lblName.Text = "We have a winner!";
-            this.lblName.Visible = false;
             // 
             // Result
             // 
