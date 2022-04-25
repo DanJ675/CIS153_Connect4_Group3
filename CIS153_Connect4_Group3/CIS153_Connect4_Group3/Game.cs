@@ -51,25 +51,26 @@ namespace CIS153_Connect4_Group3
         {
             return board.getShowBoard();
         }
-        public void nextComputerMove(Square[,] square)
+        public Square[,] nextComputerMove()
         {
             //square = board.getBoard(); // Fills the square with the board information
 
             //check for pieces in a row
-            if (threePlusTwo(square)) //sends the square with the board information to threePlusTwo
+            //tree
+            if (threePlusTwo(board.getBoard())) //sends the square with the board information to threePlusTwo
             {
-                return;
+                return board.getBoard();
             }
-            else if (twoPlusTwo(square)) //sends the square with the board information to twoPlusTwo
+            else if (twoPlusTwo(board.getBoard())) //sends the square with the board information to twoPlusTwo
             {
-                return;
+                return board.getBoard();
             }
-            else if (onePlusTwo(square)) //sends the square with the board information to onePlueTwo
+            else if (onePlusTwo(board.getBoard())) //sends the square with the board information to onePlueTwo
             {
-                return;
+                return board.getBoard();
             }
 
-
+            return board.getBoard();
         }
         public bool checkDraw() //check for 4 in a row winner after board updates
         {

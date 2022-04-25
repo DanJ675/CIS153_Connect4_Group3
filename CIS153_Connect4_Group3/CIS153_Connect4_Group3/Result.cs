@@ -53,7 +53,7 @@ namespace CIS153_Connect4_Group3
 
         private void Result_Load(object sender, EventArgs e)
         {
-            lblName.Text = playerName + " wins!";
+            lblName.Text = playerName;
         }
     }
 }
