@@ -886,13 +886,13 @@ namespace Connect4
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
-                    player1.addWinVsAi();
-                    player2.addLoss();
+                    player1.addLossVsAi();
+                    player2.addWin();
                 }
                 else
                 {
-                    player1.addWin();
-                    player2.addLoss();
+                    player1.addLoss();
+                    player2.addWin();
                 }
                 this.Hide();
                 Result result = new Result();
@@ -946,13 +946,13 @@ namespace Connect4
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
-                    player1.addWinVsAi();
-                    player2.addLoss();
+                    player1.addLossVsAi();
+                    player2.addWin();
                 }
                 else
                 {
-                    player1.addWin();
-                    player2.addLoss();
+                    player1.addLoss();
+                    player2.addWin();
                 }
                 this.Hide();
                 Result result = new Result();
@@ -1016,13 +1016,13 @@ namespace Connect4
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
-                    player1.addWinVsAi();
-                    player2.addLoss();
+                    player1.addLossVsAi();
+                    player2.addWin();
                 }
                 else
                 {
-                    player1.addWin();
-                    player2.addLoss();
+                    player1.addLoss();
+                    player2.addWin();
                 }
                 this.Hide();
                 Result result = new Result();
@@ -1086,13 +1086,13 @@ namespace Connect4
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
-                    player1.addWinVsAi();
-                    player2.addLoss();
+                    player1.addLossVsAi();
+                    player2.addWin();
                 }
                 else
                 {
-                    player1.addWin();
-                    player2.addLoss();
+                    player1.addLoss();
+                    player2.addWin();
                 }
                 this.Hide();
                 Result result = new Result();
@@ -1156,13 +1156,13 @@ namespace Connect4
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
-                    player1.addWinVsAi();
-                    player2.addLoss();
+                    player1.addLossVsAi();
+                    player2.addWin();
                 }
                 else
                 {
-                    player1.addWin();
-                    player2.addLoss();
+                    player1.addLoss();
+                    player2.addWin();
                 }
                 this.Hide();
                 Result result = new Result();
@@ -1226,13 +1226,13 @@ namespace Connect4
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
-                    player1.addWinVsAi();
-                    player2.addLoss();
+                    player1.addLossVsAi();
+                    player2.addWin();
                 }
                 else
                 {
-                    player1.addWin();
-                    player2.addLoss();
+                    player1.addLoss();
+                    player2.addWin();
                 }
                 this.Hide();
                 Result result = new Result();
@@ -1296,13 +1296,13 @@ namespace Connect4
                 }
                 if (g.getActivePlayerNum() == 2 && player2.getName() == "Computer")
                 {
-                    player1.addWinVsAi();
-                    player2.addLoss();
+                    player1.addLossVsAi();
+                    player2.addWin();
                 }
                 else
                 {
-                    player1.addWin();
-                    player2.addLoss();
+                    player1.addLoss();
+                    player2.addWin();
                 }
                 this.Hide();
                 Result result = new Result();
