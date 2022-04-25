@@ -169,9 +169,9 @@ namespace CIS153_Connect4_Group3
             }
 
             ////check for upward diagonal
-            for (int r = 3; r < 6; r++)
+            for (int r = 0; r < 3; r++)
             {
-                for (int c = 0; c < 3; c++)
+                for (int c = 0; c < 4; c++)
                 {
                     if (square[c , r].getPlayerNum() == 1 &&
                         square[c + 1, r + 1].getPlayerNum() == 1 &&
@@ -212,14 +212,14 @@ namespace CIS153_Connect4_Group3
             }
 
             //check for downward diagonal
-            for (int r = 5; r > 3; r--)
+            for (int r = 5; r > 2; r--)
             {
-                for (int c = 0; c < 4; c++)
+                for (int c = 0; c < 3; c++)
                 {
                     if (square[c, r].getPlayerNum() == 1 &&
-                        square[c - 1, r + 1].getPlayerNum() == 1 &&
-                        square[c - 2, r + 2].getPlayerNum() == 1 &&
-                        square[c - 3, r + 3].getPlayerNum() == 1)
+                        square[c + 1, r - 1].getPlayerNum() == 1 &&
+                        square[c + 2, r - 2].getPlayerNum() == 1 &&
+                        square[c + 3, r - 3].getPlayerNum() == 1)
                     {
                         if (player2.getName() == "Computer")
                         {
@@ -233,9 +233,9 @@ namespace CIS153_Connect4_Group3
                     }
 
                     if (square[c, r].getPlayerNum() == 2 &&
-                        square[c - 1, r + 1].getPlayerNum() == 2 &&
-                        square[c - 2, r + 2].getPlayerNum() == 2 &&
-                        square[c - 3, r + 3].getPlayerNum() == 2)
+                        square[c + 1, r - 1].getPlayerNum() == 2 &&
+                        square[c + 2, r - 2].getPlayerNum() == 2 &&
+                        square[c + 3, r - 3].getPlayerNum() == 2)
                     {
                         if (player2.getName() == "Computer")
                         {
