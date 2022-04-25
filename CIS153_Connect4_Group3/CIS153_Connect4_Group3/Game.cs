@@ -292,34 +292,34 @@ namespace CIS153_Connect4_Group3
             }
 
             //check for vertical
-            for (int r = 0; r < 3; r++)
-            {
-                for (int c = 0; c < 7; c++)
-                {
-                    if (square[r, c].getPlayerNum() == 0 &&
-                        square[r + 1, c].getPlayerNum() == 2 &&
-                        square[r + 2, c].getPlayerNum() == 2 &&
-                        square[r + 3, c].getPlayerNum() == 0 &&
-                        square[r + 4, c].getPlayerNum() == 0)
-                    {
-                        square[r + 3, c].setPlayerNum(2); //make move
-                        return true; //successful move, stop three plus two
-                    }
+            //for (int r = 0; r < 2; r++)
+            //{
+            //    for (int c = 0; c < 7; c++)
+            //    {
+            //        if (square[r, c].getPlayerNum() == 0 &&
+            //            square[r + 1, c].getPlayerNum() == 2 &&
+            //            square[r + 2, c].getPlayerNum() == 2 &&
+            //            square[r + 3, c].getPlayerNum() == 0 &&
+            //            square[r + 4, c].getPlayerNum() == 0)
+            //        {
+            //            square[r + 3, c].setPlayerNum(2); //make move
+            //            return true; //successful move, stop three plus two
+            //        }
 
-                    else if (square[r, c].getPlayerNum() == 0 &&
-                        square[r + 1, c].getPlayerNum() == 1 &&
-                        square[r + 2, c].getPlayerNum() == 1 &&
-                        square[r + 3, c].getPlayerNum() == 0 &&
-                        square[r + 4, c].getPlayerNum() == 0)
-                    {
-                        square[r + 3, c].setPlayerNum(2); //block
-                        return true; //successful move, stop three plus two
-                    }
-                }
-            }
+            //        else if (square[r, c].getPlayerNum() == 0 &&
+            //            square[r + 1, c].getPlayerNum() == 1 &&
+            //            square[r + 2, c].getPlayerNum() == 1 &&
+            //            square[r + 3, c].getPlayerNum() == 0 &&
+            //            square[r + 4, c].getPlayerNum() == 0)
+            //        {
+            //            square[r + 3, c].setPlayerNum(2); //block
+            //            return true; //successful move, stop three plus two
+            //        }
+            //    }
+            //}
 
             //check for upward diagonal
-            for (int r = 3; r < 6; r++)
+            for (int r = 0; r < 2; r++)
             {
                 for (int c = 0; c < 3; c++)
                 {
@@ -353,9 +353,9 @@ namespace CIS153_Connect4_Group3
             }
 
             //check for downward diagonal
-            for (int r = 0; r < 3; r++)
+            for (int r = 5; r > 4; r--)
             {
-                for (int c = 4; c < 7; c++)
+                for (int c = 0; c < 3; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r - 1, c + 1].getPlayerNum() == 2 &&
@@ -395,7 +395,7 @@ namespace CIS153_Connect4_Group3
             //check for horizontal
             for (int r = 0; r < 6; r++)
             {
-                for (int c = 0; c < 3; c++)
+                for (int c = 0; c < 4; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r, c + 1].getPlayerNum() == 2 &&
@@ -423,34 +423,34 @@ namespace CIS153_Connect4_Group3
             }
 
             //check for vertical 
-            for (int r = 0; r < 3; r++)
-            {
-                for (int c = 0; c < 7; c++)
-                {
-                    if (square[r, c].getPlayerNum() == 0 &&
-                        square[r + 1, c].getPlayerNum() == 2 &&
-                        square[r + 2, c].getPlayerNum() == 2 &&
-                        square[r + 3, c].getPlayerNum() == 0)
-                    {
-                        square[r + 2, c].setPlayerNum(2); //make move
-                        return true; //successful move, stop two plus two;
-                    }
+            //for (int r = 0; r < 3; r++)
+            //{
+            //    for (int c = 0; c < 7; c++)
+            //    {
+            //        if (square[r, c].getPlayerNum() == 0 &&
+            //            square[r + 1, c].getPlayerNum() == 2 &&
+            //            square[r + 2, c].getPlayerNum() == 2 &&
+            //            square[r + 3, c].getPlayerNum() == 0)
+            //        {
+            //            square[r + 2, c].setPlayerNum(2); //make move
+            //            return true; //successful move, stop two plus two;
+            //        }
 
-                    else if (square[r, c].getPlayerNum() == 0 &&
-                        square[r + 1, c].getPlayerNum() == 1 &&
-                        square[r + 2, c].getPlayerNum() == 1 &&
-                        square[r + 3, c].getPlayerNum() == 0)
-                    {
-                        square[r + 2, c].setPlayerNum(2); //block
-                        return true; //successful move, stop two plus two;
-                    }
-                }
-            }
+            //        else if (square[r, c].getPlayerNum() == 0 &&
+            //            square[r + 1, c].getPlayerNum() == 1 &&
+            //            square[r + 2, c].getPlayerNum() == 1 &&
+            //            square[r + 3, c].getPlayerNum() == 0)
+            //        {
+            //            square[r + 2, c].setPlayerNum(2); //block
+            //            return true; //successful move, stop two plus two;
+            //        }
+            //    }
+            //}
 
             //check for upward diagonal
-            for (int r = 3; r < 6; r++)
+            for (int r = 0; r < 3; r++)
             {
-                for (int c = 0; c < 3; c++)
+                for (int c = 0; c < 4; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r + 1, c + 1].getPlayerNum() == 2 &&
@@ -480,9 +480,9 @@ namespace CIS153_Connect4_Group3
             }
 
             //check for downward diagonal
-            for (int r = 0; r < 3; r++)
+            for (int r = 5; r > 2; r--)
             {
-                for (int c = 4; c < 7; c++)
+                for (int c = 0; c < 4; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r - 1, c + 1].getPlayerNum() == 2 &&
@@ -518,7 +518,7 @@ namespace CIS153_Connect4_Group3
             //check for horizontal 
             for (int r = 0; r < 6; r++)
             {
-                for (int c = 0; c < 3; c++)
+                for (int c = 0; c < 5; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r, c + 1].getPlayerNum() == 2 &&
@@ -546,32 +546,32 @@ namespace CIS153_Connect4_Group3
             }
 
             //check for vertical 
-            for (int r = 0; r < 3; r++)
-            {
-                for (int c = 0; c < 7; c++)
-                {
-                    if (square[r, c].getPlayerNum() == 0 &&
-                        square[r + 1, c].getPlayerNum() == 2 &&
-                        square[r + 2, c].getPlayerNum() == 0)
-                    {
-                        square[r + 2, c].setPlayerNum(2); //make move
-                        return true; //successful move, stop one plus two;
-                    }
+            //for (int r = 0; r < 3; r++)
+            //{
+            //    for (int c = 0; c < 7; c++)
+            //    {
+            //        if (square[r, c].getPlayerNum() == 0 &&
+            //            square[r + 1, c].getPlayerNum() == 2 &&
+            //            square[r + 2, c].getPlayerNum() == 0)
+            //        {
+            //            square[r + 2, c].setPlayerNum(2); //make move
+            //            return true; //successful move, stop one plus two;
+            //        }
 
-                    else if (square[r, c].getPlayerNum() == 0 &&
-                        square[r + 1, c].getPlayerNum() == 1 &&
-                        square[r + 2, c].getPlayerNum() == 0)
-                    {
-                        square[r + 2, c].setPlayerNum(2); //block
-                        return true; //successful move, stop one plus two;
-                    }
-                }
-            }
+            //        else if (square[r, c].getPlayerNum() == 0 &&
+            //            square[r + 1, c].getPlayerNum() == 1 &&
+            //            square[r + 2, c].getPlayerNum() == 0)
+            //        {
+            //            square[r + 2, c].setPlayerNum(2); //block
+            //            return true; //successful move, stop one plus two;
+            //        }
+            //    }
+            //}
 
             //check for upward diagonal
-            for (int r = 3; r < 6; r++)
+            for (int r = 0; r < 4; r++)
             {
-                for (int c = 0; c < 3; c++)
+                for (int c = 0; c < 5; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r + 1, c + 1].getPlayerNum() == 2 &&
@@ -599,9 +599,9 @@ namespace CIS153_Connect4_Group3
             }
 
             //check for downward diagonal
-            for (int r = 0; r < 3; r++)
+            for (int r = 5; r > 2; r--)
             {
-                for (int c = 4; c < 7; c++)
+                for (int c = 0; c < 5; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r - 1, c + 1].getPlayerNum() == 2 &&
