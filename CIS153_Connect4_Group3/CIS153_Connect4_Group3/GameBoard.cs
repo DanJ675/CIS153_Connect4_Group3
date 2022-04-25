@@ -862,16 +862,38 @@ namespace Connect4
 
         private void col0_MouseClick(object sender, MouseEventArgs e)
         {
-            g.onClick(g.getActivePlayerNum(), 0);
-            updateScreen(g.getSquare());
-            switchPlayers();
+            if(g.getPlayerNum(5,0) == 0)
+            {
+                g.onClick(g.getActivePlayerNum(), 0);
+                updateScreen(g.getSquare());
+                switchPlayers();
+            }
+            if (g.checkWinner() > 0)
+            {
+                // winner stuff
+            }
+            if(g.checkDraw())
+            {
+                // ties stuff
+            }
         }
 
         private void col1_MouseClick(object sender, MouseEventArgs e)
         {
-            g.onClick(g.getActivePlayerNum(), 1);
-            updateScreen(g.getSquare());
-            switchPlayers();
+            if (g.getPlayerNum(5, 1) == 0)
+            {
+                g.onClick(g.getActivePlayerNum(), 1);
+                updateScreen(g.getSquare());
+                switchPlayers();
+            }
+            if (g.checkWinner() > 0)
+            {
+                // winner stuff
+            }
+            if (g.checkDraw())
+            {
+                // ties stuff
+            }
         }
 
         private void col1_MouseHover(object sender, EventArgs e)
@@ -886,9 +908,20 @@ namespace Connect4
         }
         private void col2_MouseClick(object sender, MouseEventArgs e)
         {
-            g.onClick(g.getActivePlayerNum(), 2);
-            updateScreen(g.getSquare());
-            switchPlayers();
+            if (g.getPlayerNum(5, 2) == 0)
+            {
+                g.onClick(g.getActivePlayerNum(), 2);
+                updateScreen(g.getSquare());
+                switchPlayers();
+            }
+            if (g.checkWinner() > 0)
+            {
+                // winner stuff
+            }
+            if (g.checkDraw())
+            {
+                // ties stuff
+            }
         }
 
         private void col2_MouseHover(object sender, EventArgs e)
@@ -903,9 +936,20 @@ namespace Connect4
         }
         private void col3_MouseClick(object sender, MouseEventArgs e)
         {
-            g.onClick(g.getActivePlayerNum(), 3);
-            updateScreen(g.getSquare());
-            switchPlayers();
+            if (g.getPlayerNum(5, 3) == 0)
+            {
+                g.onClick(g.getActivePlayerNum(), 3);
+                updateScreen(g.getSquare());
+                switchPlayers();
+            }
+            if (g.checkWinner() > 0)
+            {
+                // winner stuff
+            }
+            if (g.checkDraw())
+            {
+                // ties stuff
+            }
         }
 
         private void col3_MouseHover(object sender, EventArgs e)
@@ -920,9 +964,20 @@ namespace Connect4
         }
         private void col4_MouseClick(object sender, MouseEventArgs e)
         {
-            g.onClick(g.getActivePlayerNum(), 4);
-            updateScreen(g.getSquare());
-            switchPlayers();
+            if (g.getPlayerNum(5, 4) == 0)
+            {
+                g.onClick(g.getActivePlayerNum(), 4);
+                updateScreen(g.getSquare());
+                switchPlayers();
+            }
+            if (g.checkWinner() > 0)
+            {
+                // winner stuff
+            }
+            if (g.checkDraw())
+            {
+                // ties stuff
+            }
         }
 
         private void col4_MouseHover(object sender, EventArgs e)
@@ -937,9 +992,20 @@ namespace Connect4
         }
         private void col5_MouseClick(object sender, MouseEventArgs e)
         {
-            g.onClick(g.getActivePlayerNum(), 5);
-            updateScreen(g.getSquare());
-            switchPlayers();
+            if (g.getPlayerNum(5, 5) == 0)
+            {
+                g.onClick(g.getActivePlayerNum(), 5);
+                updateScreen(g.getSquare());
+                switchPlayers();
+            }
+            if (g.checkWinner() > 0)
+            {
+                // winner stuff
+            }
+            if (g.checkDraw())
+            {
+                // ties stuff
+            }
         }
 
         private void col5_MouseHover(object sender, EventArgs e)
@@ -954,9 +1020,20 @@ namespace Connect4
         }
         private void col6_MouseClick(object sender, MouseEventArgs e)
         {
-            g.onClick(g.getActivePlayerNum(), 6);
-            updateScreen(g.getSquare());
-            switchPlayers();
+            if (g.getPlayerNum(5, 2) == 0)
+            {
+                g.onClick(g.getActivePlayerNum(), 6);
+                updateScreen(g.getSquare());
+                switchPlayers();
+            }
+            if (g.checkWinner() > 0)
+            {
+                // winner stuff
+            }
+            if (g.checkDraw())
+            {
+                // ties stuff
+            }
         }
 
         private void col6_MouseHover(object sender, EventArgs e)

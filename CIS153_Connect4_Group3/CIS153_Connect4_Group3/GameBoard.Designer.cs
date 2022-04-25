@@ -1998,7 +1998,7 @@ namespace Connect4
             this.panel1.TabIndex = 179;
             this.panel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.col0_MouseClick);
             this.panel1.MouseLeave += new System.EventHandler(this.col0_MouseLeave);
-            this.panel1.MouseHover += new System.EventHandler(this.col0_MouseLeave);
+            this.panel1.MouseHover += new System.EventHandler(this.col0_MouseHover);
             // 
             // panel2
             // 

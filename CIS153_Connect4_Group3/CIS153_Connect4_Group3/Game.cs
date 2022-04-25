@@ -29,11 +29,17 @@ namespace CIS153_Connect4_Group3
         }
         public void setActivePlayerNum(int i) { activePlayerNum = i; }
         public int getActivePlayerNum() { return activePlayerNum; }
+        public int getPlayerNum(int row, int col)
+        {
+            Square[,] square = new Square[7, 6];
+            square = board.getBoard();
+            return square[col, row].getPlayerNum(); 
+        }
         public Square[,] onClick(int playerNum, int col) 
         {
             //board.onClick
             //square = board.getBoard();
-            //square = board.onClick(playerNum, col);
+            //square = board.onClick(playerNum, col);-
             return board.onClick(playerNum, col); ;
         }
         public Square[,] onHover(int playerNum, int col)

@@ -39,6 +39,11 @@ namespace CIS153_Connect4_Group3
         {
             return showBoard;
         }
+        public int getPlayerNum(int row, int col)
+        {
+
+            return board[row,col].getPlayerNum();
+        }
         public Square[,] mouseHover(int playerNum, int column)
         {
             copyBoard();
