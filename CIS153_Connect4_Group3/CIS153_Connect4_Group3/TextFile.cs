@@ -77,5 +77,41 @@ namespace CIS153_Connect4_Group3
             file.Close();
 
         }
+
+        public void UpdatePlayer(Player player, int type)
+        {
+            List<Player> playerList = ReadList();
+
+            foreach (Player p in playerList)
+            {
+                if (player.getName() == p.getName())
+                {
+                    switch (type)
+                    {
+                        case 1:
+                            p.addWin();
+                            break;
+                        case 2:
+                            p.addLoss();
+                            break;
+                        case 3:
+                            p.addTies();
+                            break;
+                        case 4:
+                            p.addWinVsAi();
+                            break;
+                        case 5:
+                            p.addLossVsAi();
+                            break;
+                        case 6:
+                            p.addTieVsAi();
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            WriteList(playerList);
+        }
     }
 }
