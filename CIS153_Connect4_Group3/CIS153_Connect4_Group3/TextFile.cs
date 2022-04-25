@@ -35,11 +35,11 @@ namespace CIS153_Connect4_Group3
                 }
                 //create new player in list by name
                 playerList.Add(new Player(line.Substring(0, delimPos[0])));
-                playerList[index].setWins(Int32.Parse(line.Substring(delimPos[0] + 1, 1)));
-                playerList[index].setLosses(Int32.Parse(line.Substring(delimPos[1] + 1, 1)));
-                playerList[index].setTies(Int32.Parse(line.Substring(delimPos[2] + 1, 1)));
-                playerList[index].setWinsVsAi(Int32.Parse(line.Substring(delimPos[3] + 1, 1)));
-                playerList[index].setLossesVsAi(Int32.Parse(line.Substring(delimPos[4] + 1, 1)));
+                playerList[index].setWins(Int32.Parse(line.Substring(delimPos[0] + 1, delimPos[1]-delimPos[0]-1)));
+                playerList[index].setLosses(Int32.Parse(line.Substring(delimPos[1] + 1, delimPos[2] - delimPos[1]-1)));
+                playerList[index].setTies(Int32.Parse(line.Substring(delimPos[2] + 1, delimPos[3] - delimPos[2]-1)));
+                playerList[index].setWinsVsAi(Int32.Parse(line.Substring(delimPos[3] + 1, delimPos[4] - delimPos[3]-1)));
+                playerList[index].setLossesVsAi(Int32.Parse(line.Substring(delimPos[4] + 1, delimPos[5] - delimPos[4]-1)));
                 playerList[index].setTiesVsAi(Int32.Parse(line.Substring(delimPos[5] + 1)));
                 index++;
                 line = file.ReadLine();
