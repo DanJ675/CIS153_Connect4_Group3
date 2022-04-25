@@ -518,7 +518,7 @@ namespace CIS153_Connect4_Group3
             //check for horizontal 
             for (int r = 0; r < 6; r++)
             {
-                for (int c = 0; c < 5; c++)
+                for (int c = 0; c < 4; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r, c + 1].getPlayerNum() == 2 &&
@@ -571,7 +571,7 @@ namespace CIS153_Connect4_Group3
             //check for upward diagonal
             for (int r = 0; r < 4; r++)
             {
-                for (int c = 0; c < 5; c++)
+                for (int c = 0; c < 4; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r + 1, c + 1].getPlayerNum() == 2 &&
@@ -601,7 +601,7 @@ namespace CIS153_Connect4_Group3
             //check for downward diagonal
             for (int r = 5; r < 3; r--)
             {
-                for (int c = 0; c < 5; c++)
+                for (int c = 0; c < 4; c++)
                 {
                     if (square[r, c].getPlayerNum() == 0 &&
                         square[r - 1, c + 1].getPlayerNum() == 2 &&

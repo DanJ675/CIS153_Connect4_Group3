@@ -45,7 +45,6 @@ namespace CIS153_Connect4_Group3
         {
             this.Hide();
             GameBoard board = new GameBoard();
-            board.setActiveBoard(false);
             board.FormClosed += (s, args) => this.Close();
             board.Show();
 
