@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CIS153_Connect4_Group3
+namespace Connect4
 {
     public partial class GameBoard : Form
     {

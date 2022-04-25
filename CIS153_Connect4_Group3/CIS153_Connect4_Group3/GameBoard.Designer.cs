@@ -1,5 +1,5 @@
 ﻿
-namespace CIS153_Connect4_Group3
+namespace Connect4
 {
     partial class GameBoard
     {

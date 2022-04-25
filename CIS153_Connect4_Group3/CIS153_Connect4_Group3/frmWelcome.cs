@@ -1,4 +1,4 @@
-﻿using CIS153_Connect4_Group3;
+﻿using Connect4;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
