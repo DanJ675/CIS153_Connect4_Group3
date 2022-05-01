@@ -42,7 +42,7 @@ namespace CIS153_Connect4_Group3
             this.NewButt.Location = new System.Drawing.Point(16, 153);
             this.NewButt.Margin = new System.Windows.Forms.Padding(4);
             this.NewButt.Name = "NewButt";
-            this.NewButt.Size = new System.Drawing.Size(145, 60);
+            this.NewButt.Size = new System.Drawing.Size(186, 60);
             this.NewButt.TabIndex = 0;
             this.NewButt.Text = "New Game";
             this.NewButt.UseVisualStyleBackColor = true;
@@ -51,7 +51,7 @@ namespace CIS153_Connect4_Group3
             // ReturnButt
             // 
             this.ReturnButt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ReturnButt.Location = new System.Drawing.Point(356, 153);
+            this.ReturnButt.Location = new System.Drawing.Point(327, 153);
             this.ReturnButt.Margin = new System.Windows.Forms.Padding(4);
             this.ReturnButt.Name = "ReturnButt";
             this.ReturnButt.Size = new System.Drawing.Size(145, 60);
@@ -66,7 +66,7 @@ namespace CIS153_Connect4_Group3
             this.StatButt.Location = new System.Drawing.Point(16, 220);
             this.StatButt.Margin = new System.Windows.Forms.Padding(4);
             this.StatButt.Name = "StatButt";
-            this.StatButt.Size = new System.Drawing.Size(231, 60);
+            this.StatButt.Size = new System.Drawing.Size(186, 60);
             this.StatButt.TabIndex = 2;
             this.StatButt.Text = "View Board";
             this.StatButt.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@ namespace CIS153_Connect4_Group3
             // ExitButt
             // 
             this.ExitButt.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ExitButt.Location = new System.Drawing.Point(356, 220);
+            this.ExitButt.Location = new System.Drawing.Point(327, 220);
             this.ExitButt.Margin = new System.Windows.Forms.Padding(4);
             this.ExitButt.Name = "ExitButt";
             this.ExitButt.Size = new System.Drawing.Size(145, 60);
@@ -88,10 +88,10 @@ namespace CIS153_Connect4_Group3
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Times New Roman", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(91, 43);
+            this.lblName.Location = new System.Drawing.Point(35, 57);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(310, 42);
+            this.lblName.Size = new System.Drawing.Size(201, 26);
             this.lblName.TabIndex = 4;
             this.lblName.Text = "We have a winner!";
             // 

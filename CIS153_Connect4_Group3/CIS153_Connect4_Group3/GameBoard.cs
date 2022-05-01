@@ -871,7 +871,7 @@ namespace Connect4
                 g.onClick(g.getActivePlayerNum(), 0);
                 updateScreen(g.getSquare());
                 switchPlayers();
-                if(player2Name== "Computer")
+                if(player2Name == "Computer")
                 {
                     updateScreen(g.nextComputerMove());
                 }
@@ -880,7 +880,7 @@ namespace Connect4
             {
                 this.Hide();
                 Result result = new Result();
-                switchPlayers();
+                //switchPlayers();
 
                 if (g.getActivePlayerNum() == 1)
                 {
@@ -947,6 +947,8 @@ namespace Connect4
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
+
+            switchPlayers();
         }
 
         private void col1_MouseClick(object sender, MouseEventArgs e)
@@ -956,12 +958,16 @@ namespace Connect4
                 g.onClick(g.getActivePlayerNum(), 1);
                 updateScreen(g.getSquare());
                 switchPlayers();
+                if (player2Name == "Computer")
+                {
+                    updateScreen(g.nextComputerMove());
+                }
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
                 this.Hide();
                 Result result = new Result();
-                switchPlayers();
+                //switchPlayers();
 
                 if (g.getActivePlayerNum() == 1)
                 {
@@ -1028,6 +1034,8 @@ namespace Connect4
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
+
+            switchPlayers();
         }
 
         private void col1_MouseHover(object sender, EventArgs e)
@@ -1047,12 +1055,16 @@ namespace Connect4
                 g.onClick(g.getActivePlayerNum(), 2);
                 updateScreen(g.getSquare());
                 switchPlayers();
+                if (player2Name == "Computer")
+                {
+                    updateScreen(g.nextComputerMove());
+                }
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
                 this.Hide();
                 Result result = new Result();
-                switchPlayers();
+                //switchPlayers();
 
                 if (g.getActivePlayerNum() == 1)
                 {
@@ -1119,6 +1131,8 @@ namespace Connect4
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
+
+            switchPlayers();
         }
 
         private void col2_MouseHover(object sender, EventArgs e)
@@ -1138,12 +1152,16 @@ namespace Connect4
                 g.onClick(g.getActivePlayerNum(), 3);
                 updateScreen(g.getSquare());
                 switchPlayers();
+                if (player2Name == "Computer")
+                {
+                    updateScreen(g.nextComputerMove());
+                }
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
                 this.Hide();
                 Result result = new Result();
-                switchPlayers();
+                //switchPlayers();
 
                 if (g.getActivePlayerNum() == 1)
                 {
@@ -1210,6 +1228,8 @@ namespace Connect4
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
+
+            switchPlayers();
         }
 
         private void col3_MouseHover(object sender, EventArgs e)
@@ -1229,12 +1249,16 @@ namespace Connect4
                 g.onClick(g.getActivePlayerNum(), 4);
                 updateScreen(g.getSquare());
                 switchPlayers();
+                if (player2Name == "Computer")
+                {
+                    updateScreen(g.nextComputerMove());
+                }
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
                 this.Hide();
                 Result result = new Result();
-                switchPlayers();
+                //switchPlayers();
 
                 if (g.getActivePlayerNum() == 1)
                 {
@@ -1301,6 +1325,8 @@ namespace Connect4
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
+
+            switchPlayers();
         }
 
         private void col4_MouseHover(object sender, EventArgs e)
@@ -1320,12 +1346,16 @@ namespace Connect4
                 g.onClick(g.getActivePlayerNum(), 5);
                 updateScreen(g.getSquare());
                 switchPlayers();
+                if (player2Name == "Computer")
+                {
+                    updateScreen(g.nextComputerMove());
+                }
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
                 this.Hide();
                 Result result = new Result();
-                switchPlayers();
+                //switchPlayers();
 
                 if (g.getActivePlayerNum() == 1)
                 {
@@ -1392,6 +1422,8 @@ namespace Connect4
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
+
+            switchPlayers();
         }
 
         private void col5_MouseHover(object sender, EventArgs e)
@@ -1411,12 +1443,16 @@ namespace Connect4
                 g.onClick(g.getActivePlayerNum(), 6);
                 updateScreen(g.getSquare());
                 switchPlayers();
+                if (player2Name == "Computer")
+                {
+                    updateScreen(g.nextComputerMove());
+                }
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
                 this.Hide();
                 Result result = new Result();
-                switchPlayers();
+                //switchPlayers();
 
                 if (g.getActivePlayerNum() == 1)
                 {
@@ -1483,6 +1519,8 @@ namespace Connect4
                 result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
+
+            switchPlayers();
         }
 
         private void col6_MouseHover(object sender, EventArgs e)
