@@ -42,39 +42,6 @@ namespace Connect4
             lblPlayer1Name.Text = player1Name;
             lblPlayer2Name.Text = player2Name;
 
-            //showGame.getSquare();   // you use this to return the information to update the colors of the squares.
-
-            //if (game.checkWinner() > 0)
-            //{
-            //    if(player2.getName() == "Computer")
-            //    {
-            //        if(game.checkWinner() == 1)
-            //        {
-            //            player1.addWinVsAi();
-            //        }
-            //        else
-            //        {
-            //            player1.addLossVsAi();
-            //        }
-            //    }
-            //}
-
-            //if(game.checkDraw())
-            //{
-            //    if (player2.getName() == "Computer")
-            //    {
-            //        if (game.checkDraw() == true)
-            //        {
-            //            player1.addTieVsAi();
-            //            player2.addTies();
-            //        }
-            //    }
-            //    else
-            //    {
-            //        player1.addTies();
-            //        player2.addTies();
-            //    }
-            //}
         }
         private void updateScreen(CIS153_Connect4_Group3.Square[,] squares)
         {
@@ -841,24 +808,29 @@ namespace Connect4
         }
         private void switchPlayers()
         {
-            if (g.getActivePlayerNum() == 1)
+            if(activeBoard)
             {
-                g.setActivePlayerNum(2);
-                pBoxPlayer1.Visible = false;
-                pBoxPlayer2.Visible = true;
+                if (g.getActivePlayerNum() == 1)
+                {
+                    g.setActivePlayerNum(2);
+                    pBoxPlayer1.Visible = false;
+                    pBoxPlayer2.Visible = true;
+                }
+                else
+                {
+                    g.setActivePlayerNum(1);
+                    pBoxPlayer1.Visible = true;
+                    pBoxPlayer2.Visible = false;
+                }
             }
-            else
-            {
-                g.setActivePlayerNum(1);
-                pBoxPlayer1.Visible = true;
-                pBoxPlayer2.Visible = false;
-            }
-
         }
         private void col0_MouseHover(object sender, EventArgs e)
         {
-            g.onHover(g.getActivePlayerNum(), 0);
-            updateScreen(g.getShowSquare());
+            if(activeBoard)
+            {
+                g.onHover(g.getActivePlayerNum(), 0);
+                updateScreen(g.getShowSquare());
+            }
         }
 
         private void col0_MouseLeave(object sender, EventArgs e)
@@ -886,6 +858,7 @@ namespace Connect4
                         player2.addLoss();
                         textFile.UpdatePlayer(player1Name, 4);
                         textFile.UpdatePlayer(player2Name, 2);
+                        //result.Curr
                         result.setPlayerName(player1Name);
                         result.setP1(player1Name);
                         result.setP2(player2Name);
@@ -929,7 +902,7 @@ namespace Connect4
 
                     }
                 }
-                result.FormClosed += (s, args) => this.Close();
+                //result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
             if (g.checkDraw() && activeBoard)
@@ -952,11 +925,12 @@ namespace Connect4
                 this.Hide();
                 Result result = new Result();
                 result.setPlayerName(player1Name);
-                result.FormClosed += (s, args) => this.Close();
+                //result.FormClosed += (s, args) => this.Close();
                 result.Show();
             }
 
             switchPlayers();
+
             if (player2Name == "Computer" && g.getActivePlayerNum() == 2 && activeBoard)
             {
                 updateScreen(g.nextComputerMove());
@@ -1013,7 +987,7 @@ namespace Connect4
                             result.setP2(player2Name);
                         }
                     }
-                    result.FormClosed += (s, args) => this.Close();
+                    //result.FormClosed += (s, args) => this.Close();
                     result.Show();
                 }
                 if (g.checkDraw() && activeBoard)
@@ -1036,7 +1010,7 @@ namespace Connect4
                     this.Hide();
                     Result result = new Result();
                     result.setPlayerName(player1Name);
-                    result.FormClosed += (s, args) => this.Close();
+                    //result.FormClosed += (s, args) => this.Close();
                     result.Show();
                 }
                 switchPlayers();
@@ -1054,8 +1028,12 @@ namespace Connect4
 
         private void col1_MouseHover(object sender, EventArgs e)
         {
-            g.onHover(g.getActivePlayerNum(), 1);
-            updateScreen(g.getShowSquare());
+            if (activeBoard)
+            {
+                g.onHover(g.getActivePlayerNum(), 1);
+                updateScreen(g.getShowSquare());
+            }
+
         }
 
         private void col1_MouseLeave(object sender, EventArgs e)
@@ -1069,8 +1047,11 @@ namespace Connect4
 
         private void col2_MouseHover(object sender, EventArgs e)
         {
-            g.onHover(g.getActivePlayerNum(), 2);
-            updateScreen(g.getShowSquare());
+            if (activeBoard)
+            {
+                g.onHover(g.getActivePlayerNum(), 2);
+                updateScreen(g.getShowSquare());
+            }
         }
 
         private void col2_MouseLeave(object sender, EventArgs e)
@@ -1084,9 +1065,11 @@ namespace Connect4
 
         private void col3_MouseHover(object sender, EventArgs e)
         {
-            g.onHover(g.getActivePlayerNum(), 3);
-            updateScreen(g.getShowSquare());
-        }
+            if (activeBoard)
+            {
+                g.onHover(g.getActivePlayerNum(), 3);
+                updateScreen(g.getShowSquare());
+            }        }
 
         private void col3_MouseLeave(object sender, EventArgs e)
         {
@@ -1099,9 +1082,11 @@ namespace Connect4
 
         private void col4_MouseHover(object sender, EventArgs e)
         {
-            g.onHover(g.getActivePlayerNum(), 4);
-            updateScreen(g.getShowSquare());
-        }
+            if (activeBoard)
+            {
+                g.onHover(g.getActivePlayerNum(), 4);
+                updateScreen(g.getShowSquare());
+            }        }
 
         private void col4_MouseLeave(object sender, EventArgs e)
         {
@@ -1114,9 +1099,11 @@ namespace Connect4
 
         private void col5_MouseHover(object sender, EventArgs e)
         {
-            g.onHover(g.getActivePlayerNum(), 5);
-            updateScreen(g.getShowSquare());
-        }
+            if (activeBoard)
+            {
+                g.onHover(g.getActivePlayerNum(), 5);
+                updateScreen(g.getShowSquare());
+            }        }
 
         private void col5_MouseLeave(object sender, EventArgs e)
         {
@@ -1129,8 +1116,11 @@ namespace Connect4
 
         private void col6_MouseHover(object sender, EventArgs e)
         {
-            g.onHover(g.getActivePlayerNum(), 6);
-            updateScreen(g.getShowSquare());
+            if (activeBoard)
+            {
+                g.onHover(g.getActivePlayerNum(), 6);
+                updateScreen(g.getShowSquare());
+            }
         }
 
         private void col6_MouseLeave(object sender, EventArgs e)

@@ -53,7 +53,7 @@ namespace CIS153_Connect4_Group3
             this.pvpw.Location = new System.Drawing.Point(128, 153);
             this.pvpw.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pvpw.Name = "pvpw";
-            this.pvpw.Size = new System.Drawing.Size(417, 61);
+            this.pvpw.Size = new System.Drawing.Size(513, 76);
             this.pvpw.TabIndex = 3;
             this.pvpw.Text = "Wins vs Players =";
             // 
@@ -64,7 +64,7 @@ namespace CIS153_Connect4_Group3
             this.pvpl.Location = new System.Drawing.Point(94, 214);
             this.pvpl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pvpl.Name = "pvpl";
-            this.pvpl.Size = new System.Drawing.Size(451, 61);
+            this.pvpl.Size = new System.Drawing.Size(554, 76);
             this.pvpl.TabIndex = 4;
             this.pvpl.Text = "Losses vs Players =";
             // 
@@ -75,7 +75,7 @@ namespace CIS153_Connect4_Group3
             this.pvcw.Location = new System.Drawing.Point(72, 338);
             this.pvcw.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pvcw.Name = "pvcw";
-            this.pvcw.Size = new System.Drawing.Size(473, 61);
+            this.pvcw.Size = new System.Drawing.Size(587, 76);
             this.pvcw.TabIndex = 5;
             this.pvcw.Text = "Wins vs Computer =";
             // 
@@ -86,7 +86,7 @@ namespace CIS153_Connect4_Group3
             this.pvcl.Location = new System.Drawing.Point(38, 399);
             this.pvcl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pvcl.Name = "pvcl";
-            this.pvcl.Size = new System.Drawing.Size(507, 61);
+            this.pvcl.Size = new System.Drawing.Size(628, 76);
             this.pvcl.TabIndex = 6;
             this.pvcl.Text = "Losses vs Computer =";
             // 
@@ -97,7 +97,7 @@ namespace CIS153_Connect4_Group3
             this.pvpt.Location = new System.Drawing.Point(170, 277);
             this.pvpt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pvpt.Name = "pvpt";
-            this.pvpt.Size = new System.Drawing.Size(375, 61);
+            this.pvpt.Size = new System.Drawing.Size(461, 76);
             this.pvpt.TabIndex = 7;
             this.pvpt.Text = "Tie vs Players =";
             // 
@@ -108,7 +108,7 @@ namespace CIS153_Connect4_Group3
             this.pvct.Location = new System.Drawing.Point(114, 460);
             this.pvct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pvct.Name = "pvct";
-            this.pvct.Size = new System.Drawing.Size(431, 61);
+            this.pvct.Size = new System.Drawing.Size(535, 76);
             this.pvct.TabIndex = 8;
             this.pvct.Text = "Tie vs Computer =";
             // 
@@ -119,7 +119,7 @@ namespace CIS153_Connect4_Group3
             this.lblWins.Location = new System.Drawing.Point(553, 153);
             this.lblWins.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWins.Name = "lblWins";
-            this.lblWins.Size = new System.Drawing.Size(189, 61);
+            this.lblWins.Size = new System.Drawing.Size(237, 76);
             this.lblWins.TabIndex = 9;
             this.lblWins.Text = "123131";
             // 
@@ -130,7 +130,7 @@ namespace CIS153_Connect4_Group3
             this.lblLosses.Location = new System.Drawing.Point(553, 214);
             this.lblLosses.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLosses.Name = "lblLosses";
-            this.lblLosses.Size = new System.Drawing.Size(189, 61);
+            this.lblLosses.Size = new System.Drawing.Size(237, 76);
             this.lblLosses.TabIndex = 10;
             this.lblLosses.Text = "123131";
             // 
@@ -141,7 +141,7 @@ namespace CIS153_Connect4_Group3
             this.lblTies.Location = new System.Drawing.Point(553, 277);
             this.lblTies.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTies.Name = "lblTies";
-            this.lblTies.Size = new System.Drawing.Size(189, 61);
+            this.lblTies.Size = new System.Drawing.Size(237, 76);
             this.lblTies.TabIndex = 11;
             this.lblTies.Text = "123131";
             // 
@@ -152,7 +152,7 @@ namespace CIS153_Connect4_Group3
             this.lblWinsVsAi.Location = new System.Drawing.Point(553, 338);
             this.lblWinsVsAi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWinsVsAi.Name = "lblWinsVsAi";
-            this.lblWinsVsAi.Size = new System.Drawing.Size(189, 61);
+            this.lblWinsVsAi.Size = new System.Drawing.Size(237, 76);
             this.lblWinsVsAi.TabIndex = 12;
             this.lblWinsVsAi.Text = "123131";
             // 
@@ -163,7 +163,7 @@ namespace CIS153_Connect4_Group3
             this.lblLossesVsAi.Location = new System.Drawing.Point(553, 399);
             this.lblLossesVsAi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLossesVsAi.Name = "lblLossesVsAi";
-            this.lblLossesVsAi.Size = new System.Drawing.Size(189, 61);
+            this.lblLossesVsAi.Size = new System.Drawing.Size(237, 76);
             this.lblLossesVsAi.TabIndex = 13;
             this.lblLossesVsAi.Text = "123131";
             // 
@@ -174,7 +174,7 @@ namespace CIS153_Connect4_Group3
             this.lblTiesVsAi.Location = new System.Drawing.Point(553, 460);
             this.lblTiesVsAi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTiesVsAi.Name = "lblTiesVsAi";
-            this.lblTiesVsAi.Size = new System.Drawing.Size(189, 61);
+            this.lblTiesVsAi.Size = new System.Drawing.Size(237, 76);
             this.lblTiesVsAi.TabIndex = 14;
             this.lblTiesVsAi.Text = "123131";
             // 
@@ -186,7 +186,7 @@ namespace CIS153_Connect4_Group3
             this.lblPlayerName.Location = new System.Drawing.Point(273, 51);
             this.lblPlayerName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPlayerName.Name = "lblPlayerName";
-            this.lblPlayerName.Size = new System.Drawing.Size(337, 85);
+            this.lblPlayerName.Size = new System.Drawing.Size(421, 107);
             this.lblPlayerName.TabIndex = 15;
             this.lblPlayerName.Text = "Computer";
             // 
@@ -228,6 +228,7 @@ namespace CIS153_Connect4_Group3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(904, 613);
+            this.ControlBox = false;
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.ExitButt);
             this.Controls.Add(this.lblPlayerName);

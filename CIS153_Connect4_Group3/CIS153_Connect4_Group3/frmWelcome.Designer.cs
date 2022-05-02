@@ -65,7 +65,7 @@ namespace CIS153_Connect4_Group3
             this.label1.Location = new System.Drawing.Point(70, 2);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(741, 122);
+            this.label1.Size = new System.Drawing.Size(928, 152);
             this.label1.TabIndex = 4;
             this.label1.Text = "Play Connect 4!";
             // 
@@ -76,7 +76,7 @@ namespace CIS153_Connect4_Group3
             this.cmbPlayer1.Location = new System.Drawing.Point(16, 161);
             this.cmbPlayer1.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlayer1.Name = "cmbPlayer1";
-            this.cmbPlayer1.Size = new System.Drawing.Size(247, 45);
+            this.cmbPlayer1.Size = new System.Drawing.Size(247, 54);
             this.cmbPlayer1.TabIndex = 6;
             // 
             // cmbPlayer2
@@ -86,7 +86,7 @@ namespace CIS153_Connect4_Group3
             this.cmbPlayer2.Location = new System.Drawing.Point(315, 161);
             this.cmbPlayer2.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPlayer2.Name = "cmbPlayer2";
-            this.cmbPlayer2.Size = new System.Drawing.Size(247, 45);
+            this.cmbPlayer2.Size = new System.Drawing.Size(247, 54);
             this.cmbPlayer2.TabIndex = 7;
             // 
             // Start
@@ -110,7 +110,7 @@ namespace CIS153_Connect4_Group3
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(11, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 42);
+            this.label2.Size = new System.Drawing.Size(202, 54);
             this.label2.TabIndex = 10;
             this.label2.Text = "Player 1";
             // 
@@ -120,7 +120,7 @@ namespace CIS153_Connect4_Group3
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(309, 124);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 42);
+            this.label3.Size = new System.Drawing.Size(202, 54);
             this.label3.TabIndex = 11;
             this.label3.Text = "Player 2";
             // 
@@ -130,7 +130,7 @@ namespace CIS153_Connect4_Group3
             this.tbAdd.Location = new System.Drawing.Point(31, 376);
             this.tbAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbAdd.Name = "tbAdd";
-            this.tbAdd.Size = new System.Drawing.Size(185, 44);
+            this.tbAdd.Size = new System.Drawing.Size(185, 53);
             this.tbAdd.TabIndex = 12;
             // 
             // label4
@@ -139,7 +139,7 @@ namespace CIS153_Connect4_Group3
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(31, 342);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(300, 42);
+            this.label4.Size = new System.Drawing.Size(371, 54);
             this.label4.TabIndex = 13;
             this.label4.Text = "Add New Player";
             // 
@@ -192,6 +192,7 @@ namespace CIS153_Connect4_Group3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkKhaki;
             this.ClientSize = new System.Drawing.Size(1080, 606);
+            this.ControlBox = false;
             this.Controls.Add(this.btnPlayer2Stats);
             this.Controls.Add(this.btnPlayer1Stats);
             this.Controls.Add(this.btnAdd);

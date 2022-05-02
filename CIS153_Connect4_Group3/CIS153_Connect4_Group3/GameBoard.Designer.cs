@@ -2123,6 +2123,7 @@ namespace Connect4
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 492);
+            this.ControlBox = false;
             this.Controls.Add(this.pBoxPlayer2);
             this.Controls.Add(this.lblPlayer2Name);
             this.Controls.Add(this.lblPlayer1Name);
@@ -2147,7 +2148,7 @@ namespace Connect4
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GameBoard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "GameBoard";
+            this.Text = "Connect 4";
             this.Load += new System.EventHandler(this.GameBoard_Load);
             this.col6Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pBox51P1)).EndInit();

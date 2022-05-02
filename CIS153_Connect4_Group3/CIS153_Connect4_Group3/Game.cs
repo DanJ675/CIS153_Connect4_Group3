@@ -617,7 +617,7 @@ namespace CIS153_Connect4_Group3
                     if (square[c, r].getPlayerNum() == 2 &&
                         square[c + 1, r + 1].getPlayerNum() == 0 &&
                         square[c + 2, r + 2].getPlayerNum() == 0 &&
-                        (r == 0 || (square[c, r + 1].getPlayerNum() != 0)))
+                        (r == 0 || (square[c + 1, r].getPlayerNum() != 0)))
 
                     {
                         square[c + 1, r + 1].setPlayerNum(2); // make move
@@ -627,7 +627,7 @@ namespace CIS153_Connect4_Group3
                     else if (square[c, r].getPlayerNum() == 1 &&
                          square[c + 1, r + 1].getPlayerNum() == 0 &&
                          square[c + 2, r + 2].getPlayerNum() == 0 &&
-                         (r == 0 || (square[c, r + 1].getPlayerNum() != 0)))
+                         (r == 0 || (square[c + 1, r].getPlayerNum() != 0)))
 
                     {
                         square[c + 1, r + 1].setPlayerNum(2); // block
@@ -652,8 +652,8 @@ namespace CIS153_Connect4_Group3
                         Console.WriteLine("1+2 Square: " + (c + 1) + ", " + (r - 2) + " is player: " + square[c + 1, r - 2].getPlayerNum());
                         return true; //successful move, stop one plus two;
                     }
-                    else if (square[c, r].getPlayerNum() == 0 &&
-                        square[c + 1, r - 1].getPlayerNum() == 1 &&
+                    else if (square[c, r].getPlayerNum() == 1 &&
+                        square[c + 1, r - 1].getPlayerNum() == 0 &&
                         square[c + 2, r - 2].getPlayerNum() == 0 &&
                         (r == 0 || (square[c + 1, r - 2].getPlayerNum() != 0)))
 

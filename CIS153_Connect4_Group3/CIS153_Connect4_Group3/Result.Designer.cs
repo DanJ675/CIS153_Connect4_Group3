@@ -101,6 +101,7 @@ namespace CIS153_Connect4_Group3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(532, 321);
+            this.ControlBox = false;
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.ExitButt);
             this.Controls.Add(this.StatButt);
@@ -110,7 +111,7 @@ namespace CIS153_Connect4_Group3
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Result";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form1";
+            this.Text = "Results";
             this.Load += new System.EventHandler(this.Result_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
