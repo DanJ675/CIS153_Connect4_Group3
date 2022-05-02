@@ -91,7 +91,7 @@ namespace CIS153_Connect4_Group3
             this.lblName.Location = new System.Drawing.Point(35, 57);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(201, 26);
+            this.lblName.Size = new System.Drawing.Size(399, 53);
             this.lblName.TabIndex = 4;
             this.lblName.Text = "We have a winner!";
             // 
@@ -100,14 +100,16 @@ namespace CIS153_Connect4_Group3
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.ClientSize = new System.Drawing.Size(517, 292);
+            this.ClientSize = new System.Drawing.Size(532, 321);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.ExitButt);
             this.Controls.Add(this.StatButt);
             this.Controls.Add(this.ReturnButt);
             this.Controls.Add(this.NewButt);
+            this.Location = new System.Drawing.Point(100, 100);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Result";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Result_Load);
             this.ResumeLayout(false);

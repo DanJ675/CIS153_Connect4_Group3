@@ -421,8 +421,6 @@ namespace CIS153_Connect4_Group3
             return false;
         }
 
-
-
         public bool twoPlusTwo(Square[,] square)
         {
 
@@ -485,7 +483,7 @@ namespace CIS153_Connect4_Group3
             }
 
             //check for upward diagonal
-            for (int c = 0; c < 5; c++)
+            for (int c = 0; c < 4; c++)
             {
                 for (int r = 0; r < 3; r++)
                 {
@@ -496,7 +494,7 @@ namespace CIS153_Connect4_Group3
                         (r == 0 || (square[c + 2, r + 1].getPlayerNum() != 0)))
 
                     {
-                        square[c + 2, r + 1].setPlayerNum(2); // make move
+                        square[c + 2, r + 2].setPlayerNum(2); // make move
                         Console.WriteLine("2+2 Square: " + (c + 2) + ", " + (r + 1) + " is player: " + square[c + 2, r + 1].getPlayerNum());
                         return true; //successful move, stop two plus two;
                     }
@@ -507,7 +505,7 @@ namespace CIS153_Connect4_Group3
                         (r == 0 || (square[c + 2, r + 1].getPlayerNum() != 0)))
 
                     {
-                        square[c + 2, r + 1].setPlayerNum(2); // block
+                        square[c + 2, r + 2].setPlayerNum(2); // block
                         Console.WriteLine("2+2 block Square: " + (c + 2) + ", " + (r + 1) + " is player: " + square[c + 2, r + 1].getPlayerNum());
                         return true; //successful move, stop two plus two;
                     }
@@ -526,7 +524,7 @@ namespace CIS153_Connect4_Group3
                         (r == 0 || (square[c + 2, r - 3].getPlayerNum() != 0)))
 
                     {
-                        square[c + 1, r - 2].setPlayerNum(2); // make move
+                        square[c + 2, r - 2].setPlayerNum(2); // make move
                         Console.WriteLine("2+2 Square: " + (c + 1) + ", " + (r - 2) + " is player: " + square[c + 1, r - 2].getPlayerNum());
                         return true; //successful move, stop two plus two;
                     }
@@ -537,7 +535,7 @@ namespace CIS153_Connect4_Group3
                         (r == 0 || (square[c + 2, r - 3].getPlayerNum() != 0)))
 
                     {
-                        square[c, r].setPlayerNum(2); // block
+                        square[c + 2, r - 2].setPlayerNum(2); // block
                         Console.WriteLine("2+2 block Square: " + (c + 2) + ", " + (r - 2) + " is player: " + square[c + 1, r - 2].getPlayerNum());
                         return true; //successful move, stop two plus two;
                     }
@@ -553,7 +551,7 @@ namespace CIS153_Connect4_Group3
             return false;
         }
 
-    public bool onePlusTwo(Square[,] square)
+        public bool onePlusTwo(Square[,] square)
         {
             Console.WriteLine("Entered 1+2");
 

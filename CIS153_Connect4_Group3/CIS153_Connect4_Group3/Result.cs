@@ -14,13 +14,23 @@ namespace CIS153_Connect4_Group3
 {
     public partial class Result : Form
     {
+        //private Square[,] gBoard = new Square[7, 6];
+        private Game g;
         private string playerName;
-        
+        private string p1;
+        private string p2;
+
         public Result()
         {
             InitializeComponent();
         }
+        //public void setGameBoard(Game game)
+        //{
+        //    g = game;
+        //}
         public void setPlayerName(string s) { playerName = s; }
+        public void setP1(string s) { p1 = s; }
+        public void setP2(string s) { p2 = s; }
 
         private void ReturnButt_Click(object sender, EventArgs e)
         {
@@ -45,9 +55,12 @@ namespace CIS153_Connect4_Group3
         {
             this.Hide();
             GameBoard board = new GameBoard();
+            board.setActiveBoard(true);
+            board.player1Name = p1;
+            board.player2Name = p2;
+            //board.game = game;
             board.FormClosed += (s, args) => this.Close();
             board.Show();
-
         }
 
         private void Result_Load(object sender, EventArgs e)

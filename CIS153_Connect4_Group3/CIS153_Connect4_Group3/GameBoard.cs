@@ -25,7 +25,7 @@ namespace Connect4
         public GameBoard()
         {
             InitializeComponent();
-            CIS153_Connect4_Group3.Square[,] squares;
+            //CIS153_Connect4_Group3.Square[,] squares;
             player1 = new CIS153_Connect4_Group3.Player(player1Name);
             player2 = new CIS153_Connect4_Group3.Player(player2Name);
             CIS153_Connect4_Group3.Game game = new CIS153_Connect4_Group3.Game(player1, player2);
@@ -39,6 +39,8 @@ namespace Connect4
         public void setActiveBoard(bool a) { activeBoard = a; }
         private void GameBoard_Load(object sender, EventArgs e)
         {
+            lblPlayer1Name.Text = player1Name;
+            lblPlayer2Name.Text = player2Name;
 
             //showGame.getSquare();   // you use this to return the information to update the colors of the squares.
 
@@ -863,24 +865,18 @@ namespace Connect4
         {
             updateScreen(g.getSquare());
         }
-
-        private void col0_MouseClick(object sender, MouseEventArgs e)
+        private void mouseClick(int col)
         {
-            if(g.getPlayerNum(5,0) == 0 && activeBoard)
+            if (g.getPlayerNum(5, col) == 0 && activeBoard)
             {
-                g.onClick(g.getActivePlayerNum(), 0);
+                g.onClick(g.getActivePlayerNum(), col);
                 updateScreen(g.getSquare());
-                switchPlayers();
-                if(player2Name == "Computer")
-                {
-                    updateScreen(g.nextComputerMove());
-                }
             }
             if (g.checkWinner() > 0 && activeBoard)
             {
+                activeBoard = false;
                 this.Hide();
                 Result result = new Result();
-                //switchPlayers();
 
                 if (g.getActivePlayerNum() == 1)
                 {
@@ -891,6 +887,9 @@ namespace Connect4
                         textFile.UpdatePlayer(player1Name, 4);
                         textFile.UpdatePlayer(player2Name, 2);
                         result.setPlayerName(player1Name);
+                        result.setP1(player1Name);
+                        result.setP2(player2Name);
+
                     }
                     else
                     {
@@ -899,6 +898,9 @@ namespace Connect4
                         textFile.UpdatePlayer(player1Name, 1);
                         textFile.UpdatePlayer(player2Name, 2);
                         result.setPlayerName(player1Name);
+                        result.setP1(player1Name);
+                        result.setP2(player2Name);
+
                     }
 
                 }
@@ -911,6 +913,9 @@ namespace Connect4
                         textFile.UpdatePlayer(player1Name, 5);
                         textFile.UpdatePlayer(player2Name, 1);
                         result.setPlayerName(player2Name);
+                        result.setP1(player1Name);
+                        result.setP2(player2Name);
+
                     }
                     else
                     {
@@ -919,14 +924,17 @@ namespace Connect4
                         textFile.UpdatePlayer(player1Name, 2);
                         textFile.UpdatePlayer(player2Name, 1);
                         result.setPlayerName(player2Name);
+                        result.setP1(player1Name);
+                        result.setP2(player2Name);
+
                     }
                 }
-                    result.FormClosed += (s, args) => this.Close();
-                    result.Show();
+                result.FormClosed += (s, args) => this.Close();
+                result.Show();
             }
             if (g.checkDraw() && activeBoard)
             {
-                switchPlayers();
+                activeBoard = false;
                 if (player2Name == "Computer")
                 {
                     player1.addTieVsAi();
@@ -949,93 +957,99 @@ namespace Connect4
             }
 
             switchPlayers();
+            if (player2Name == "Computer" && g.getActivePlayerNum() == 2 && activeBoard)
+            {
+                updateScreen(g.nextComputerMove());
+                if (g.checkWinner() > 0 && activeBoard)
+                {
+                    activeBoard = false;
+                    this.Hide();
+                    Result result = new Result();
+
+                    if (g.getActivePlayerNum() == 1)
+                    {
+                        if (player2Name == "Computer")
+                        {
+                            player1.addWinVsAi();
+                            player2.addLoss();
+                            textFile.UpdatePlayer(player1Name, 4);
+                            textFile.UpdatePlayer(player2Name, 2);
+                            result.setPlayerName(player1Name);
+                            result.setP1(player1Name);
+                            result.setP2(player2Name);
+                        }
+                        else
+                        {
+                            player1.addWin();
+                            player2.addLoss();
+                            textFile.UpdatePlayer(player1Name, 1);
+                            textFile.UpdatePlayer(player2Name, 2);
+                            result.setPlayerName(player1Name);
+                            result.setP1(player1Name);
+                            result.setP2(player2Name);
+                        }
+
+                    }
+                    else
+                    {
+                        if (player2Name == "Computer")
+                        {
+                            player1.addLossVsAi();
+                            player2.addWin();
+                            textFile.UpdatePlayer(player1Name, 5);
+                            textFile.UpdatePlayer(player2Name, 1);
+                            result.setPlayerName(player2Name);
+                            result.setP1(player1Name);
+                            result.setP2(player2Name);
+                        }
+                        else
+                        {
+                            player1.addLoss();
+                            player2.addWin();
+                            textFile.UpdatePlayer(player1Name, 2);
+                            textFile.UpdatePlayer(player2Name, 1);
+                            result.setPlayerName(player2Name);
+                            result.setP1(player1Name);
+                            result.setP2(player2Name);
+                        }
+                    }
+                    result.FormClosed += (s, args) => this.Close();
+                    result.Show();
+                }
+                if (g.checkDraw() && activeBoard)
+                {
+                    activeBoard = false;
+                    if (player2Name == "Computer")
+                    {
+                        player1.addTieVsAi();
+                        player2.addTies();
+                        textFile.UpdatePlayer(player1Name, 6);
+                        textFile.UpdatePlayer(player2Name, 3);
+                    }
+                    else
+                    {
+                        player1.addTies();
+                        player2.addTies();
+                        textFile.UpdatePlayer(player1Name, 3);
+                        textFile.UpdatePlayer(player2Name, 3);
+                    }
+                    this.Hide();
+                    Result result = new Result();
+                    result.setPlayerName(player1Name);
+                    result.FormClosed += (s, args) => this.Close();
+                    result.Show();
+                }
+                switchPlayers();
+            }
+        }
+        private void col0_MouseClick(object sender, MouseEventArgs e)
+        {
+            mouseClick(0);
         }
 
         private void col1_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 1) == 0 && activeBoard)
-            {
-                g.onClick(g.getActivePlayerNum(), 1);
-                updateScreen(g.getSquare());
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    updateScreen(g.nextComputerMove());
-                }
-            }
-            if (g.checkWinner() > 0 && activeBoard)
-            {
-                this.Hide();
-                Result result = new Result();
-                //switchPlayers();
-
-                if (g.getActivePlayerNum() == 1)
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addWinVsAi();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 4);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-                    else
-                    {
-                        player1.addWin();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 1);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-
-                }
-                else
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addLossVsAi();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 5);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                    else
-                    {
-                        player1.addLoss();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 2);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                }
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-            if (g.checkDraw() && activeBoard)
-            {
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    player1.addTieVsAi();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 6);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                else
-                {
-                    player1.addTies();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 3);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                this.Hide();
-                Result result = new Result();
-                result.setPlayerName(player1Name);
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-
-            switchPlayers();
+            mouseClick(1);
         }
 
         private void col1_MouseHover(object sender, EventArgs e)
@@ -1050,89 +1064,7 @@ namespace Connect4
         }
         private void col2_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 2) == 0 && activeBoard)
-            {
-                g.onClick(g.getActivePlayerNum(), 2);
-                updateScreen(g.getSquare());
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    updateScreen(g.nextComputerMove());
-                }
-            }
-            if (g.checkWinner() > 0 && activeBoard)
-            {
-                this.Hide();
-                Result result = new Result();
-                //switchPlayers();
-
-                if (g.getActivePlayerNum() == 1)
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addWinVsAi();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 4);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-                    else
-                    {
-                        player1.addWin();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 1);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-
-                }
-                else
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addLossVsAi();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 5);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                    else
-                    {
-                        player1.addLoss();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 2);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                }
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-            if (g.checkDraw() && activeBoard)
-            {
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    player1.addTieVsAi();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 6);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                else
-                {
-                    player1.addTies();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 3);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                this.Hide();
-                Result result = new Result();
-                result.setPlayerName(player1Name);
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-
-            switchPlayers();
+            mouseClick(2);
         }
 
         private void col2_MouseHover(object sender, EventArgs e)
@@ -1147,89 +1079,7 @@ namespace Connect4
         }
         private void col3_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 3) == 0 && activeBoard)
-            {
-                g.onClick(g.getActivePlayerNum(), 3);
-                updateScreen(g.getSquare());
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    updateScreen(g.nextComputerMove());
-                }
-            }
-            if (g.checkWinner() > 0 && activeBoard)
-            {
-                this.Hide();
-                Result result = new Result();
-                //switchPlayers();
-
-                if (g.getActivePlayerNum() == 1)
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addWinVsAi();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 4);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-                    else
-                    {
-                        player1.addWin();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 1);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-
-                }
-                else
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addLossVsAi();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 5);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                    else
-                    {
-                        player1.addLoss();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 2);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                }
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-            if (g.checkDraw() && activeBoard)
-            {
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    player1.addTieVsAi();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 6);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                else
-                {
-                    player1.addTies();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 3);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                this.Hide();
-                Result result = new Result();
-                result.setPlayerName(player1Name);
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-
-            switchPlayers();
+            mouseClick(3);
         }
 
         private void col3_MouseHover(object sender, EventArgs e)
@@ -1244,89 +1094,7 @@ namespace Connect4
         }
         private void col4_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 4) == 0 && activeBoard)
-            {
-                g.onClick(g.getActivePlayerNum(), 4);
-                updateScreen(g.getSquare());
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    updateScreen(g.nextComputerMove());
-                }
-            }
-            if (g.checkWinner() > 0 && activeBoard)
-            {
-                this.Hide();
-                Result result = new Result();
-                //switchPlayers();
-
-                if (g.getActivePlayerNum() == 1)
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addWinVsAi();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 4);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-                    else
-                    {
-                        player1.addWin();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 1);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-
-                }
-                else
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addLossVsAi();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 5);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                    else
-                    {
-                        player1.addLoss();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 2);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                }
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-            if (g.checkDraw() && activeBoard)
-            {
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    player1.addTieVsAi();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 6);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                else
-                {
-                    player1.addTies();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 3);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                this.Hide();
-                Result result = new Result();
-                result.setPlayerName(player1Name);
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-
-            switchPlayers();
+            mouseClick(4);
         }
 
         private void col4_MouseHover(object sender, EventArgs e)
@@ -1341,89 +1109,7 @@ namespace Connect4
         }
         private void col5_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 5) == 0 && activeBoard)
-            {
-                g.onClick(g.getActivePlayerNum(), 5);
-                updateScreen(g.getSquare());
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    updateScreen(g.nextComputerMove());
-                }
-            }
-            if (g.checkWinner() > 0 && activeBoard)
-            {
-                this.Hide();
-                Result result = new Result();
-                //switchPlayers();
-
-                if (g.getActivePlayerNum() == 1)
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addWinVsAi();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 4);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-                    else
-                    {
-                        player1.addWin();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 1);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-
-                }
-                else
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addLossVsAi();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 5);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                    else
-                    {
-                        player1.addLoss();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 2);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                }
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-            if (g.checkDraw() && activeBoard)
-            {
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    player1.addTieVsAi();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 6);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                else
-                {
-                    player1.addTies();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 3);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                this.Hide();
-                Result result = new Result();
-                result.setPlayerName(player1Name);
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-
-            switchPlayers();
+            mouseClick(5);
         }
 
         private void col5_MouseHover(object sender, EventArgs e)
@@ -1438,89 +1124,7 @@ namespace Connect4
         }
         private void col6_MouseClick(object sender, MouseEventArgs e)
         {
-            if (g.getPlayerNum(5, 2) == 0 && activeBoard)
-            {
-                g.onClick(g.getActivePlayerNum(), 6);
-                updateScreen(g.getSquare());
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    updateScreen(g.nextComputerMove());
-                }
-            }
-            if (g.checkWinner() > 0 && activeBoard)
-            {
-                this.Hide();
-                Result result = new Result();
-                //switchPlayers();
-
-                if (g.getActivePlayerNum() == 1)
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addWinVsAi();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 4);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-                    else
-                    {
-                        player1.addWin();
-                        player2.addLoss();
-                        textFile.UpdatePlayer(player1Name, 1);
-                        textFile.UpdatePlayer(player2Name, 2);
-                        result.setPlayerName(player1Name);
-                    }
-
-                }
-                else
-                {
-                    if (player2Name == "Computer")
-                    {
-                        player1.addLossVsAi();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 5);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                    else
-                    {
-                        player1.addLoss();
-                        player2.addWin();
-                        textFile.UpdatePlayer(player1Name, 2);
-                        textFile.UpdatePlayer(player2Name, 1);
-                        result.setPlayerName(player2Name);
-                    }
-                }
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-            if (g.checkDraw() && activeBoard)
-            {
-                switchPlayers();
-                if (player2Name == "Computer")
-                {
-                    player1.addTieVsAi();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 6);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                else
-                {
-                    player1.addTies();
-                    player2.addTies();
-                    textFile.UpdatePlayer(player1Name, 3);
-                    textFile.UpdatePlayer(player2Name, 3);
-                }
-                this.Hide();
-                Result result = new Result();
-                result.setPlayerName(player1Name);
-                result.FormClosed += (s, args) => this.Close();
-                result.Show();
-            }
-
-            switchPlayers();
+            mouseClick(6);
         }
 
         private void col6_MouseHover(object sender, EventArgs e)
